@@ -763,19 +763,9 @@ for q in page_qs:
             label_visibility="collapsed",
             key=f"radio_{qnum}"
         )
-        col_ans, col_skip = st.columns([3, 1])
-        with col_ans:
-            if st.button("Submit Answer", key=f"btn_{qnum}",
-                         use_container_width=True, type="primary"):
-                if choice is not None:
-                    st.session_state.answers[qnum] = choice[0]
-                    st.rerun()
-                else:
-                    st.warning("Please select an option first.")
-        with col_skip:
-            if st.button("Skip", key=f"skip_{qnum}", use_container_width=True):
-                st.session_state.answers[qnum] = "SKIP"
-                st.rerun()
+        if choice is not None:
+            st.session_state.answers[qnum] = choice[0]
+            st.rerun()
 
     else:
         is_skip  = chosen == "SKIP"
