@@ -15,13 +15,13 @@ st.markdown("""
 .q-card {
     background: white;
     border-radius: 10px;
-    padding: 18px 20px 14px;
+    padding: 20px 22px 16px;
     margin-bottom: 10px;
     box-shadow: 0 1px 4px rgba(0,0,0,.08);
     border-left: 5px solid #E85D26;
 }
 .q-number {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     color: #E85D26;
     letter-spacing: 1px;
@@ -29,15 +29,15 @@ st.markdown("""
     margin-bottom: 6px;
 }
 .q-text {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
     color: #1A1A2E;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 .domain-badge {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
-    padding: 2px 8px;
+    padding: 3px 10px;
     border-radius: 20px;
     float: right;
 }
@@ -45,36 +45,40 @@ st.markdown("""
     background: #E8F5E9;
     border: 2px solid #2E7D32;
     border-radius: 8px;
-    padding: 10px 14px;
-    margin: 4px 0;
+    padding: 13px 16px;
+    margin: 5px 0;
     color: #1B5E20;
     font-weight: 700;
+    font-size: 16px;
 }
 .opt-wrong {
     background: #FFEBEE;
     border: 2px solid #C62828;
     border-radius: 8px;
-    padding: 10px 14px;
-    margin: 4px 0;
+    padding: 13px 16px;
+    margin: 5px 0;
     color: #B71C1C;
     font-weight: 700;
+    font-size: 16px;
 }
 .opt-neutral {
     background: #FAFAFA;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
-    padding: 10px 14px;
-    margin: 4px 0;
-    color: #444;
+    padding: 13px 16px;
+    margin: 5px 0;
+    color: #333;
+    font-size: 16px;
 }
 .mem-box {
     background: #FFFDE7;
     border-left: 4px solid #F9A825;
     border-radius: 0 8px 8px 0;
-    padding: 10px 14px;
-    margin-top: 10px;
-    font-size: 13px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    font-size: 15px;
     color: #5D4037;
+    line-height: 1.6;
 }
 .score-card {
     background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
@@ -100,16 +104,17 @@ st.markdown("""
     height: 7px;
 }
 div[data-testid="stRadio"] label {
-    font-size: 14px !important;
-    padding: 5px 0 !important;
+    font-size: 16px !important;
+    padding: 7px 4px !important;
     display: block;
+    line-height: 1.5 !important;
 }
-div[data-testid="stRadio"] > div { gap: 2px !important; }
+div[data-testid="stRadio"] > div { gap: 4px !important; }
 div[data-testid="stButton"] > button {
     border-radius: 8px !important;
-    font-size: 14px !important;
+    font-size: 15px !important;
     font-weight: 600 !important;
-    padding: 10px 16px !important;
+    padding: 12px 16px !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -719,11 +724,13 @@ with st.sidebar:
   </div>
 </div>"""
         st.markdown(btn_html, unsafe_allow_html=True)
-        if st.button(f"Go", key=f"page_btn_{p}", use_container_width=True,
-                     help=f"Q{s}–{e}"):
-            st.session_state.page = p
-            st.rerun()
-        st.markdown("<div style='margin-top:-12px'></div>", unsafe_allow_html=True)
+        col_go, _ = st.columns([1, 0.001])
+        with col_go:
+            if st.button(f"{'▶ Current' if is_current else 'Go →'}", key=f"page_btn_{p}",
+                         use_container_width=True, type="primary" if is_current else "secondary"):
+                st.session_state.page = p
+                st.rerun()
+        st.markdown("<div style='margin-bottom:4px'></div>", unsafe_allow_html=True)
 
     st.markdown("---")
     if st.button("Reset All", use_container_width=True):
