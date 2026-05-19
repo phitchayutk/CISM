@@ -666,18 +666,64 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("**Jump to page:**")
+    st.markdown("")
 
-    page_labels = []
+    DOMAIN_NAMES = {
+        0: "D1 Governance",
+        1: "D2 Risk Mgmt",
+        2: "D3 Security Prog",
+        3: "D4 Incident Mgmt",
+        4: "Mixed Q201-250",
+        5: "Mixed Q251-300",
+        6: "Mixed Q301-350",
+        7: "Mixed Q351-400",
+        8: "Mixed Q401-450",
+        9: "Mixed Q451-500",
+    }
+    DOMAIN_COLORS = {
+        0: "#1565C0", 1: "#2E7D32", 2: "#E65100", 3: "#6A1B9A",
+        4: "#37474F", 5: "#37474F", 6: "#37474F",
+        7: "#37474F", 8: "#37474F", 9: "#37474F",
+    }
+
     for p in range(TOTAL_PAGES):
         s = p * PAGE_SIZE + 1
         e = min((p+1) * PAGE_SIZE, TOTAL)
-        done = sum(1 for q in range(s, e+1) if q in st.session_state.answers)
-        page_labels.append(f"Q{s}-{e}  ({done}/{e-s+1})")
+        done  = sum(1 for q in range(s, e+1) if q in st.session_state.answers)
+        total_p = e - s + 1
+        pct_p = int(done / total_p * 100)
+        is_current = (p == st.session_state.page)
+        dc = DOMAIN_COLORS[p]
+        dn = DOMAIN_NAMES[p]
 
-    sel = st.radio("", page_labels,
-                   index=st.session_state.page,
-                   label_visibility="collapsed")
-    st.session_state.page = page_labels.index(sel)
+        bg   = dc if is_current else "transparent"
+        tc   = "white" if is_current else "var(--color-text-primary)"
+        bord = dc
+
+        btn_html = f"""
+<div style="
+    background:{bg};
+    border:1.5px solid {bord};
+    border-radius:8px;
+    padding:8px 10px;
+    margin-bottom:6px;
+    cursor:pointer;
+    ">
+  <div style="font-size:11px;font-weight:700;color:{'white' if is_current else dc};margin-bottom:2px;">{dn}</div>
+  <div style="display:flex;justify-content:space-between;align-items:center;">
+    <span style="font-size:12px;color:{tc};opacity:.85;">Q{s}–{e}</span>
+    <span style="font-size:11px;color:{tc};opacity:.7;">{done}/{total_p}</span>
+  </div>
+  <div style="background:{'rgba(255,255,255,.3)' if is_current else '#E0E0E0'};border-radius:4px;height:3px;margin-top:5px;">
+    <div style="background:{'white' if is_current else dc};width:{pct_p}%;height:3px;border-radius:4px;"></div>
+  </div>
+</div>"""
+        st.markdown(btn_html, unsafe_allow_html=True)
+        if st.button(f"Go", key=f"page_btn_{p}", use_container_width=True,
+                     help=f"Q{s}–{e}"):
+            st.session_state.page = p
+            st.rerun()
+        st.markdown("<div style='margin-top:-12px'></div>", unsafe_allow_html=True)
 
     st.markdown("---")
     if st.button("Reset All", use_container_width=True):
@@ -815,7 +861,7 @@ for q in page_qs:
             st.rerun()
 
     st.markdown(
-        "<hr style='margin:18px 0;border:none;border-top:1px solid #e8e8e8'>",
+        "<div style='margin:28px 0 24px;border-top:3px solid #E85D26;opacity:.3;'></div>",
         unsafe_allow_html=True
     )
 
