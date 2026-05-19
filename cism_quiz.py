@@ -15,27 +15,27 @@ st.markdown("""
 .q-card {
     background: white;
     border-radius: 10px;
-    padding: 20px 22px 16px;
-    margin-bottom: 10px;
+    padding: 22px 24px 18px;
+    margin-bottom: 12px;
     box-shadow: 0 1px 4px rgba(0,0,0,.08);
     border-left: 5px solid #E85D26;
 }
 .q-number {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
     color: #E85D26;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 .q-text {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 700;
     color: #1A1A2E;
     line-height: 1.6;
 }
 .domain-badge {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 700;
     padding: 3px 10px;
     border-radius: 20px;
@@ -45,51 +45,54 @@ st.markdown("""
     background: #E8F5E9;
     border: 2px solid #2E7D32;
     border-radius: 8px;
-    padding: 13px 16px;
-    margin: 5px 0;
+    padding: 14px 18px;
+    margin: 6px 0;
     color: #1B5E20;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 .opt-wrong {
     background: #FFEBEE;
     border: 2px solid #C62828;
     border-radius: 8px;
-    padding: 13px 16px;
-    margin: 5px 0;
+    padding: 14px 18px;
+    margin: 6px 0;
     color: #B71C1C;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 .opt-neutral {
     background: #FAFAFA;
     border: 1px solid #E0E0E0;
     border-radius: 8px;
-    padding: 13px 16px;
-    margin: 5px 0;
+    padding: 14px 18px;
+    margin: 6px 0;
     color: #333;
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 .mem-box {
     background: #FFFDE7;
     border-left: 4px solid #F9A825;
     border-radius: 0 8px 8px 0;
-    padding: 12px 16px;
-    margin-top: 12px;
-    font-size: 15px;
+    padding: 14px 18px;
+    margin-top: 14px;
+    font-size: 20px;
     color: #5D4037;
     line-height: 1.6;
 }
 .score-card {
-    background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+    background: #1A1A2E;
     color: white;
     border-radius: 14px;
-    padding: 24px;
+    padding: 28px;
     text-align: center;
-    margin: 12px 0;
+    margin: 16px 0;
 }
 .score-big {
-    font-size: 52px;
+    font-size: 56px;
     font-weight: 700;
     line-height: 1;
 }
@@ -97,24 +100,24 @@ st.markdown("""
     background: #E0E0E0;
     border-radius: 6px;
     height: 7px;
-    margin: 6px 0 14px;
+    margin: 6px 0 16px;
 }
 .progress-fill {
     border-radius: 6px;
     height: 7px;
 }
 div[data-testid="stRadio"] label {
-    font-size: 16px !important;
-    padding: 7px 4px !important;
+    font-size: 20px !important;
+    padding: 8px 4px !important;
     display: block;
     line-height: 1.5 !important;
 }
-div[data-testid="stRadio"] > div { gap: 4px !important; }
+div[data-testid="stRadio"] > div { gap: 6px !important; }
 div[data-testid="stButton"] > button {
     border-radius: 8px !important;
-    font-size: 15px !important;
+    font-size: 18px !important;
     font-weight: 600 !important;
-    padding: 12px 16px !important;
+    padding: 14px 18px !important;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -624,16 +627,16 @@ QUESTIONS = [
 ]
 
 
-LABELS     = ["A", "B", "C", "D"]
-PAGE_SIZE  = 50
-TOTAL      = len(QUESTIONS)
+LABELS      = ["A", "B", "C", "D"]
+PAGE_SIZE   = 50
+TOTAL       = len(QUESTIONS)
 TOTAL_PAGES = (TOTAL + PAGE_SIZE - 1) // PAGE_SIZE
 
 DOMAIN_RANGES = [
-    (range(1,   51), "D1 Governance",        "#1565C0"),
-    (range(51,  101),"D2 Risk Mgmt",         "#2E7D32"),
-    (range(101, 151),"D3 Security Program",  "#E65100"),
-    (range(151, 201),"D4 Incident Mgmt",     "#6A1B9A"),
+    (range(1,   51), "D1 Governance",       "#1565C0"),
+    (range(51,  101),"D2 Risk Mgmt",        "#2E7D32"),
+    (range(101, 151),"D3 Security Program", "#E65100"),
+    (range(151, 201),"D4 Incident Mgmt",    "#6A1B9A"),
 ]
 
 def get_domain(qnum):
@@ -671,66 +674,18 @@ with st.sidebar:
 
     st.markdown("---")
     st.markdown("**Jump to page:**")
-    st.markdown("")
 
-    DOMAIN_NAMES = {
-        0: "D1 Governance",
-        1: "D2 Risk Mgmt",
-        2: "D3 Security Prog",
-        3: "D4 Incident Mgmt",
-        4: "Mixed Q201-250",
-        5: "Mixed Q251-300",
-        6: "Mixed Q301-350",
-        7: "Mixed Q351-400",
-        8: "Mixed Q401-450",
-        9: "Mixed Q451-500",
-    }
-    DOMAIN_COLORS = {
-        0: "#1565C0", 1: "#2E7D32", 2: "#E65100", 3: "#6A1B9A",
-        4: "#37474F", 5: "#37474F", 6: "#37474F",
-        7: "#37474F", 8: "#37474F", 9: "#37474F",
-    }
-
+    page_labels = []
     for p in range(TOTAL_PAGES):
         s = p * PAGE_SIZE + 1
         e = min((p+1) * PAGE_SIZE, TOTAL)
-        done  = sum(1 for q in range(s, e+1) if q in st.session_state.answers)
-        total_p = e - s + 1
-        pct_p = int(done / total_p * 100)
-        is_current = (p == st.session_state.page)
-        dc = DOMAIN_COLORS[p]
-        dn = DOMAIN_NAMES[p]
+        done = sum(1 for q in range(s, e+1) if q in st.session_state.answers)
+        page_labels.append(f"Q{s}-{e}  ({done}/{e-s+1})")
 
-        bg   = dc if is_current else "transparent"
-        tc   = "white" if is_current else "var(--color-text-primary)"
-        bord = dc
-
-        btn_html = f"""
-<div style="
-    background:{bg};
-    border:1.5px solid {bord};
-    border-radius:8px;
-    padding:8px 10px;
-    margin-bottom:6px;
-    cursor:pointer;
-    ">
-  <div style="font-size:11px;font-weight:700;color:{'white' if is_current else dc};margin-bottom:2px;">{dn}</div>
-  <div style="display:flex;justify-content:space-between;align-items:center;">
-    <span style="font-size:12px;color:{tc};opacity:.85;">Q{s}–{e}</span>
-    <span style="font-size:11px;color:{tc};opacity:.7;">{done}/{total_p}</span>
-  </div>
-  <div style="background:{'rgba(255,255,255,.3)' if is_current else '#E0E0E0'};border-radius:4px;height:3px;margin-top:5px;">
-    <div style="background:{'white' if is_current else dc};width:{pct_p}%;height:3px;border-radius:4px;"></div>
-  </div>
-</div>"""
-        st.markdown(btn_html, unsafe_allow_html=True)
-        col_go, _ = st.columns([1, 0.001])
-        with col_go:
-            if st.button(f"{'▶ Current' if is_current else 'Go →'}", key=f"page_btn_{p}",
-                         use_container_width=True, type="primary" if is_current else "secondary"):
-                st.session_state.page = p
-                st.rerun()
-        st.markdown("<div style='margin-bottom:4px'></div>", unsafe_allow_html=True)
+    sel = st.radio("", page_labels,
+                   index=st.session_state.page,
+                   label_visibility="collapsed")
+    st.session_state.page = page_labels.index(sel)
 
     st.markdown("---")
     if st.button("Reset All", use_container_width=True):
@@ -745,22 +700,22 @@ start_idx = page * PAGE_SIZE
 end_idx   = min(start_idx + PAGE_SIZE, TOTAL)
 page_qs   = QUESTIONS[start_idx:end_idx]
 
-p_start  = page_qs[0][0]
-p_end    = page_qs[-1][0]
-p_done   = sum(1 for q in page_qs if q[0] in st.session_state.answers)
-p_right  = sum(1 for q in page_qs
-               if q[0] in st.session_state.answers
-               and st.session_state.answers[q[0]] == q[3])
-p_wrong  = p_done - p_right
+p_start = page_qs[0][0]
+p_end   = page_qs[-1][0]
+p_done  = sum(1 for q in page_qs if q[0] in st.session_state.answers)
+p_right = sum(1 for q in page_qs
+              if q[0] in st.session_state.answers
+              and st.session_state.answers[q[0]] == q[3])
+p_wrong = p_done - p_right
 
 st.markdown(f"## Questions {p_start} - {p_end}")
 
 c1, c2, c3 = st.columns(3)
-c1.metric("Answered",  f"{p_done}/{len(page_qs)}")
-c2.metric("Correct",   p_right)
-c3.metric("Wrong",     p_wrong)
+c1.metric("Answered", f"{p_done}/{len(page_qs)}")
+c2.metric("Correct",  p_right)
+c3.metric("Wrong",    p_wrong)
 
-fill_pct = int(p_done / len(page_qs) * 100)
+fill_pct   = int(p_done / len(page_qs) * 100)
 fill_color = "#2E7D32" if fill_pct == 100 else "#E85D26"
 st.markdown(
     f'''<div class="progress-wrap">
@@ -774,7 +729,7 @@ if p_done == len(page_qs) and p_done > 0:
     gc = "#2E7D32" if sc >= 75 else "#E65100" if sc >= 60 else "#C62828"
     st.markdown(
         f'''<div class="score-card">
-        <div style="font-size:13px;color:#aab;margin-bottom:4px">Page Score</div>
+        <div style="font-size:14px;color:#aab;margin-bottom:4px">Page Score</div>
         <div class="score-big" style="color:{gc}">{sc}%</div>
         <div style="color:#ccc;margin-top:6px">{p_right} correct out of {p_done}</div>
         </div>''',
@@ -800,9 +755,8 @@ for q in page_qs:
     )
 
     if not answered_q:
-        # Unanswered — show radio
         options = [f"{LABELS[i]}.  {opts[i]}" for i in range(4)]
-        choice = st.radio(
+        choice  = st.radio(
             label=f"q_{qnum}",
             options=options,
             index=None,
@@ -824,23 +778,22 @@ for q in page_qs:
                 st.rerun()
 
     else:
-        # Answered — show result
         is_skip  = chosen == "SKIP"
         is_right = (chosen == correct_ans) and not is_skip
 
         for i, opt in enumerate(opts):
-            lbl = LABELS[i]
+            lbl            = LABELS[i]
             is_correct_opt = (lbl == correct_ans)
             is_chosen_opt  = (lbl == chosen)
 
             if is_correct_opt:
-                css, icon = "opt-correct", "checkmark"
+                css    = "opt-correct"
                 prefix = f"✅ {lbl}."
             elif is_chosen_opt and not is_right:
-                css, icon = "opt-wrong", "x"
+                css    = "opt-wrong"
                 prefix = f"❌ {lbl}."
             else:
-                css = "opt-neutral"
+                css    = "opt-neutral"
                 prefix = f"   {lbl}."
 
             st.markdown(
@@ -848,7 +801,6 @@ for q in page_qs:
                 unsafe_allow_html=True
             )
 
-        # Result message
         if is_skip:
             st.info(f"Skipped — Correct Answer: **{correct_ans}**")
         elif is_right:
@@ -856,7 +808,6 @@ for q in page_qs:
         else:
             st.error(f"Wrong — Correct Answer: **{correct_ans}**")
 
-        # Memory hint
         st.markdown(
             f'''<div class="mem-box">💡 {mem}</div>''',
             unsafe_allow_html=True
@@ -868,7 +819,7 @@ for q in page_qs:
             st.rerun()
 
     st.markdown(
-        "<div style='margin:28px 0 24px;border-top:3px solid #E85D26;opacity:.3;'></div>",
+        "<div style='margin:28px 0 24px;border-top:3px solid #E85D26;opacity:.25;'></div>",
         unsafe_allow_html=True
     )
 
@@ -881,7 +832,7 @@ with col_prev:
             st.rerun()
 with col_mid:
     st.markdown(
-        f"<p style='text-align:center;color:#888;font-size:13px'>"
+        f"<p style='text-align:center;color:#888;font-size:14px'>"
         f"Page {page+1} / {TOTAL_PAGES}</p>",
         unsafe_allow_html=True
     )
