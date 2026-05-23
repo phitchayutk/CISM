@@ -626,6 +626,3210 @@ QUESTIONS = [
     (500, "An empowered security steering committee has decided to accept a critical risk. What is the IS manager's BEST course of action?", ["Notify the chief risk officer (CRO) and internal audit.", "Determine the impact to IS objectives.", "Remove the specific risk item from the risk register.", "Document the risk acceptance and justification."], "D", "จำ: steering committee accepts risk → IS manager = DOCUMENT acceptance + justification"),
 ]
 
+# ── Q501-550 (Dump) ───────────────────────────────────────────────────────────
+QUESTIONS += [
+(501,"Which of the following is the PRIMARY benefit of implementing an information security governance framework?",
+["The framework provides a roadmap to maximize revenue through the secure use of technology.",
+"The framework is able to confirm the validity of business goals and strategies.",
+"The framework defines managerial responsibilities for risk impacts to business goals.",
+"The framework provides direction to meet business goals while balancing risks and controls."],"D",
+"จำ: IS governance PRIMARY benefit → direction to meet business goals while BALANCING risks and controls"),
+
+(502,"Which of the following is the BEST way to prevent insider threats?",
+["Implement strict security policies and password controls.",
+"Conduct organization-wide security awareness training.",
+"Enforce segregation of duties and least privilege access.",
+"Implement logging for all access activities."],"C",
+"จำ: prevent insider threats → segregation of duties + least privilege (LIMIT access)"),
+
+(503,"Which of the following should be done FIRST to ensure a new critical cloud application can be supported by internal personnel?",
+["Establish a capability maturity model.",
+"Develop a training plan.",
+"Conduct a risk assessment.",
+"Perform a skills gap analysis."],"D",
+"จำ: support new app → FIRST = skills GAP ANALYSIS (รู้ก่อนว่าขาดอะไร)"),
+
+(504,"An organization is conducting a post-incident review to determine root cause. Which situation would be MOST harmful to this investigation?",
+["Unencrypted logs of the affected systems were saved on magnetic tapes.",
+"Antivirus signature update processes failed on the affected systems.",
+"Systems logs were cleared by the administrator to free up space on the affected systems.",
+"The incident response plan has not been updated during the past year."],"C",
+"จำ: MOST harmful to investigation → logs CLEARED (ทำลายหลักฐาน)"),
+
+(505,"When building support for an information security program, which of the following elements is MOST important?",
+["Business impact analysis (BIA)",
+"Identification of existing vulnerabilities",
+"Threat analysis",
+"Information risk assessment"],"A",
+"จำ: building support for IS program → BIA (แสดง business impact ให้ mgmt เห็น)"),
+
+(506,"Capacity planning would prevent:",
+["system downtime for scheduled security maintenance.",
+"file system overload arising from distributed denial of service (DDoS) attacks.",
+"application failures arising from insufficient hardware resources.",
+"software failures arising from exploitation of buffer capacity vulnerabilities."],"C",
+"จำ: capacity planning prevents → app failures from INSUFFICIENT HARDWARE resources"),
+
+(507,"Which of the following is the MOST effective way to ensure information security policies are understood?",
+["Implement a whistle-blower program.",
+"Document security procedures.",
+"Include security responsibilities in job descriptions.",
+"Provide regular security awareness training."],"D",
+"จำ: policies UNDERSTOOD → regular security AWARENESS TRAINING"),
+
+(508,"Which of the following is the MOST effective method for testing an incident response plan?",
+["Disaster recovery testing",
+"Risk assessment",
+"Tabletop exercises",
+"Industry benchmarking"],"C",
+"จำ: test IR plan MOST effective → TABLETOP EXERCISES"),
+
+(509,"A penetration test was conducted by an accredited third party. What should be the IS manager's FIRST course of action?",
+["Request funding needed to resolve the top vulnerabilities.",
+"Ensure a risk assessment is performed to evaluate the findings.",
+"Report findings to senior management.",
+"Ensure vulnerabilities found are resolved within acceptable timeframes."],"B",
+"จำ: after pen test → FIRST = risk assessment to EVALUATE findings"),
+
+(510,"An IS steering committee must approve a key control. Which of the following is the MOST important input to assist the committee?",
+["IT strategy",
+"Security architecture",
+"Risk assessment",
+"Business case"],"D",
+"จำ: steering committee approve control → BUSINESS CASE (ไม่ใช่ risk assessment)"),
+
+(511,"What should a global IS manager do FIRST when a new regulation with significant impact will go into effect soon?",
+["Perform a vulnerability assessment.",
+"Perform a business impact analysis (BIA).",
+"Perform a privacy impact assessment.",
+"Perform a gap analysis."],"D",
+"จำ: new regulation → FIRST = GAP ANALYSIS"),
+
+(512,"Which of the following will have the MOST negative impact to the effectiveness of incident response processes?",
+["High organizational risk tolerance",
+"Decentralized incident monitoring",
+"Ambiguous severity criteria",
+"Manual incident reporting processes"],"C",
+"จำ: IR effectiveness MOST negative → AMBIGUOUS SEVERITY CRITERIA (ไม่รู้จะ escalate เมื่อไหร่)"),
+
+(513,"Which of the following tasks would provide a newly appointed IS manager with the BEST view of the organization's existing security posture?",
+["Performing a business impact analysis (BIA)",
+"Reviewing policies and procedures",
+"Performing a risk assessment",
+"Interviewing business managers and employees"],"C",
+"จำ: BEST view of security posture → RISK ASSESSMENT"),
+
+(514,"Which of the following is the MOST important consideration when developing incident classification methods?",
+["Data classification",
+"Data owner input",
+"Service level agreements (SLAs)",
+"Business impact"],"D",
+"จำ: incident classification → MOST important = BUSINESS IMPACT"),
+
+(515,"Which of the following should be the PRIMARY goal of an IS manager when designing information security policies?",
+["Minimizing the cost of security controls",
+"Reducing organizational security risk",
+"Improving the protection of information",
+"Achieving organizational objectives"],"D",
+"จำ: IS policy PRIMARY goal → ACHIEVING ORGANIZATIONAL OBJECTIVES"),
+
+(516,"An organization outsourced app development to a third party using contract programmers. Which provides BEST assurance that contractors comply with the organization's security policies?",
+["Perform periodic security assessments of the contractors' activities.",
+"Conduct periodic vulnerability scans of the application.",
+"Require annual signed agreements of adherence to security policies.",
+"Include penalties for noncompliance in the contracting agreement."],"A",
+"จำ: contractors comply with policies → PERIODIC SECURITY ASSESSMENTS (verify จริง)"),
+
+(517,"How does an IS steering committee facilitate the achievement of IS program objectives?",
+["Monitoring information security resources",
+"Making decisions on security priorities",
+"Enforcing regulatory and policy compliance",
+"Evaluating information security metrics"],"B",
+"จำ: steering committee facilitates → MAKING DECISIONS on security priorities"),
+
+(518,"Which of the following is the BEST reason to consolidate security operations teams across a global organization?",
+["Compliance with regulatory requirements",
+"Enhanced visibility of threats",
+"Detection of fraud",
+"Cost reduction"],"B",
+"จำ: consolidate global security ops → ENHANCED VISIBILITY of threats"),
+
+(519,"The business value of an information asset is derived from:",
+["its replacement cost.",
+"the risk assessment.",
+"its criticality.",
+"the threat profile."],"C",
+"จำ: business value of asset → CRITICALITY (ไม่ใช่ cost)"),
+
+(520,"A business unit handles sensitive PII with significant financial liability. Which is the BEST way to mitigate the risk?",
+["Implementing audit logging on systems",
+"Including indemnification into customer contracts",
+"Contracting the process to a third party",
+"Purchasing insurance"],"A",
+"จำ: mitigate PII breach risk → AUDIT LOGGING (detect + evidence)"),
+
+(521,"Which of the following would be impacted the MOST by a business decision to move from traditional computing to cloud computing?",
+["Security awareness",
+"Security standards",
+"Security policies",
+"Security strategy"],"D",
+"จำ: move to cloud MOST impacts → SECURITY STRATEGY"),
+
+(522,"Key risk indicators (KRIs) are MOST effective when they:",
+["are mapped to core strategic initiatives.",
+"allow for comparison with industry peers.",
+"are redefined on a regular basis.",
+"assess progress toward declared goals."],"A",
+"จำ: KRIs MOST effective → mapped to CORE STRATEGIC INITIATIVES"),
+
+(523,"An organization's IPS detected an unusually large number of external intrusion attempts in 24 hours. What should be the IS manager's FIRST course of action?",
+["Perform security assessments on Internet-facing systems.",
+"Identify the source and nature of the attempts.",
+"Review the server and firewall audit logs.",
+"Report the issue to senior management."],"B",
+"จำ: large intrusion attempts → FIRST = IDENTIFY source and nature"),
+
+(524,"Which should be the GREATEST consideration when determining the RTO for an in-house critical application?",
+["Direction from senior management",
+"Results of recovery testing",
+"Determination of recovery point objective (RPO)",
+"Impact of service interruption"],"D",
+"จำ: determine RTO → GREATEST consideration = IMPACT of service interruption"),
+
+(525,"Which of the following is the PRIMARY purpose of implementing information security standards?",
+["To provide a basis for developing information security policies",
+"To provide step-by-step instructions for performing security-related tasks",
+"To provide management direction with a specific security objective",
+"To establish a minimum acceptable security baseline"],"D",
+"จำ: IS standards PRIMARY purpose → MINIMUM ACCEPTABLE security baseline"),
+
+(526,"Which of the following should be the FIRST step in patch management procedures when receiving an emergency security patch?",
+["Validate the authenticity of the patch.",
+"Conduct comprehensive testing of the patch.",
+"Schedule patching based on the criticality.",
+"Install the patch immediately to eliminate the vulnerability."],"A",
+"จำ: emergency patch FIRST → VALIDATE AUTHENTICITY (ของปลอมมีอยู่)"),
+
+(527,"The MOST effective tools for responding to new and advanced attacks are those that detect attacks based on:",
+["behavior analysis.",
+"penetration testing.",
+"signature analysis.",
+"data packet analysis."],"A",
+"จำ: detect new/advanced attacks → BEHAVIOR ANALYSIS (signatures ไม่รู้จัก zero-day)"),
+
+(528,"When developing security processes for handling credit card data, the IS manager should FIRST:",
+["ensure that systems that handle credit card data are segmented.",
+"review industry best practices for handling secure payments.",
+"ensure alignment with industry encryption standards.",
+"review corporate policies regarding credit card information."],"D",
+"จำ: handling credit card data FIRST → review CORPORATE POLICIES (align กับ org ก่อน)"),
+
+(529,"What is the PRIMARY objective of information security involvement in the change management process?",
+["To narrow the threat landscape",
+"To ensure changes are not applied without prior authorization",
+"To reduce the likelihood of control failure",
+"To meet obligations for regulatory and legal compliance"],"C",
+"จำ: IS in change management PRIMARY → REDUCE LIKELIHOOD of control failure"),
+
+(530,"Which of the following is MOST likely to trigger an update and revision of information security policies?",
+["Engagement with a new service provider",
+"Replacement of the information security manager",
+"Attainment of business process maturity",
+"Changes in the organization's risk appetite"],"D",
+"จำ: trigger policy update → CHANGES IN RISK APPETITE"),
+
+(531,"A small org with limited budget has one IT staff member assigned to system admin, security admin, DBA, and app admin roles. What is the manager's BEST course of action?",
+["Formally document IT administrator activities.",
+"Automate user provisioning activities.",
+"Maintain strict control over user provisioning activities.",
+"Implement monitoring of IT administrator activities."],"D",
+"จำ: one person has all roles (no SoD possible) → MONITOR all activities"),
+
+(532,"What should an IS manager do FIRST when assessing conflicting requirements between global security standards and local regulations?",
+["Conduct a gap analysis against local regulations.",
+"Perform a cost-benefit analysis of compliance.",
+"Create a local version of the organizational standards.",
+"Prioritize the organizational standards over local regulations."],"A",
+"จำ: global vs local regulation conflict → FIRST = GAP ANALYSIS against local regs"),
+
+(533,"Which of the following is the BEST method to reduce the risk of an IS breach due to spear phishing?",
+["Implementing a vulnerability management program",
+"Deploying an intrusion protection system (IPS)",
+"Establishing a company-wide information security awareness plan",
+"Reviewing log files daily to identify any suspicious activity"],"C",
+"จำ: spear phishing → SECURITY AWARENESS PLAN (human = target)"),
+
+(534,"A desktop computer is being used to perpetrate a fraud, and data must be secured for evidence. What should be done FIRST?",
+["Encrypt the content of the hard drive using a strong algorithm.",
+"Obtain a hash of the desktop computer's internal hard drive.",
+"Copy the data on the computer to an external hard drive.",
+"Capture a forensic image of the computer."],"B",
+"จำ: secure evidence FIRST → OBTAIN HASH (prove integrity before touching anything)"),
+
+(535,"The PRIMARY purpose of an IS governance framework is to ensure that the IS strategy is an extension of:",
+["organizational strategies.",
+"information technology strategies.",
+"formal enterprise architecture.",
+"approved business cases."],"A",
+"จำ: IS governance framework → IS strategy extends from ORGANIZATIONAL STRATEGIES"),
+
+(536,"Which is the MOST important consideration for a global organization designing an IS awareness program?",
+["National regulations",
+"Program costs",
+"Cultural backgrounds",
+"Local languages"],"C",
+"จำ: global awareness program → MOST important = CULTURAL BACKGROUNDS"),
+
+(537,"Changes proposed to an ERP system would violate existing security standards. What should be done FIRST?",
+["Perform a cost-benefit analysis.",
+"Calculate business impact levels.",
+"Validate current standards.",
+"Implement updated standards."],"C",
+"จำ: change violates standards → FIRST = VALIDATE CURRENT STANDARDS (อาจ outdated)"),
+
+(538,"What should an IS manager do NEXT after creating a roadmap to execute the strategy for an IS program?",
+["Develop a project plan to implement the strategy.",
+"Obtain consensus on the strategy from the executive board.",
+"Define organizational risk tolerance.",
+"Review alignment with business goals."],"A",
+"จำ: after roadmap created → NEXT = DEVELOP PROJECT PLAN to implement"),
+
+(539,"An organization updated its backup capability to a new cloud-based solution. Which test will MOST effectively verify this change is working as intended?",
+["Simulation testing",
+"Tabletop testing",
+"Parallel testing",
+"Black box testing"],"C",
+"จำ: verify new backup solution → PARALLEL TESTING (run old + new simultaneously)"),
+
+(540,"Which of the following is the MOST important function of an IS steering committee?",
+["Assigning data classifications to organizational assets",
+"Defining security standards for logical access controls",
+"Developing organizational risk assessment processes",
+"Obtaining multiple perspectives from the business"],"D",
+"จำ: steering committee MOST important → MULTIPLE PERSPECTIVES from business"),
+
+(541,"Which is the BEST way to obtain reliable information to help an IR team maintain awareness of emerging threats and vulnerabilities?",
+["Subscribe to a reputed threat intelligence group.",
+"Assign staff to engage with social media hacking groups.",
+"Review alerts from a SIEM system.",
+"Implement vulnerability scanners."],"A",
+"จำ: awareness of emerging threats → SUBSCRIBE to threat intelligence group"),
+
+(542,"Which is the MOST effective approach to ensure seamless integration between BCP and the IR plan?",
+["The BCP manager is included in the core IR team.",
+"Criteria for escalating to the BCP manager are in the IR plan.",
+"Both response teams contain the same members.",
+"Consistent event classifications are used in both plans."],"D",
+"จำ: BCP + IR plan integration → CONSISTENT EVENT CLASSIFICATIONS in both"),
+
+(543,"Which is an IS manager's BEST course of action when a potential business breach is discovered in a critical business system?",
+["Update the incident response plan.",
+"Inform affected stakeholders.",
+"Inform IT management.",
+"Implement mitigating actions immediately."],"B",
+"จำ: potential breach in critical system → INFORM AFFECTED STAKEHOLDERS"),
+
+(544,"Which of the following is MOST important to include in a report of an organization's information security risk?",
+["Control risk",
+"Mitigated risk",
+"Residual risk",
+"Inherent risk"],"C",
+"จำ: IS risk report MOST important → RESIDUAL RISK (หลัง controls แล้ว)"),
+
+(545,"Which is an IS manager's BEST recommendation to senior management following a breach at the organization's SaaS vendor?",
+["Engage legal counsel",
+"Terminate the relationship with the vendor",
+"Renegotiate the vendor contract",
+"Update the vendor risk assessment"],"A",
+"จำ: SaaS vendor breach → BEST recommendation = ENGAGE LEGAL COUNSEL"),
+
+(546,"Which of the following is MOST important to consider when determining asset valuation?",
+["Potential business loss",
+"Asset classification level",
+"Asset recovery cost",
+"Cost of insurance premiums"],"A",
+"จำ: asset valuation → POTENTIAL BUSINESS LOSS"),
+
+(547,"What should an IS manager do FIRST to address the risk associated with a new third-party cloud app that will not meet organizational security requirements?",
+["Restrict application network access temporarily.",
+"Update the risk register.",
+"Consult with the business owner.",
+"Include security requirements in the contract."],"C",
+"จำ: new cloud app won't meet security reqs → FIRST = CONSULT BUSINESS OWNER"),
+
+(548,"BCP was activated and employees followed the plan, but two major suppliers missed deadlines because they were not aware of the disruption. What is the BEST way to prevent a similar situation?",
+["Ensure service level agreements (SLAs) with suppliers are enforced.",
+"Conduct a vulnerability assessment.",
+"Perform testing of the BCP communication plan.",
+"Provide suppliers with access to the BCP document."],"C",
+"จำ: suppliers not notified in BCP → TEST BCP COMMUNICATION PLAN (include suppliers)"),
+
+(549,"When performing a data classification project, an IS manager should:",
+["assign information criticality and sensitivity.",
+"identify information custodians.",
+"identify information owners.",
+"assign information access privileges."],"C",
+"จำ: data classification project → IS manager = IDENTIFY INFORMATION OWNERS"),
+
+(550,"Which of the following provides the MOST comprehensive information related to an organization's current risk profile?",
+["Gap analysis results",
+"Risk register",
+"Heat map",
+"Risk assessment results"],"B",
+"จำ: MOST comprehensive risk profile → RISK REGISTER"),
+]
+
+# ── Q551-600 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(551,"Which of the following has the GREATEST impact on the viability of an information security roadmap?",
+["Regulatory requirements","Management support","Threat landscape","Resource availability"],"B",
+"จำ: IS roadmap viability → MANAGEMENT SUPPORT"),
+
+(552,"An IS manager is recommending investment in a new security initiative to address recently published threats. Which is MOST important to include in the business case?",
+["Alignment with the approved IT strategy","Potential impact of threat realization","Availability of resources to implement the initiative","Peer group threat intelligence report"],"B",
+"จำ: business case for new security initiative → POTENTIAL IMPACT of threat realization"),
+
+(553,"Which of the following is the MOST important output from a post-incident review?",
+["Documentation of lessons learned","Repository of digital forensic artifacts","Revised business impact analysis (BIA)","Compilation of incident-related costs"],"A",
+"จำ: post-incident review MOST important output → LESSONS LEARNED"),
+
+(554,"Which of the following is the GREATEST benefit of using a network-based intrusion prevention system (IPS)?",
+["The ability to review and monitor data streams by network segment","The ability to shut down or block suspicious connections","Increased visibility into user web surfing","Centralized controls for incident handling"],"B",
+"จำ: IPS GREATEST benefit → SHUT DOWN or BLOCK suspicious connections"),
+
+(555,"What should be the GREATEST concern for an IS manager of a large multinational organization when outsourcing data processing to a cloud service provider?",
+["Local laws and regulations","Backup and restoration of data","Vendor service level agreements (SLAs)","Independent review of the vendor"],"A",
+"จำ: cloud outsourcing multinational GREATEST concern → LOCAL LAWS AND REGULATIONS"),
+
+(556,"Which should be an IS manager's MAIN concern if the same digital signing certificate is able to be used by two or more users?",
+["Potential to decrypt digital hash values","Inability to validate identity of sender","Certificate alteration","Segregation of duties"],"B",
+"จำ: shared digital signing cert → cannot VALIDATE IDENTITY of sender (non-repudiation lost)"),
+
+(557,"Signature based anti-malware controls are MOST effective against:",
+["poorly configured firewall rules.","reused virus code.","known threats.","zero-day exploits."],"C",
+"จำ: signature-based anti-malware = KNOWN THREATS only (ไม่ใช่ zero-day)"),
+
+(558,"Which of the following is the PRIMARY objective of a business impact analysis (BIA)?",
+["Confirm control effectiveness.","Determine recovery priorities.","Define the recovery point objective (RPO).","Analyze vulnerabilities."],"B",
+"จำ: BIA PRIMARY objective → DETERMINE RECOVERY PRIORITIES"),
+
+(559,"A common drawback of email software packages that provide native encryption of messages is that the encryption:",
+["has an insufficient key length.","cannot interoperate across product domains.","cannot encrypt attachments.","has no key-recovery mechanism."],"B",
+"จำ: native email encryption drawback → CANNOT INTEROPERATE across product domains"),
+
+(560,"Which of the following is the MOST important outcome of effective risk treatment?",
+["Implementation of corrective actions","Elimination of risk","Timely reporting of incidents","Reduced cost of acquiring controls"],"B",
+"จำ: effective risk treatment MOST important outcome → ELIMINATION OF RISK"),
+
+(561,"Which of the following is MOST important to the successful management of an information security program?",
+["Compliance with regulatory requirements","Adequate security budget","Support from key stakeholders","Continuous controls monitoring"],"C",
+"จำ: IS program success MOST important → SUPPORT FROM KEY STAKEHOLDERS"),
+
+(562,"A newly hired IS manager discovers that the cleanup of accounts for terminated employees happens only once a year. What should be the FIRST course of action?",
+["Design and document a new process.","Perform a risk assessment.","Report the issue to senior management.","Update the security policy."],"B",
+"จำ: accounts cleaned only annually → FIRST = RISK ASSESSMENT"),
+
+(563,"Which of the following BEST conveys minimum information security requirements to an organization in alignment with policies?",
+["Procedures","Regulations","Baselines","Standards"],"D",
+"จำ: minimum IS requirements aligned with policies → STANDARDS"),
+
+(564,"Which of the following security initiatives should be the FIRST step in helping an organization maintain compliance with privacy regulations?",
+["Implementing a data classification framework","Implementing SIEM","Installing a DLP solution","Developing security awareness training"],"A",
+"จำ: comply with privacy regulations FIRST → DATA CLASSIFICATION FRAMEWORK"),
+
+(565,"Which of the following is MOST important to consider when developing a business case to support investment in an IS program?",
+["Senior management support","Results of a risk assessment","Results of a cost-benefit analysis","Impact on the risk profile"],"C",
+"จำ: business case for IS program → COST-BENEFIT ANALYSIS results"),
+
+(566,"The PRIMARY reason for using metrics as part of an information security program is to help management:",
+["determine whether objectives are being met.","visualize security trends.","develop an information security baseline.","track financial impact of the program."],"A",
+"จำ: metrics PRIMARY reason → determine whether OBJECTIVES ARE BEING MET"),
+
+(567,"After an IS incident has been detected and its priority established, which should be the NEXT course of action?",
+["Gathering evidence","Eradicating the incident","Performing a risk assessment","Containing the incident"],"D",
+"จำ: after detection + priority → NEXT = CONTAIN the incident"),
+
+(568,"Which of the following is the MOST important input to the development of an effective IS strategy?",
+["Well-defined security policies and procedures","Current and desired state of security","Business processes and requirements","Risk and business impact assessments"],"B",
+"จำ: IS strategy MOST important input → CURRENT AND DESIRED STATE of security (gap)"),
+
+(569,"Which of the following is MOST important to review following a security incident?",
+["Incident response procedures","Response tools and techniques","Incident response plan","Lessons learned"],"D",
+"จำ: review following security incident → LESSONS LEARNED"),
+
+(570,"Which of the following is necessary to ensure consistent protection for an organization's information assets?",
+["Control assessment","Data ownership","Regulatory requirements","Classification mode"],"A",
+"จำ: consistent protection for information assets → CONTROL ASSESSMENT"),
+
+(571,"A new law requires an organization to implement specific security controls. What should the IS manager do FIRST?",
+["Integrate the new requirements into the security policy.","Perform a gap analysis on the new requirements.","Develop a control implementation plan.","Assess the risk of noncompliance with the new requirements."],"B",
+"จำ: new law requires controls → FIRST = GAP ANALYSIS"),
+
+(572,"Which of the following BEST demonstrates that security controls are effective?",
+["Audit report","Tabletop simulation","Risk and control self-assessment","Business impact analysis (BIA) results"],"A",
+"จำ: demonstrate controls effective → AUDIT REPORT"),
+
+(573,"Which of the following activities provides the GREATEST insight into the level of threat exposure within an IT environment?",
+["Executing an organization-wide security audit","Performing penetration testing","Performing technical vulnerability assessments","Conducting a red team exercise"],"D",
+"จำ: GREATEST insight into threat exposure → RED TEAM EXERCISE"),
+
+(574,"Which of the following is MOST important to ensure when an organization is moving portions of its sensitive database to the cloud?",
+["The conversion has been approved by the IS team.","A right to audit clause is included in the contract.","Input from data owners is included in the requirements definition.","Data encryption is used in the cloud hosting solution."],"C",
+"จำ: moving sensitive DB to cloud → INPUT FROM DATA OWNERS in requirements"),
+
+(575,"Which of the following is the BEST way to determine the gap between the present and desired state of an IS program?",
+["Determine whether critical success factors (CSFs) have been defined.","Review and update current operational procedures.","Perform a risk analysis for critical applications.","Conduct a capability maturity model evaluation."],"D",
+"จำ: gap between present and desired state → CAPABILITY MATURITY MODEL evaluation"),
+
+(576,"The PRIMARY goal of information security governance is to:",
+["reduce risk to an acceptable level.","align with business processes.","align with business objectives.","establish a security strategy."],"C",
+"จำ: IS governance PRIMARY goal → ALIGN WITH BUSINESS OBJECTIVES"),
+
+(577,"An IS manager is reviewing BCP review results. Which finding should be the MOST immediate concern?",
+["The cost of a recent recovery test exceeded budget expectations.","The annual BIA has been delayed.","The BCP has not been recently tested.","The RTO was not met during a recent power outage."],"D",
+"จำ: BCP MOST immediate concern → RTO NOT MET during actual outage"),
+
+(578,"If an organization does not have an IS governance framework in place, which would BEST facilitate adoption of a future governance program?",
+["Audit recommendations","IT department support","IS funding","Involvement of business stakeholders"],"D",
+"จำ: facilitate IS governance adoption → INVOLVEMENT OF BUSINESS STAKEHOLDERS"),
+
+(579,"Which would provide the GREATEST assurance that IS incidents will be detected and contained in a timely manner without jeopardizing the organization's mission?",
+["Network security penetration testing program","Continuous vulnerability scanning solution","Security information and event management (SIEM) system","Fully operational security operations center (SOC)"],"D",
+"จำ: GREATEST assurance for timely detection + containment → FULLY OPERATIONAL SOC"),
+
+(580,"Which would BEST provide stakeholders with information to determine the appropriate response to a disaster?",
+["Vulnerability assessment","SWOT analysis","Business impact analysis (BIA)","Risk assessment"],"C",
+"จำ: determine appropriate disaster response → BIA"),
+
+(581,"Which of the following provides the BEST guidance when establishing a security program?",
+["Risk assessment methodology","Security audit report","IS budget","Information security framework"],"D",
+"จำ: BEST guidance for establishing security program → IS FRAMEWORK"),
+
+(582,"Which should be of MOST concern to an IS manager reviewing the organization's DRP?",
+["Organization-wide training for DR has not occurred.","The response team has contracted with an external consultant.","Six months have elapsed since the most recent test.","The response plan document has not been updated with the latest notification list details."],"D",
+"จำ: DRP MOST concern → notification list NOT UPDATED (ติดต่อไม่ได้ตอน disaster)"),
+
+(583,"Which of the following is the GREATEST risk of centralized IS administration within a multinational organization?",
+["Slower turnaround","Less uniformity","Less objectivity","Violation of local law"],"D",
+"จำ: centralized IS in multinational GREATEST risk → VIOLATION OF LOCAL LAW"),
+
+(584,"Which would BEST enable an organization to aggregate information from different systems for centralized categorization of incidents?",
+["Intrusion detection system (IDS)","Application program interfaces (APIs)","Intrusion prevention system (IPS)","Security information and event management (SIEM)"],"D",
+"จำ: aggregate + centralized incident categorization → SIEM"),
+
+(585,"When preparing an IS policy for a global organization, how should an IS manager BEST address local legislation in multiple countries?",
+["Rely on local interpretation of the global policy.",
+"Create a policy exception process for each country.",
+"Enforce the same global policy in every country.",
+"Establish local policies for each country that supplement the global policy."],"D",
+"จำ: global IS policy + local legislation → local policies SUPPLEMENT global policy"),
+
+(586,"Which is the MOST important control to implement when senior managers use smartphones to access sensitive company information?",
+["Centralized device administration","Remote wipe capability","Anti-malware on the devices","Strong passwords"],"A",
+"จำ: senior mgr smartphones + sensitive info → CENTRALIZED DEVICE ADMINISTRATION"),
+
+(587,"Which is the MOST appropriate resource to determine whether a particular solution should utilize encryption based on its location and data classification?",
+["Guidelines","Procedures","Standards","Policies"],"C",
+"จำ: determine encryption requirement by location/classification → STANDARDS"),
+
+(588,"An organization globally is planning to use a third-party to process payroll. Which issue poses the GREATEST risk?",
+["The third party has not provided evidence of compliance with local regulations where data is generated.",
+"The third party does not have an independent assessment of controls available.",
+"The third party's SLA does not include guarantees of uptime.",
+"The third-party contract does not include an indemnity clause."],"A",
+"จำ: global payroll 3rd party GREATEST risk → no evidence of LOCAL REGULATION compliance"),
+
+(589,"The PRIMARY objective of timely declaration of a disaster is to:",
+["ensure the continuity of the organization's essential services.","protect critical physical assets from further loss.","ensure engagement of business management in the recovery process.","assess and correct disaster recovery process deficiencies."],"A",
+"จำ: timely disaster declaration PRIMARY → ENSURE CONTINUITY of essential services"),
+
+(590,"Which of the following BEST enables the design of an effective incident escalation process?",
+["A well-defined organizational hierarchy","Enforceable control baselines","A comprehensive risk register","Controls designed for defense in depth"],"A",
+"จำ: effective escalation process → WELL-DEFINED ORGANIZATIONAL HIERARCHY"),
+
+(591,"An IS manager is notified that two senior executives can elevate their own privileges in the corporate accounting system, in violation of policy. What is the FIRST step?",
+["Notify the CISO of the security policy violation.",
+"Perform a system access review.",
+"Perform a full review of all system transactions over the past 90 days.",
+"Immediately suspend the executives' access privileges."],"D",
+"จำ: execs can elevate own privileges → FIRST = IMMEDIATELY SUSPEND access"),
+
+(592,"Which of the following is MOST useful to display on a dashboard to demonstrate security performance?",
+["Number of hours spent per vulnerability remediated","Number of vulnerabilities detected over time","Severity of currently unremediated vulnerabilities","Average time to identify vulnerabilities"],"C",
+"จำ: dashboard security performance → SEVERITY OF CURRENTLY UNREMEDIATED vulnerabilities"),
+
+(593,"Which should be done FIRST when establishing an IS governance framework?",
+["Gain an understanding of the business and cultural attributes.","Contract a third party to conduct an independent review.","Conduct a cost-benefit analysis of the framework.","Evaluate IS tools and skills relevant for the environment."],"A",
+"จำ: establish IS governance framework FIRST → understand BUSINESS AND CULTURAL attributes"),
+
+(594,"Which is the BEST approach to make strategic IS decisions?",
+["Establish periodic senior management meetings.","Establish regular IS status reporting.","Establish an IS steering committee.","Establish business unit security working groups."],"C",
+"จำ: strategic IS decisions BEST approach → IS STEERING COMMITTEE"),
+
+(595,"Which type of incident response test is the MOST efficient way to verify that backup power generators are functioning?",
+["Operational full test","Simulation failure test","Parallel recovery test","Full interruption test"],"C",
+"จำ: verify backup power generators → PARALLEL RECOVERY TEST"),
+
+(596,"Which is the MOST important action to prepare for a ransomware attack?",
+["Back up data regularly and verify the integrity of backups.","Scan emails to detect threats and filter out executable files.","Configure access controls with least privilege in mind.","Execute operating systems and programs in a virtualized environment."],"A",
+"จำ: prepare for ransomware → BACK UP + VERIFY INTEGRITY of backups"),
+
+(597,"Which should be the MAIN outcome from monitoring key performance indicators (KPIs) for a corporate security management program?",
+["A balanced scorecard","An effective security awareness program","Data for the organization to assess progress","Optimal level of value delivery"],"C",
+"จำ: monitoring KPIs MAIN outcome → data to ASSESS PROGRESS"),
+
+(598,"An organization is considering using a third party to host sensitive archived data. Which is MOST important to verify before entering the relationship?",
+["Independent audits of the vendor's operations are regularly conducted.","The vendor's controls are in line with the organization's security standards.","The encryption keys are not provided to the vendor.","The vendor's data centers are in the same geographic region."],"B",
+"จำ: 3rd party host sensitive data → vendor controls ALIGNED WITH ORG STANDARDS"),
+
+(599,"When creating an IR plan, which is MOST important to include during the preparation phase?",
+["Communication plan","Response procedures","Risk management plan","Forensic analysis procedures"],"A",
+"จำ: IR plan preparation phase → COMMUNICATION PLAN"),
+
+(600,"A software vendor announced a zero-day vulnerability exposing critical systems. The vendor released an emergency patch. What should be the IS manager's PRIMARY concern?",
+["Ability to test the patch prior to deployment","Adequacy of the incident response plan","Availability of resources to implement controls","Documentation of patching procedures"],"A",
+"จำ: zero-day emergency patch → PRIMARY concern = ABILITY TO TEST before deployment"),
+]
+
+# ── Q601-650 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(601,"What is the MOST important reason to regularly report information security risk to relevant stakeholders?",
+["To enable risk-informed decision making","To reduce the impact of IS risk","To ensure IS controls are effective","To achieve compliance with regulatory requirements"],"A",
+"จำ: report IS risk to stakeholders MOST important → ENABLE RISK-INFORMED DECISION MAKING"),
+
+(602,"Which is MOST important to ensure ongoing senior management commitment to an organization's IS strategy?",
+["Effective and reliable security reporting","A well-defined IS control framework","A detailed and documented BIA","Strategic alignment to an industry framework"],"A",
+"จำ: ongoing senior mgmt commitment → EFFECTIVE AND RELIABLE security reporting"),
+
+(603,"A pen test of a new system found critical vulnerabilities. The system owner asks the IS manager to approve an exception to allow go-live without fixing. What is the MOST appropriate course of action?",
+["Implement a log monitoring process.","Perform a risk assessment.","Develop a set of compensating controls.","Approve and document the exception."],"B",
+"จำ: critical vulns + exception request → FIRST = RISK ASSESSMENT"),
+
+(604,"Which IS activity is MOST helpful to support compliance with IS policy?",
+["Conducting IS awareness programs","Creating monthly trend metrics","Performing periodic IT reviews on new system acquisitions","Obtaining management commitment"],"A",
+"จำ: support compliance with IS policy → IS AWARENESS PROGRAMS"),
+
+(605,"Which is MOST important to determine following the discovery and eradication of a malware attack?",
+["The creator of the malware","The malware entry path","The type of malware involved","The method of detecting the malware"],"B",
+"จำ: after malware eradicated → determine MALWARE ENTRY PATH (prevent recurrence)"),
+
+(606,"Which is MOST helpful in ensuring an IS governance framework continues to support business objectives?",
+["A consistent risk assessment methodology","A monitoring strategy","An effective organizational structure","Stakeholder buy-in"],"D",
+"จำ: IS governance continues to support business → STAKEHOLDER BUY-IN"),
+
+(607,"Reviewing which would be MOST helpful when a new IS manager is developing an IS strategy for a non-regulated organization?",
+["Management's business goals and objectives","Strategies of other non-regulated companies","Industry best practices and control recommendations","Risk assessment results"],"A",
+"จำ: new IS manager develops strategy → review MANAGEMENT'S BUSINESS GOALS"),
+
+(608,"In order to understand an organization's security posture, it is MOST important for senior leadership to:",
+["review the number of reported security incidents.","evaluate results of the most recent IR test.","ensure established security metrics are reported.","assess progress of risk mitigation efforts."],"C",
+"จำ: understand security posture → ensure SECURITY METRICS ARE REPORTED"),
+
+(609,"IS controls should be designed PRIMARILY based on:",
+["regulatory requirements.","a vulnerability assessment.","business risk scenarios.","a business impact analysis (BIA)."],"D",
+"จำ: IS controls designed PRIMARILY based on → BIA"),
+
+(610,"An e-commerce org in its home country opened a new office in another country with stringent security laws. The overall security strategy should be based on:",
+["risk assessment results.","international security standards.","the most stringent requirements.","the security organization structure."],"C",
+"จำ: multiple countries' laws → MOST STRINGENT requirements"),
+
+(611,"An IS manager developing an IR plan MUST ensure it includes:",
+["critical infrastructure diagrams.","a BIA.","criteria for escalation.","an inventory of critical data."],"C",
+"จำ: IR plan MUST include → CRITERIA FOR ESCALATION"),
+
+(612,"Which is the MOST effective way to help staff understand their responsibilities for IS?",
+["Require staff to sign confidentiality agreements.","Require staff to participate in IS awareness training.","Communicate disciplinary processes for policy violations.","Include IS responsibilities in job descriptions."],"B",
+"จำ: staff understand IS responsibilities → IS AWARENESS TRAINING"),
+
+(613,"Security program development is PRIMARILY driven by which of the following?",
+["Regulatory requirements","Business strategy","Risk appetite","Available resources"],"B",
+"จำ: security program development PRIMARILY driven by → BUSINESS STRATEGY"),
+
+(614,"An organization identified a risk scenario with low impact but very costly to mitigate. Which risk treatment is MOST appropriate?",
+["Transfer","Acceptance","Mitigation","Avoidance"],"B",
+"จำ: low impact + costly to mitigate → ACCEPT the risk"),
+
+(615,"Prior to conducting a forensic examination, an IS manager should:",
+["boot the original hard disk on a clean system.","create an image of the original data on new media.","duplicate data from the backup media.","shut down and relocate the server."],"B",
+"จำ: before forensic examination → CREATE IMAGE of original data on new media"),
+
+(616,"The fundamental purpose of establishing security metrics is to:",
+["adopt security best practices.","establish security benchmarks.","provide feedback on control effectiveness.","increase return on investment (ROI)."],"C",
+"จำ: security metrics fundamental purpose → FEEDBACK ON CONTROL EFFECTIVENESS"),
+
+(617,"Which presents the GREATEST challenge to a SOC's timely identification of potential security breaches?",
+["An organization has a decentralized data center using cloud services.","Operating systems are no longer supported by the vendor.","IT system clocks are not synchronized with the centralized logging server.","The patch management system does not deploy patches in a timely manner."],"C",
+"จำ: SOC timely identification GREATEST challenge → CLOCKS NOT SYNCHRONIZED with logging server"),
+
+(618,"An organization plans to utilize SaaS and is selecting a vendor. What should the IS manager do FIRST?",
+["Review independent security assessment reports for each vendor.","Benchmark each vendor's services with industry best practices.","Define IS requirements and processes.","Analyze the risks and propose mitigating controls."],"C",
+"จำ: SaaS vendor selection → FIRST = DEFINE IS REQUIREMENTS AND PROCESSES"),
+
+(619,"An online bank identifies a successful network attack in progress. The bank should FIRST:",
+["report the root cause to the board of directors.","isolate the affected network segment.","shut down the entire network.","assess whether PII is compromised."],"B",
+"จำ: network attack in progress → FIRST = ISOLATE affected network segment"),
+
+(620,"Which provides an IS manager with the MOST accurate indication of the organization's ability to respond to a cyber attack?",
+["Walk-through of the IR plan","Black box penetration test","Simulated phishing exercise","Red team exercise"],"D",
+"จำ: ability to respond to cyber attack MOST accurate → RED TEAM EXERCISE"),
+
+(621,"Which would be MOST helpful to identify worst-case disruption scenarios?",
+["Cost-benefit analysis","SWOT analysis","Business process analysis","Business impact analysis (BIA)"],"D",
+"จำ: identify worst-case disruption scenarios → BIA"),
+
+(622,"Which BEST enables an organization to appropriately prioritize IS-focused projects?",
+["Return on investment (ROI)","Privacy compliance requirements","Organizational risk appetite","Historical security incidents"],"C",
+"จำ: prioritize IS projects → ORGANIZATIONAL RISK APPETITE"),
+
+(623,"What should an IS manager do FIRST upon learning that some security hardening settings may negatively impact future business activity?",
+["Document a security exception.","Reduce security hardening settings.","Perform a risk assessment.","Inform business management of the risk."],"C",
+"จำ: hardening may impact business → FIRST = RISK ASSESSMENT"),
+
+(624,"Which IS activity MUST be performed by an IS manager for change requests?",
+["Assess impact on IS risk.","Perform penetration testing on affected systems.","Scan IT systems for OS vulnerabilities.","Review change in business requirements for IS."],"A",
+"จำ: IS manager MUST do for change requests → ASSESS IMPACT ON IS RISK"),
+
+(625,"The PRIMARY purpose for continuous monitoring of security controls is to ensure:",
+["alignment with compliance requirements.","effectiveness of controls.","control gaps are minimized.","system availability."],"B",
+"จำ: continuous monitoring PRIMARY purpose → EFFECTIVENESS OF CONTROLS"),
+
+(626,"Which is the MOST important factor of a successful IS program?",
+["The program follows industry best practices.","The program is based on a well-developed strategy.","The program is focused on risk management.","The program is cost-efficient and within budget."],"B",
+"จำ: IS program success MOST important factor → BASED ON WELL-DEVELOPED STRATEGY"),
+
+(627,"Which message would be MOST effective in obtaining senior management's commitment to IS management?",
+["Security is a business product and not a process.","Effective security eliminates risk to the business.","Adopt a recognized framework with metrics.","Security supports and protects the business."],"D",
+"จำ: get senior mgmt commitment → SECURITY SUPPORTS AND PROTECTS THE BUSINESS"),
+
+(628,"When choosing best controls to mitigate risk to acceptable levels, the IS manager's decision should be MAINLY driven by:",
+["regulatory requirements.","control framework.","best practices.","cost-benefit analysis."],"D",
+"จำ: choose controls to mitigate risk → COST-BENEFIT ANALYSIS"),
+
+(629,"A high-risk issue is found in a legacy app risk assessment. Business is unwilling to allocate resources to remediate. What is the IS manager's BEST course of action?",
+["Document risk acceptance from the business.","Recommend discontinuing the use of the legacy application.","Design alternative compensating controls to reduce the risk.","Present the worst-case scenario related to the risk."],"C",
+"จำ: high risk + no resources → DESIGN COMPENSATING CONTROLS"),
+
+(630,"The PRIMARY benefit of introducing a single point of administration in network monitoring is that it:",
+["reduces unauthorized access to systems.","promotes efficiency in control of the environment.","prevents inconsistencies in information in the distributed environment.","allows administrative staff to make management decisions."],"B",
+"จำ: single point of administration → PROMOTES EFFICIENCY in control"),
+
+(631,"Which is the MOST important reason to document IS incidents reported across the organization?",
+["Support business investments in security.","Evaluate the security posture of the organization.","Identify unmitigated risk.","Prevent incident recurrence."],"D",
+"จำ: document IS incidents MOST important → PREVENT INCIDENT RECURRENCE"),
+
+(632,"Which is MOST important for building a robust IS culture within an organization?",
+["Mature IS awareness training across the organization","Security controls embedded within development and operation of IT","Senior management approval of IS policies","Strict enforcement of employee compliance with security policies"],"A",
+"จำ: build IS culture → MATURE IS AWARENESS TRAINING"),
+
+(633,"Which is the BEST way for an organization to ensure IR teams are properly prepared?",
+["Documenting multiple scenarios and response steps","Providing training from third-party forensics firms","Obtaining industry certifications for the response team","Conducting tabletop exercises appropriate for the organization"],"D",
+"จำ: IR teams properly prepared → TABLETOP EXERCISES"),
+
+(634,"Which metric BEST measures the effectiveness of an organization's IS program?",
+["Return on IS investment","Number of IS business cases developed","Reduction in IS incidents","Increase in risk assessments completed"],"C",
+"จำ: IS program effectiveness metric → REDUCTION IN IS INCIDENTS"),
+
+(635,"Which is MOST important when conducting a forensic investigation?",
+["Capturing full system images","Documenting analysis steps","Maintaining a chain of custody","Analyzing system memory"],"C",
+"จำ: forensic investigation MOST important → CHAIN OF CUSTODY"),
+
+(636,"Which presents the GREATEST challenge to recovery of critical systems after a ransomware incident?",
+["Unavailable or corrupt data backups","Ineffective alert configurations for backup operations","Lack of encryption for backup data in transit","Undefined or undocumented backup retention policies"],"A",
+"จำ: ransomware recovery GREATEST challenge → UNAVAILABLE OR CORRUPT BACKUPS"),
+
+(637,"An organization is aligning its IR capability with a public cloud service provider. What should the IS manager do FIRST?",
+["Identify the skill set of the provider's IR team.","Update the incident escalation process.","Evaluate the provider's audit logging and monitoring controls.","Review the provider's incident definitions and notification criteria."],"D",
+"จำ: align IR with cloud provider → FIRST = REVIEW PROVIDER'S INCIDENT DEFINITIONS and notification criteria"),
+
+(638,"An IS manager is reporting on open items from the risk register to senior management. Which is MOST important to communicate?",
+["Key risk indicators (KRIs)","Responsible entities","Compensating controls","Potential business impact"],"D",
+"จำ: report risk register to senior → MOST important = POTENTIAL BUSINESS IMPACT"),
+
+(639,"Users are sharing a login account to an app with sensitive info, violating access policy. Business says it creates operational efficiencies. What is the IS manager's BEST course of action?",
+["Present the risk to senior management.","Modify the policy.","Create an exception for the deviation.","Enforce the policy."],"A",
+"จำ: policy violated + business justification → PRESENT RISK TO SENIOR MANAGEMENT"),
+
+(640,"Which should be the FIRST step to gain approval for outsourcing to address a security gap?",
+["Perform a cost-benefit analysis.","Collect additional metrics.","Begin due diligence on the outsourcing company.","Submit funding request to senior management."],"A",
+"จำ: gain approval for outsourcing → FIRST = COST-BENEFIT ANALYSIS"),
+
+(641,"Which is MOST helpful for determining which IS policies should be implemented?",
+["Business impact analysis (BIA)","Risk assessment","Vulnerability assessment","Industry best practices"],"B",
+"จำ: determine which IS policies to implement → RISK ASSESSMENT"),
+
+(642,"Which of the following BEST ensures timely and reliable access to services?",
+["Authenticity","Availability","Nonrepudiation","Recovery time objective (RTO)"],"B",
+"จำ: timely and reliable access to services → AVAILABILITY"),
+
+(643,"An organization is creating a risk mitigation plan considering redundant power supplies to reduce business risk from critical system outages. Which type of control is being considered?",
+["Deterrent","Detective","Preventive","Corrective"],"C",
+"จำ: redundant power supplies = PREVENTIVE control"),
+
+(644,"Which BEST enables an IS manager to determine the comprehensiveness of an organization's IS strategy?",
+["Internal security audit","Organizational risk appetite","External security audit","Business impact analysis (BIA)"],"B",
+"จำ: determine IS strategy comprehensiveness → ORGANIZATIONAL RISK APPETITE"),
+
+(645,"An IS manager sees a threat intel report indicating large ransomware attacks targeting the industry. What is the BEST course of action?",
+["Assess the risk to the organization.","Review the mitigating security controls.","Notify staff members of the threat.","Increase the frequency of system backups."],"A",
+"จำ: threat intel report on ransomware → FIRST = ASSESS RISK TO THE ORGANIZATION"),
+
+(646,"Whose input is of GREATEST importance in the development of an IS strategy?",
+["Security architects","End users","Corporate auditors","Process owners"],"D",
+"จำ: IS strategy development GREATEST importance → PROCESS OWNERS"),
+
+(647,"Which risk is introduced when using only sanitized data for testing of applications?",
+["Unexpected outcomes may arise in production.","Data disclosure may occur during the migration event.","Breaches of compliance obligations will occur.","Data loss may occur during the testing phase."],"A",
+"จำ: sanitized data only for testing → UNEXPECTED OUTCOMES in production"),
+
+(648,"Which is the MOST important consideration when defining a recovery strategy in a BCP?",
+["Legal and regulatory requirements","Likelihood of a disaster","Organizational tolerance to service interruption","Geographical location of the backup site"],"C",
+"จำ: BCP recovery strategy → ORGANIZATIONAL TOLERANCE to service interruption"),
+
+(649,"Which should be done FIRST when developing an IS program?",
+["Establish security policies.","Define the security strategy.","Approve security standards.","Set security baselines."],"B",
+"จำ: developing IS program FIRST → DEFINE SECURITY STRATEGY"),
+
+(650,"The BEST way to identify risk associated with a social engineering attack is to:",
+["monitor the intrusion detection system (IDS).","review SSO authentication logs.","perform a business risk assessment of the email filtering system.","test user knowledge of IS practices."],"D",
+"จำ: identify social engineering risk → TEST USER KNOWLEDGE of IS practices"),
+]
+
+# ── Q651-700 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(651,"Which is MOST important to have in place to help ensure an organization's cybersecurity program meets the needs of the business?",
+["IS awareness training","Risk assessment program","IS governance","IS metrics"],"C",
+"จำ: cybersecurity program meets business needs → IS GOVERNANCE"),
+
+(652,"Which is the GREATEST benefit of including incident classification criteria within an IR plan?",
+["More visibility to the impact of disruptions","Ability to monitor and control incident management costs","Effective protection of information assets","Optimized allocation of recovery resources"],"D",
+"จำ: incident classification in IR plan GREATEST benefit → OPTIMIZED ALLOCATION of recovery resources"),
+
+(653,"A recovery point objective (RPO) is required in which of the following?",
+["Business continuity plan (BCP)","IS plan","Incident response plan","Disaster recovery plan (DRP)"],"D",
+"จำ: RPO is required in → DISASTER RECOVERY PLAN (DRP)"),
+
+(654,"Which provides the BEST assurance that security policies are applied across business operations?",
+["Organizational standards are enforced by technical controls.","Organizational standards are included in awareness training.","Organizational standards are required to be formally accepted.","Organizational standards are documented in operational procedures."],"A",
+"จำ: security policies applied across business → standards ENFORCED BY TECHNICAL CONTROLS"),
+
+(655,"What should an IS manager do FIRST when a mandatory security standard hinders achievement of an identified business objective?",
+["Recommend risk acceptance.","Perform a cost-benefit analysis.","Escalate to senior management.","Revisit the business objective."],"C",
+"จำ: security standard hinders business objective → FIRST = ESCALATE TO SENIOR MANAGEMENT"),
+
+(656,"A business unit is not complying with a control because it impacts business goals. What is the IS manager's BEST recommendation to senior management?",
+["Accept the noncompliance.","Conduct a control assessment.","Implement compensating controls.","Educate the noncompliant users."],"C",
+"จำ: control impacts business goals → IMPLEMENT COMPENSATING CONTROLS"),
+
+(657,"Which is MOST helpful for protecting an enterprise from advanced persistent threats (APTs)?",
+["Updated security policies","Regular antivirus updates","Defined security standards","Threat intelligence"],"D",
+"จำ: protect against APTs → THREAT INTELLIGENCE"),
+
+(658,"Which should be the PRIMARY consideration when developing an IR plan?",
+["Previously reported incidents","Management support","Compliance with regulations","The definition of an incident"],"D",
+"จำ: developing IR plan PRIMARY consideration → DEFINITION OF AN INCIDENT"),
+
+(659,"A strict new regulation is being finalized to address global cybersecurity concerns. What should the IS manager do FIRST?",
+["Monitor industry response to the regulation.","Seek legal counsel on the new regulation.","Validate the applicability of the regulation.","Escalate compliance risk to senior management."],"C",
+"จำ: new regulation being finalized → FIRST = VALIDATE APPLICABILITY to org"),
+
+(660,"A post-incident review identified that user error resulted in a major breach. Which is MOST important to determine?",
+["The underlying reason for the user error","The time and location that the breach occurred","Appropriate disciplinary procedures for user error","Evidence of previous incidents caused by the user"],"A",
+"จำ: user error caused breach → determine UNDERLYING REASON (root cause)"),
+
+(661,"The BEST way to ensure frequently encountered incidents are reflected in user security awareness training is to include:",
+["responses to security questionnaires.","previous training sessions.","examples of help desk requests.","results of exit interviews."],"C",
+"จำ: frequent incidents in awareness training → include HELP DESK REQUESTS examples"),
+
+(662,"Management decided to take no further action regarding a DoS attack risk. The MOST likely reason is:",
+["the cost of implementing controls exceeds the potential financial losses.","the risk assessment has not defined the likelihood of occurrence.","executive management is not aware of the impact potential.","the reported vulnerability has not been validated."],"A",
+"จำ: no action on DoS risk → COST OF CONTROLS > potential financial losses"),
+
+(663,"Which is the BEST indication of an effective IS awareness training program?",
+["An increase in the identification rate during phishing simulations","An increase in the speed of incident resolution","An increase in positive user feedback","An increase in the frequency of phishing tests"],"A",
+"จำ: effective awareness training → ↑ IDENTIFICATION RATE in phishing simulations"),
+
+(664,"Penetration testing is MOST appropriate when a:",
+["new system is about to go live.","security incident has occurred.","security policy is being developed.","new system is being designed."],"A",
+"จำ: pen test MOST appropriate → NEW SYSTEM ABOUT TO GO LIVE"),
+
+(665,"Which will result in the MOST accurate controls assessment?",
+["Mature change management processes","Unannounced testing","Well-defined security policies","Senior management support"],"B",
+"จำ: MOST accurate controls assessment → UNANNOUNCED TESTING"),
+
+(666,"The MOST important reason for having an IS manager serve on the change management committee is to:",
+["ensure changes are properly documented.","advise on change-related risk.","identify changes to the IS policy.","ensure that changes are tested."],"B",
+"จำ: IS manager on change mgmt committee → ADVISE ON CHANGE-RELATED RISK"),
+
+(667,"Who is in the BEST position to evaluate business impacts?",
+["Senior management","IS manager","Process manager","IT manager"],"C",
+"จำ: evaluate business impacts BEST position → PROCESS MANAGER"),
+
+(668,"Which should be done FIRST when establishing a new data protection program to comply with data privacy regulations?",
+["Encrypt all personal data stored on systems and networks.","Evaluate privacy technologies required for data protection.","Create an inventory of systems where personal data is stored.","Update disciplinary processes to address privacy violations."],"C",
+"จำ: new data protection program FIRST → CREATE INVENTORY of systems with personal data"),
+
+(669,"Which is the BEST approach to IR for an organization migrating to a cloud-based solution?",
+["Transfer responsibility for IR to the cloud provider.","Continue using the existing IR procedures.","Revise IR procedures to encompass the cloud environment.","Adopt the cloud provider's IR procedures."],"C",
+"จำ: IR for cloud migration → REVISE IR PROCEDURES to encompass cloud"),
+
+(670,"Which is the BEST way to help ensure risk appetite will be considered as part of the risk treatment process?",
+["Establish key risk indicators (KRIs).","Provide regular reporting on risk treatment to senior management.","Require steering committee approval of risk treatment plans.","Use quantitative risk assessment methods."],"C",
+"จำ: risk appetite in risk treatment → STEERING COMMITTEE APPROVAL of treatment plans"),
+
+(671,"Which is MOST important to include in a post-incident review following a data breach?",
+["An evaluation of the effectiveness of the IS strategy","Documentation of regulatory reporting requirements","A review of the forensics chain of custody","Evaluations of the adequacy of existing controls"],"D",
+"จำ: post-incident review after data breach → EVALUATE ADEQUACY OF EXISTING CONTROLS"),
+
+(672,"An org plans to use social networks to promote products. What is the IS manager's BEST course of action?",
+["Conduct vulnerability assessments on social network platforms.","Assess the security risk associated with the use of social networks.","Establish processes to publish content on social networks.","Develop security controls for the use of social networks."],"B",
+"จำ: org uses social networks → ASSESS SECURITY RISK associated with social networks"),
+
+(673,"Which BEST supports IS management in the event of organizational changes in security personnel?",
+["Ensuring current documentation of security processes","Formalizing a security strategy and program","Developing an awareness program for staff","Establishing processes within the security operations team"],"A",
+"จำ: security personnel changes → CURRENT DOCUMENTATION of security processes"),
+
+(674,"Which is the BEST tool to monitor the effectiveness of IS governance?",
+["Balanced scorecard","Risk profile","BIA","Key performance indicators (KPIs)"],"A",
+"จำ: monitor IS governance effectiveness → BALANCED SCORECARD"),
+
+(675,"Management decisions concerning IS investments will be MOST effective when they are based on:",
+["a process for identifying and analyzing threats and vulnerabilities.","the formalized acceptance of risk analysis by management.","the reporting of consistent and periodic assessments of risks.","an ALE determined from the history of security events."],"C",
+"จำ: IS investment decisions MOST effective → CONSISTENT AND PERIODIC RISK ASSESSMENTS"),
+
+(676,"An org is going through digital transformation in an unfamiliar risk landscape. The IS manager leads IT risk management. Which should be given HIGHEST priority?",
+["Identification of risk","Selection of risk treatment options","Analysis of control gaps","Design of key risk indicators (KRIs)"],"A",
+"จำ: new risk landscape → HIGHEST priority = IDENTIFICATION OF RISK"),
+
+(677,"Which change management procedure is MOST likely to cause concern to the IS manager?",
+["Users are not notified of scheduled system changes.","Fallback processes are tested the weekend before changes are made.","The development manager migrates programs into production.","A manual rather than automated process is used to compare program versions."],"C",
+"จำ: change mgmt concern → DEVELOPMENT MANAGER migrates to production (segregation of duties)"),
+
+(678,"Which is the BEST method to evaluate the effectiveness of an alternate processing site when continuous uptime is required?",
+["Full interruption test","Tabletop test","Parallel test","Simulation test"],"C",
+"จำ: evaluate alternate site + continuous uptime → PARALLEL TEST"),
+
+(679,"Which should be the MOST important consideration when establishing IS policies for an organization?",
+["Job descriptions include requirements to read security policies.","Senior management supports the policies.","The policies are aligned to industry best practices.","The policies are updated annually."],"B",
+"จำ: establishing IS policies MOST important → SENIOR MANAGEMENT SUPPORT"),
+
+(680,"If civil litigation is a goal for an organizational response to a security incident, the PRIMARY step should be to:",
+["capture evidence using standard server-backup utilities.","document the chain of custody.","reboot affected machines in a secure area to search for evidence.","contact law enforcement."],"B",
+"จำ: civil litigation goal → PRIMARY = DOCUMENT CHAIN OF CUSTODY"),
+
+(681,"An org's marketing dept wants to use an online collaboration service not compliant with IS policy. Risk acceptance is pursued. Approval should be provided by:",
+["business senior management.","the compliance officer.","the IS manager.","the chief risk officer (CRO)."],"A",
+"จำ: risk acceptance approval → BUSINESS SENIOR MANAGEMENT"),
+
+(682,"Business management accepted an IS risk in a rapidly changing environment. It is MOST important for the IS manager to ensure:",
+["change activities are documented.","compliance with the risk acceptance framework.","the rationale for acceptance is periodically reviewed.","the acceptance is aligned with business strategy."],"C",
+"จำ: risk accepted in changing environment → rationale PERIODICALLY REVIEWED"),
+
+(683,"Which is the BEST course of action for an IS manager to align security and business goals?",
+["Reviewing the business strategy","Conducting a BIA","Actively engaging with stakeholders","Defining key performance indicators (KPIs)"],"C",
+"จำ: align security and business goals → ACTIVELY ENGAGING WITH STAKEHOLDERS"),
+
+(684,"What should be the IS manager's FIRST step when updating an IS program?",
+["Review costs and benchmark them against industry norms.","Interview business unit managers and key stakeholders.","Identify program components that do not align with business objectives.","Re-evaluate the organization's business expectations and objectives."],"D",
+"จำ: updating IS program FIRST → RE-EVALUATE BUSINESS EXPECTATIONS AND OBJECTIVES"),
+
+(685,"Which of the following defines the triggers within a business continuity plan (BCP)?",
+["Disaster recovery plan (DRP)","Needs of the organization","IS policy","Gap analysis"],"B",
+"จำ: BCP triggers defined by → NEEDS OF THE ORGANIZATION"),
+
+(686,"A cloud app used by an org is found to have a serious vulnerability. After assessing the risk, what is the IS manager's BEST course of action?",
+["Instruct the vendor to conduct penetration testing.","Suspend the connection to the application in the firewall.","Initiate the organization's IR process.","Report the situation to the business owner of the application."],"D",
+"จำ: cloud app serious vuln → REPORT TO BUSINESS OWNER of the application"),
+
+(687,"Which is the BEST indication of a successful IS culture?",
+["The budget allocated for IS is sufficient","End users know how to identify and report incidents","Individuals are given roles based on job functions","Penetration testing is done regularly and findings remediated"],"B",
+"จำ: successful IS culture → END USERS know how to IDENTIFY AND REPORT incidents"),
+
+(688,"Which plan should be invoked by an organization to remain operational during a disaster?",
+["IR plan","Disaster recovery plan (DRP)","Business contingency plan","Business continuity plan (BCP)"],"D",
+"จำ: remain OPERATIONAL during disaster → BCP"),
+
+(689,"Which source is MOST useful when planning a business-aligned IS program?",
+["Business impact analysis (BIA)","IS policy","Security risk register","Enterprise architecture (EA)"],"A",
+"จำ: business-aligned IS program MOST useful source → BIA"),
+
+(690,"Which is the BEST technical defense against unauthorized access through social engineering?",
+["Requiring multifactor authentication","Requiring challenge/response information","Enforcing frequent password changes","Enforcing complex password formats"],"A",
+"จำ: technical defense against social engineering → MULTIFACTOR AUTHENTICATION"),
+
+(691,"What is the BEST way to reduce the impact of a successful ransomware attack?",
+["Include provisions to pay ransoms in the IS budget","Monitor the network and provide alerts on intrusions","Perform frequent backups and store them offline","Purchase or renew cyber insurance policies"],"C",
+"จำ: reduce ransomware impact → FREQUENT BACKUPS stored OFFLINE"),
+
+(692,"Which is the BEST approach for governing noncompliance with security requirements?",
+["Require users to acknowledge the acceptable use policy","Base mandatory review and exception approvals on residual risk","Require the steering committee to review exception requests","Base mandatory review and exception approvals on inherent risk"],"B",
+"จำ: govern noncompliance → exceptions based on RESIDUAL RISK"),
+
+(693,"Which is MOST important to ensuring information stored by an organization is protected appropriately?",
+["Defining security asset categorization","Assigning information asset ownership","Developing a records retention schedule","Defining information stewardship roles"],"B",
+"จำ: information protected appropriately → ASSIGNING INFORMATION ASSET OWNERSHIP"),
+
+(694,"In which cloud model does the cloud service buyer assume the MOST security responsibility?",
+["Infrastructure as a Service (IaaS)","Software as a Service (SaaS)","Disaster Recovery as a Service (DRaaS)","Platform as a Service (PaaS)"],"A",
+"จำ: MOST security responsibility for buyer → IaaS (ควบคุม OS/app/data)"),
+
+(695,"Which is the GREATEST benefit of conducting an organization-wide security awareness program?",
+["More security incidents are detected","Security behavior is improved","The security strategy is promoted","Fewer security incidents are reported"],"B",
+"จำ: security awareness program GREATEST benefit → SECURITY BEHAVIOR IS IMPROVED"),
+
+(696,"Which is the FIRST step to establishing an effective IS program?",
+["Assign accountability","Perform a BIA","Create a business case","Conduct a compliance review"],"C",
+"จำ: establish IS program FIRST → CREATE A BUSINESS CASE"),
+
+(697,"An IS manager believes information has been classified inappropriately, increasing breach risk. What is the BEST action?",
+["Re-classify the data and increase the security level.","Complete a risk assessment and refer the results to the data owners.","Instruct the relevant system owners to reclassify the data.","Refer the issue to internal audit for a recommendation."],"B",
+"จำ: inappropriate classification → RISK ASSESSMENT + refer to DATA OWNERS"),
+
+(698,"Which BEST supports the incident management process for attacks on an organization's supply chain?",
+["Requiring security awareness training for vendor staff","Including SLAs in vendor contracts","Performing integration testing with vendor systems","Establishing communication paths with vendors"],"D",
+"จำ: incident mgmt for supply chain attacks → COMMUNICATION PATHS WITH VENDORS"),
+
+(699,"Which is MOST useful to an IS manager when conducting a post-incident review of an attack?",
+["Cost of the attack to the organization","Location of the attacker","Details from IDS logs","Method of operation used by the attacker"],"D",
+"จำ: post-incident review attack → METHOD OF OPERATION used by attacker"),
+
+(700,"Which is MOST important for an IS manager to verify when selecting a third-party forensics provider?",
+["Existence of a right to audit clause","Technical capabilities of the provider","Results of the provider's BCP tests","Existence of the provider's IR plan"],"B",
+"จำ: selecting 3rd party forensics provider → TECHNICAL CAPABILITIES"),
+]
+
+# ── Q701-750 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(701,"Which security process will BEST prevent the exploitation of system vulnerabilities?",
+["Antivirus software","Log monitoring","Intrusion detection","Patch management"],"D",
+"จำ: prevent exploitation of system vulnerabilities → PATCH MANAGEMENT"),
+
+(702,"Which is the BEST method to protect against emerging advanced persistent threat (APT) actors?",
+["Providing ongoing training to the IR team","Updating IS awareness materials","Implementing a honeypot environment","Implementing proactive systems monitoring"],"D",
+"จำ: protect against emerging APTs → PROACTIVE SYSTEMS MONITORING"),
+
+(703,"Measuring which is the MOST accurate way to determine alignment of an IS strategy with organizational goals?",
+["Number of blocked intrusion attempts","Number of business cases reviewed by senior management","Trends in the number of identified threats to the business","Percentage of controls integrated into business processes"],"D",
+"จำ: IS strategy aligned with org goals → % CONTROLS INTEGRATED INTO BUSINESS PROCESSES"),
+
+(704,"An org outsourced development of a mission-critical app. Which is the BEST way to test for backdoors?",
+["Perform security code reviews on the entire application","Scan the entire application using a vulnerability scanning tool","Monitor Internet traffic for sensitive information leakage","Run the application from a high-privileged account on a test system"],"A",
+"จำ: test for backdoors in outsourced app → SECURITY CODE REVIEWS"),
+
+(705,"When remote access to confidential info is granted to a vendor for analytics, which is the MOST important security consideration?",
+["The vendor must be able to amend data","The vendor must agree to the organization's IS policy","Data is encrypted in transit and at rest at the vendor site","Data is subject to regular access log review"],"B",
+"จำ: vendor remote access to confidential info → AGREE TO ORG'S IS POLICY"),
+
+(706,"When investigating an IS incident, details of the incident should be shared:",
+["widely to demonstrate positive intent","only as needed","only with management","only with internal audit"],"B",
+"จำ: share incident details → ONLY AS NEEDED"),
+
+(707,"The PRIMARY advantage of involving end users in continuity planning is that they:",
+["can see the overall impact to the business","are more objective than IS management","can balance the technical and business risks","have a better understanding of specific business needs"],"D",
+"จำ: end users in continuity planning → BETTER UNDERSTANDING of specific business needs"),
+
+(708,"A vendor promotes being certified for international security standards. Before relying on this, the IS manager should confirm that the:",
+["certification scope is relevant to the service being offered","certification will remain current through the life of the contract","current international standard was used to assess security processes","certification can be extended to cover the client's business"],"A",
+"จำ: vendor certification → confirm CERTIFICATION SCOPE IS RELEVANT to service"),
+
+(709,"Which IaaS offering will BEST enable a cloud provider to assist customers when recovering from a security incident?",
+["Capability to take a snapshot of virtual machines","Capability of online virtual machine analysis","Availability of web application firewall logs","Availability of current infrastructure documentation"],"A",
+"จำ: IaaS incident recovery → SNAPSHOT of virtual machines"),
+
+(710,"Which role is BEST able to influence the security culture within an organization?",
+["Chief information security officer (CISO)","Chief information officer (CIO)","Chief operating officer (COO)","Chief executive officer (CEO)"],"D",
+"จำ: influence security culture → CEO (tone at the very top)"),
+
+(711,"Which BEST indicates the effectiveness of a recent IS awareness campaign?",
+["Increase in the frequency of security incident escalations","Reduction in the impact of security incidents","Decrease in the number of security incidents","Increase in the number of reported security incidents"],"D",
+"จำ: IS awareness campaign effectiveness → ↑ NUMBER OF REPORTED incidents"),
+
+(712,"Which is the BEST evidence of alignment between corporate and IS governance?",
+["Security key performance indicators (KPIs)","Senior management sponsorship","Regular security policy reviews","Project resource optimization"],"B",
+"จำ: corporate + IS governance alignment → SENIOR MANAGEMENT SPONSORSHIP"),
+
+(713,"When designing a DRP, which MUST be available to prioritize system restoration?",
+["Key performance indicators (KPIs)","Systems inventory","Recovery procedures","Business impact analysis (BIA) results"],"D",
+"จำ: DRP system restoration priority → BIA RESULTS"),
+
+(714,"Which factor has the GREATEST influence on successful implementation of IS strategy goals?",
+["Regulatory requirements","Compliance acceptance","Management support","Budgetary approval"],"C",
+"จำ: IS strategy goals success GREATEST influence → MANAGEMENT SUPPORT"),
+
+(715,"Which is the BEST approach for managing user access permissions to ensure alignment with data classification?",
+["Delegate management to an independent third party","Review access permissions annually or whenever job responsibilities change","Lock out accounts after a set number of unsuccessful login attempts","Enable MFA on user and admin accounts"],"B",
+"จำ: user access permissions + data classification → REVIEW ANNUALLY or when job responsibilities change"),
+
+(716,"Which is the MOST critical factor for IS program success?",
+["A comprehensive risk assessment program","The IS manager's knowledge of the business","Ongoing audits and addressing open items","Security staff with appropriate training and resources"],"B",
+"จำ: IS program success MOST critical → IS MANAGER'S KNOWLEDGE OF THE BUSINESS"),
+
+(717,"Which event would MOST likely require a revision to the IS program?",
+["A change in IT management","A merger with another organization","A significant increase in reported incidents","An increase in industry threat level"],"B",
+"จำ: IS program revision MOST likely → MERGER WITH ANOTHER ORGANIZATION"),
+
+(718,"Which is the MOST important consideration when establishing an org's IS governance committee?",
+["Members represent functions across the organization","Members have knowledge of IS controls","Members are rotated periodically","Members are business risk owners"],"A",
+"จำ: IS governance committee → MEMBERS REPRESENT FUNCTIONS across the organization"),
+
+(719,"An IR team is alerted to a suspected security event. Before classifying it as an incident, it is MOST important for the security manager to:",
+["follow the IR plan","follow the BCP","conduct an incident forensic analysis","notify the business process owner"],"A",
+"จำ: suspected security event → FIRST = FOLLOW THE IR PLAN"),
+
+(720,"Which is the BEST way to ensure capability to restore clean data after a ransomware attack?",
+["Purchase cyber insurance","Encrypt sensitive production data","Maintain multiple offline backups","Perform integrity checks on backups"],"C",
+"จำ: restore clean data after ransomware → MULTIPLE OFFLINE BACKUPS"),
+
+(721,"Which risk scenario is MOST likely to emerge from a supply chain attack?",
+["Unreliable delivery of hardware and software resources","Unavailability of services provided by a supplier","Loss of customers due to unavailability of products","Compromise of critical assets via third-party resources"],"D",
+"จำ: supply chain attack risk → COMPROMISE OF CRITICAL ASSETS via third-party"),
+
+(722,"An IS manager learns through threat intel that the org may be targeted for a major emerging threat. What is the FIRST course of action?",
+["Conduct an IS audit","Perform a gap analysis","Validate the relevance of the information","Inform senior management"],"C",
+"จำ: threat intel about emerging threat → FIRST = VALIDATE RELEVANCE of information"),
+
+(723,"Which BEST indicates that an org has effectively tested its BCP/DRP within stated RTOs?",
+["Internal compliance requirements are being met","Regulatory requirements are being met","Risk management objectives are being met","Business needs are being met"],"D",
+"จำ: BCP/DRP tested within RTO → BUSINESS NEEDS ARE BEING MET"),
+
+(724,"The MOST important attribute of a security control is that it is:",
+["auditable","measurable","scalable","reliable"],"D",
+"จำ: MOST important attribute of security control → RELIABLE"),
+
+(725,"Which will BEST enable an effective information asset classification process?",
+["Reviewing the RTO requirements of the asset","Assigning ownership","Including security requirements in the classification process","Analyzing audit findings"],"B",
+"จำ: asset classification process → ASSIGNING OWNERSHIP"),
+
+(726,"An IS manager is notified about a compromised endpoint device. What is the BEST course of action to prevent further damage?",
+["Run a virus scan on the endpoint device","Wipe and reset the endpoint device","Power off the endpoint device","Isolate the endpoint device"],"D",
+"จำ: compromised endpoint → ISOLATE the device"),
+
+(727,"During which phase should an IR team document actions required to remove the threat?",
+["Eradication","Identification","Containment","Post-incident review"],"A",
+"จำ: document actions to REMOVE THREAT → ERADICATION phase"),
+
+(728,"A user reports a stolen personal mobile device storing sensitive corporate data. Which will BEST minimize risk of data exposure?",
+["Wipe the device remotely","Remove user's access to corporate data","Prevent the user from using personal mobile devices","Report the incident to the police"],"A",
+"จำ: stolen mobile with corporate data → REMOTE WIPE"),
+
+(729,"An org acquired a company in a foreign country. What is the FIRST step the IS manager should take?",
+["Evaluate the IS laws that apply to the acquired company","Apply the existing IS program to the acquired company","Merge the two existing IS programs","Determine which country's IS regulations will be used"],"A",
+"จำ: acquisition in foreign country → FIRST = EVALUATE IS LAWS that apply"),
+
+(730,"An org's DRP is documented and kept at a DR site. What is the BEST way to ensure the plan can be carried out in an emergency?",
+["Require DR documentation be stored with all key decision makers","Provide annual DR training to appropriate staff","Maintain an outsourced contact center in another country","Store DR documentation in a public cloud"],"B",
+"จำ: ensure DRP can be carried out → ANNUAL DR TRAINING to appropriate staff"),
+
+(731,"Which is a desired outcome of IS governance?",
+["Penetration test","A maturity model","Improved risk management","Business agility"],"C",
+"จำ: IS governance desired outcome → IMPROVED RISK MANAGEMENT"),
+
+(732,"When designing an IS risk monitoring framework, it is MOST important to ensure:",
+["preservation of forensic evidence is enabled","the monitoring system is patched regularly","feedback is communicated to stakeholders","outlier events are escalated to system administrators"],"C",
+"จำ: IS risk monitoring framework → FEEDBACK COMMUNICATED TO STAKEHOLDERS"),
+
+(733,"Which BEST enables staff acceptance of IS policies?",
+["Adequate security funding","A robust IR program","Strong senior management support","Computer-based training"],"C",
+"จำ: staff acceptance of IS policies → STRONG SENIOR MANAGEMENT SUPPORT"),
+
+(734,"Which is the BEST way to rigorously test a DRP for a mission-critical system without disrupting business operations?",
+["Parallel testing","Simulation testing","Checklist review","Structured walk-through"],"A",
+"จำ: rigorously test DRP + no disruption → PARALLEL TESTING"),
+
+(735,"An IS manager is concerned with continued policy violations in a business unit despite recent efforts. What is the BEST course of action?",
+["Review the business unit's function against the policy","Revise the policy to accommodate the business unit","Report the business unit for policy noncompliance","Enforce sanctions on the business unit"],"A",
+"จำ: continued policy violations → REVIEW BUSINESS UNIT'S FUNCTION against policy"),
+
+(736,"Which BEST facilitates an IS manager's efforts to obtain senior management commitment for an IS program?",
+["Presenting evidence of inherent risk","Reporting the security maturity level","Presenting compliance requirements","Communicating the residual risk"],"A",
+"จำ: obtain senior mgmt commitment → PRESENTING EVIDENCE OF INHERENT RISK"),
+
+(737,"Which is PRIMARILY determined by asset classification?",
+["Priority for asset replacement","Level of protection required for assets","Replacement cost of assets","Insurance coverage required for assets"],"B",
+"จำ: asset classification PRIMARILY determines → LEVEL OF PROTECTION required"),
+
+(738,"Which is MOST helpful for aligning security operations with the IT governance framework?",
+["Business impact analysis (BIA)","Security operations program","IS policy","Security risk assessment"],"C",
+"จำ: align security operations with IT governance → IS POLICY"),
+
+(739,"An IS manager learned of a new data protection regulation soon to go into effect. What is the BEST way to manage noncompliance risk?",
+["Perform a gap analysis.","Consult with senior management on the best course of action.","Implement a program of work to comply with the new legislation.","Understand the cost of noncompliance."],"A",
+"จำ: new data protection regulation → PERFORM GAP ANALYSIS"),
+
+(740,"An IS manager learns of a new standard related to an emerging technology the org wants to implement. What should be recommended FIRST?",
+["Perform a risk assessment on the new technology.","Obtain legal counsel's opinion on the standard's applicability.","Determine whether the organization can benefit from the new standard.","Review industry specialists' analyses of the new standard."],"A",
+"จำ: new emerging technology standard → FIRST = RISK ASSESSMENT on new technology"),
+
+(741,"Which will provide the MOST guidance when deciding the level of protection for an information asset?",
+["Impact on IS program","Cost of controls","Impact to business function","Cost to replace"],"C",
+"จำ: level of protection for asset → IMPACT TO BUSINESS FUNCTION"),
+
+(742,"Which BEST demonstrates return on investment (ROI) for an IS initiative?",
+["Risk heat map","Business impact analysis (BIA)","Business case","IS program roadmap"],"C",
+"จำ: demonstrate ROI for IS initiative → BUSINESS CASE"),
+
+(743,"Which is BEST suited to provide regular reporting to the board regarding compliance to a global security standard?",
+["Legal counsel","Quality assurance (QA)","Information security","Internal audit"],"D",
+"จำ: report compliance to global security standard → INTERNAL AUDIT"),
+
+(744,"Which would be MOST effective in gaining senior management approval of security investments in network infrastructure?",
+["Performing pen tests against the network to demonstrate vulnerability","Highlighting competitor performance regarding network security","Presenting comparable security implementation estimates from several vendors","Demonstrating that targeted security controls tie to business objectives"],"D",
+"จำ: gain senior mgmt approval for security investments → controls TIE TO BUSINESS OBJECTIVES"),
+
+(745,"Which is the MOST important reason to implement IS governance?",
+["To align the security strategy with the organization's strategy","To monitor the performance of IS resources","To monitor the achievement of business goals and objectives","To provide adequate resources to achieve business goals"],"A",
+"จำ: IS governance MOST important reason → ALIGN SECURITY STRATEGY with org strategy"),
+
+(746,"Which is a PRIMARY objective of an IS governance framework?",
+["To provide the basis for action plans to achieve IS objectives organization-wide","To achieve the desired IS state as defined by business unit management","To align relationships of stakeholders in developing and executing an IS strategy","To provide assurance that information assets are protected proportionate to inherent risk"],"A",
+"จำ: IS governance framework PRIMARY objective → BASIS FOR ACTION PLANS to achieve IS objectives org-wide"),
+
+(747,"Which is the BEST way to reduce risk associated with a BYOD program?",
+["Implement a mobile device policy and standard.","Provide employee training on secure mobile device practices.","Implement a mobile device management (MDM) solution.","Require employees to install an effective anti-malware app."],"A",
+"จำ: reduce BYOD risk → MOBILE DEVICE POLICY AND STANDARD"),
+
+(748,"An IS manager contracted with a company to design security architecture for an application. Which is accountable for identification associated with this initiative?",
+["The project steering committee","The IS manager","The infrastructure management team","The application development team"],"B",
+"จำ: accountability for security architecture initiative → IS MANAGER"),
+
+(749,"Which desired outcome BEST supports a decision to invest in a new security initiative?",
+["Enhanced security monitoring and reporting","Reduction of organizational risk","Reduced control complexity","Enhanced threat detection capability"],"B",
+"จำ: invest in security initiative → REDUCTION OF ORGANIZATIONAL RISK"),
+
+(750,"Which is an IS manager's MOST important consideration when exploring use of a third-party provider to handle an IT function?",
+["The provider carries cyber insurance to cover security breaches.","The provider agrees to provide historical security incident data.","The provider's security processes align with the organization's.","The provider has undergone an independent security review."],"C",
+"จำ: 3rd party IT function → PROVIDER'S SECURITY PROCESSES ALIGN with organization's"),
+]
+
+# ── Q751-800 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(751,"Which MUST be defined for an IS manager to evaluate the appropriateness of controls currently in place?",
+["Security policy","Risk management framework","Security standards","Risk appetite"],"D",
+"จำ: evaluate appropriateness of controls → RISK APPETITE must be defined"),
+
+(752,"When an organization decides to accept a risk, it should mean the cost to mitigate:",
+["exceeds budget allocation.","is higher than the cost to transfer risk.","is less than the residual risk.","is greater than the residual risk."],"D",
+"จำ: accept risk = cost to mitigate is GREATER THAN the residual risk"),
+
+(753,"Which is the MOST important reason to conduct interviews as part of the BIA process?",
+["To facilitate a qualitative risk assessment following the BIA","To obtain input from as many relevant stakeholders as possible","To ensure the stakeholders providing input own the related risk","To increase awareness of IS among key stakeholders"],"B",
+"จำ: BIA interviews MOST important → obtain input from AS MANY RELEVANT STAKEHOLDERS as possible"),
+
+(754,"Due to changes in an org's environment, security controls may no longer be adequate. What is the IS manager's BEST course of action?",
+["Perform a new risk assessment.","Review the previous risk assessment and countermeasures.","Transfer the new risk to a third party.","Evaluate countermeasures to mitigate new risks."],"A",
+"จำ: environment changes → controls may be inadequate = PERFORM NEW RISK ASSESSMENT"),
+
+(755,"What is the PRIMARY benefit when IS program requirements are aligned with employment and staffing processes?",
+["Access is granted based on task requirements.","Information assets are classified appropriately.","Security staff turnover is reduced.","Security incident reporting procedures are followed."],"A",
+"จำ: IS aligned with staffing → ACCESS GRANTED BASED ON TASK REQUIREMENTS"),
+
+(756,"When developing an asset classification program, which step should be completed FIRST?",
+["Implement a DLP system.","Categorize each asset.","Create a business case for a digital rights management tool.","Create an inventory."],"D",
+"จำ: asset classification program FIRST → CREATE AN INVENTORY"),
+
+(757,"Which is the PRIMARY reason to monitor key risk indicators (KRIs) related to IS?",
+["To alert on unacceptable risk","To identify residual risk","To reassess risk appetite","To benchmark control performance"],"A",
+"จำ: monitor KRIs PRIMARY reason → ALERT ON UNACCEPTABLE RISK"),
+
+(758,"Which is the BEST indicator of an emerging incident?",
+["A weakness identified within an organization's information systems","Attempted patching of systems resulting in errors","Customer complaints about lack of website availability","A recent security incident at an industry competitor"],"C",
+"จำ: emerging incident BEST indicator → CUSTOMER COMPLAINTS about website unavailability"),
+
+(759,"An org discovered a recurring problem with unsecure code being released into production. What is the IS manager action?",
+["Implement segregation of duties between development and production.","Increase the frequency of penetration testing.","Review existing configuration management processes.","Review existing change management processes."],"A",
+"จำ: unsecure code released to production → SEGREGATION OF DUTIES between dev and production"),
+
+(760,"When developing a categorization method for security incidents, the categories MUST:",
+["be created by the incident handler.","align with reporting requirements.","have agreed-upon definitions.","align with industry standards."],"C",
+"จำ: incident categories MUST → HAVE AGREED-UPON DEFINITIONS"),
+
+(761,"Which is MOST likely to be impacted when emerging technologies are introduced to an organization?",
+["Risk profile","Security policies","Control effectiveness","Risk assessment approach"],"A",
+"จำ: emerging technologies introduced → RISK PROFILE most impacted"),
+
+(762,"An org's SaaS product has a major security vulnerability at the primary cloud provider. Who is PRIMARILY accountable for the associated risk?",
+["The data owner","The IS manager","The security engineer","The application owner"],"D",
+"จำ: SaaS vulnerability risk accountability → APPLICATION OWNER"),
+
+(763,"Which is the MOST important criterion when deciding whether to accept residual risk?",
+["Cost of replacing the asset","Annual loss expectancy (ALE)","Cost of additional mitigation","Annual rate of occurrence"],"B",
+"จำ: decide to accept residual risk → ANNUAL LOSS EXPECTANCY (ALE)"),
+
+(764,"An IS manager finds a soon-to-be deployed app will increase risk beyond acceptable levels without necessary controls. What is the BEST course of action?",
+["Recommend a different application.","Instruct IT to deploy controls based on urgent business needs.","Solicit bids for compensating control products.","Present a business case for additional controls to senior management."],"D",
+"จำ: app increases risk beyond acceptable + no controls → PRESENT BUSINESS CASE to senior mgmt"),
+
+(765,"When developing a business case to justify an IS investment, which would BEST enable an informed decision by senior management?",
+["The IS strategy","Security investment trends in the industry","Losses due to security incidents","The results of a risk assessment"],"D",
+"จำ: business case for IS investment → RISK ASSESSMENT results"),
+
+(766,"Which is the BEST approach for developing a physical access control policy for a data-hosting org with geographically dispersed customers?",
+["Review customers' security policies.","Design SSO or federated access.","Develop access control requirements for each system and application.","Conduct a risk assessment to determine security risks and mitigating controls."],"D",
+"จำ: physical access control policy for data-hosting org → RISK ASSESSMENT"),
+
+(767,"Which is a PRIMARY benefit of managed security solutions?",
+["Easier implementation across an organization","Greater ability to focus on core business operations","Wider range of capabilities","Lower cost of operations"],"B",
+"จำ: managed security solutions PRIMARY benefit → FOCUS ON CORE BUSINESS OPERATIONS"),
+
+(768,"Which is an example of risk mitigation?",
+["Improving security controls","Discontinuing the activity associated with the risk","Performing a cost-benefit analysis","Purchasing insurance"],"A",
+"จำ: risk mitigation example → IMPROVING SECURITY CONTROLS"),
+
+(769,"Which BEST enables an org to provide ongoing assurance that legal and regulatory compliance requirements can be met?",
+["Engaging external experts to provide guidance on changes","Assigning the operations manager accountability for compliance","Embedding compliance requirements within operational processes","Performing periodic audits for compliance"],"C",
+"จำ: ongoing compliance assurance → EMBED COMPLIANCE REQUIREMENTS within operational processes"),
+
+(770,"Following a successful attack, an IS manager should be confident malware has not continued to spread at the completion of which IR phase?",
+["Recovery","Eradication","Identification","Containment"],"D",
+"จำ: malware not spreading confirmed → CONTAINMENT phase"),
+
+(771,"Which is the BEST method to align an IS strategic plan to the corporate strategy?",
+["Ensuring the plan complies with business unit expectations","Involving industry experts in the development of the plan","Involving senior management in the development of the plan","Obtaining adequate funds from senior management"],"C",
+"จำ: align IS strategic plan to corporate strategy → INVOLVE SENIOR MANAGEMENT in development"),
+
+(772,"Which would BEST ensure that security is integrated during application development?",
+["Performing app security testing during acceptance testing","Introducing security requirements during the initiation phase","Employing global security standards during development","Providing training on secure development to programmers"],"B",
+"จำ: security integrated during app development → SECURITY REQUIREMENTS in INITIATION PHASE"),
+
+(773,"Which is MOST important in increasing the effectiveness of incident responders?",
+["Integrating staff with the IT department","Testing response scenarios","Communicating with the management team","Reviewing the IR plan annually"],"B",
+"จำ: increase IR effectiveness → TESTING RESPONSE SCENARIOS"),
+
+(774,"Which should be the PRIMARY objective of the IS IR process?",
+["Classifying incidents","Conducting incident triage","Communicating with internal and external parties","Minimizing negative impact to critical operations"],"D",
+"จำ: IR process PRIMARY objective → MINIMIZING NEGATIVE IMPACT to critical operations"),
+
+(775,"An IR team from experienced individuals. Which exercise would be MOST beneficial at the first drill?",
+["Tabletop exercise","Red team exercise","Disaster recovery exercise","Black box penetration test"],"A",
+"จำ: new IR team first drill → TABLETOP EXERCISE"),
+
+(776,"Employees have been issued smartphones with cameras, violating a policy prohibiting cameras at the office. What should be the IS manager's FIRST course of action?",
+["Revise the policy.","Conduct a risk assessment.","Communicate the acceptable use policy.","Perform a root cause analysis."],"C",
+"จำ: policy violation (cameras) → FIRST = COMMUNICATE ACCEPTABLE USE POLICY"),
+
+(777,"When performing a BIA, who should calculate the recovery time and cost estimates?",
+["Business process owner","Business continuity coordinator","IS manager","Senior management"],"A",
+"จำ: BIA recovery time and cost estimates → BUSINESS PROCESS OWNER"),
+
+(778,"A PRIMARY purpose of creating security policies is to:",
+["implement management's security governance strategy.","establish the way security tasks should be executed.","communicate management's security expectations.","define allowable security boundaries."],"C",
+"จำ: security policies PRIMARY purpose → COMMUNICATE MANAGEMENT'S SECURITY EXPECTATIONS"),
+
+(779,"The MAIN benefit of implementing a DLP solution is to:",
+["enhance the organization's antivirus controls.","reduce the need for a security awareness program.","complement the organization's detective controls.","eliminate the risk of data loss."],"C",
+"จำ: DLP solution MAIN benefit → COMPLEMENT DETECTIVE CONTROLS"),
+
+(780,"Which is the MOST important detail to capture in an organization's risk register?",
+["Risk acceptance criteria","Risk severity level","Risk ownership","Risk appetite"],"C",
+"จำ: risk register MOST important detail → RISK OWNERSHIP"),
+
+(781,"Which is the GREATEST benefit of information asset classification?",
+["Supporting segregation of duties","Defining resource ownership","Providing a basis for implementing a need-to-know policy","Helping to determine the RPO"],"C",
+"จำ: asset classification GREATEST benefit → BASIS FOR NEED-TO-KNOW POLICY"),
+
+(782,"While classifying information assets, an IS manager notices several production databases have no owners. What should the IS manager do?",
+["Assign the highest classification level to those databases.","Assign responsibility to the DBA.","Prepare a report of the databases for senior management.","Review the databases for sensitive content."],"C",
+"จำ: databases without owners → PREPARE REPORT FOR SENIOR MANAGEMENT"),
+
+(783,"An org's research dept plans to apply ML on a data set containing customer names and purchase history. Risk leakage is high impact. Which is the BEST risk treatment?",
+["Accept the risk, as the benefits exceed the potential consequences.","Mitigate the risk by applying anonymization on the data set.","Transfer the risk by purchasing insurance.","Mitigate the risk by encrypting the customer names in the data set."],"B",
+"จำ: ML on customer data high impact → ANONYMIZATION of data set"),
+
+(784,"IT projects have security controls being added post-production. Which would MOST help ensure controls are relevant to a project?",
+["Involving IS at each stage of project management","Creating a data classification framework","Identifying responsibilities during the project business case analysis","Providing stakeholders with minimum IS requirements"],"A",
+"จำ: controls added post-production → INVOLVING IS AT EACH STAGE of project management"),
+
+(785,"Which is the BEST approach to reduce unnecessary duplication of compliance activities?",
+["Integration of assurance efforts","Automation of controls","Documentation of control procedures","Standardization of compliance requirements"],"A",
+"จำ: reduce compliance duplication → INTEGRATION OF ASSURANCE EFFORTS"),
+
+(786,"Which BEST helps ensure a risk response plan will be developed and executed in a timely manner?",
+["Establishing risk metrics","Training on risk management procedures","Reporting on documented deficiencies","Assigning a risk owner"],"D",
+"จำ: risk response plan timely → ASSIGNING A RISK OWNER"),
+
+(787,"An IS manager learns IT personnel are not adhering to IS policy because it creates process inefficiencies. What should the IS manager do FIRST?",
+["Propose that IT update IS policies and procedures.","Request that internal audit conduct a review.","Conduct user awareness training within the IT function.","Determine the risk related to noncompliance with the policy."],"D",
+"จำ: IT not following IS policy (inefficiency claim) → FIRST = DETERMINE RISK of noncompliance"),
+
+(788,"Which is MOST important to include in a report to key stakeholders regarding IS program effectiveness?",
+["Security incident details","Security metrics","Security risk exposure","Security baselines"],"B",
+"จำ: report IS program effectiveness to stakeholders → SECURITY METRICS"),
+
+(789,"An org is increasingly using SaaS. Which would be the MOST effective way to ensure procurement considers IS concerns?",
+["Integrate IS risk assessments into the procurement process.","Invite IT members into regular procurement team meetings.","Enforce the right to audit in procurement contracts.","Provide regular IS training to the procurement team."],"A",
+"จำ: SaaS procurement IS concerns → INTEGRATE IS RISK ASSESSMENTS into procurement process"),
+
+(790,"Which should be the KEY consideration when creating an IS communication plan with industry peers?",
+["Reducing the costs associated with information sharing","Balancing the benefits of information sharing with drawbacks of sharing sensitive info","Notifying the legal department whenever incident-related information is shared","Ensuring information is detailed enough to be of use to other organizations"],"B",
+"จำ: IS communication plan with industry peers → BALANCE BENEFITS vs drawbacks of sharing sensitive info"),
+
+(791,"Which is MOST effective for communicating forward-looking trends within security reporting?",
+["Key risk indicators (KRIs)","Key performance indicators (KPIs)","Key control indicators (KCIs)","Key goal indicators (KGIs)"],"A",
+"จำ: forward-looking trends in security reporting → KRIs (leading indicators)"),
+
+(792,"An org purchased DLP software but discovered it fails to detect or prevent data loss. What should the IS manager do FIRST?",
+["Revise the data classification policy.","Review the contract.","Review the configuration.","Implement stricter data loss controls."],"C",
+"จำ: DLP not working → FIRST = REVIEW THE CONFIGURATION"),
+
+(793,"Network isolation techniques are immediately implemented after a security breach to:",
+["allow time for key stakeholder decision making.","reduce the extent of further damage.","enforce zero trust architecture principles.","preserve evidence as required for forensics."],"B",
+"จำ: network isolation after breach → REDUCE EXTENT OF FURTHER DAMAGE"),
+
+(794,"Which IR phase involves actions to help safeguard critical systems while maintaining business operations?",
+["Containment","Identification","Preparation","Recovery"],"A",
+"จำ: safeguard critical systems while maintaining operations → CONTAINMENT phase"),
+
+(795,"An org received complaints that some files have been encrypted and users are receiving demands for money. What is the BEST course of action?",
+["Isolate the affected systems.","Conduct an impact assessment.","Initiate incident response.","Rebuild the affected systems."],"C",
+"จำ: files encrypted + ransom demands = ransomware → INITIATE INCIDENT RESPONSE"),
+
+(796,"Which has the GREATEST positive impact on the ability to execute a DRP?",
+["Updating the plan periodically","Conducting a walk-through of the plan","Storing the plan at an offsite location","Communicating the plan to all stakeholders."],"B",
+"จำ: execute DRP GREATEST positive impact → CONDUCTING A WALK-THROUGH of the plan"),
+
+(797,"Which is MOST important to include in monthly IS reports to the board?",
+["Root cause analysis of security incidents","Threat intelligence","Risk assessment results","Trend analysis of security metrics"],"D",
+"จำ: monthly IS reports to board → TREND ANALYSIS OF SECURITY METRICS"),
+
+(798,"Which activity is designed to handle a control failure that leads to a breach?",
+["Vulnerability management","Incident management","Root cause analysis","Risk assessment"],"B",
+"จำ: handle control failure leading to breach → INCIDENT MANAGEMENT"),
+
+(799,"Which is MOST important to consider when aligning a security awareness program with the org's business strategy?",
+["Processes and technology","People and culture","Regulations and standards","Executive and board directives"],"B",
+"จำ: aligning security awareness with business strategy → PEOPLE AND CULTURE"),
+
+(800,"Which BEST indicates that information assets are classified accurately?",
+["An accurate and complete information asset catalog","Appropriate assignment of information asset owners","Appropriate prioritization of information risk treatment","Increased compliance with IS policy"],"C",
+"จำ: information assets classified accurately → APPROPRIATE PRIORITIZATION of information risk treatment"),
+]
+
+# ── Q801-850 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(801,"Reevaluation of risk is MOST critical when there is:",
+["a management request for updated security reports.","resistance to the implementation of mitigating controls.","a change in the threat landscape.","a change in security policy."],"C",
+"จำ: risk reevaluation MOST critical → CHANGE IN THREAT LANDSCAPE"),
+
+(802,"Which BEST supports investments in an IS program?",
+["Business impact analysis (BIA)","Risk assessment results","Gap analysis results","Business cases"],"D",
+"จำ: support IS program investments → BUSINESS CASES"),
+
+(803,"Which is MOST important to ensure when developing escalation procedures for an IR plan?",
+["Minimum regulatory requirements are maintained.","The contact list is regularly updated.","Each process is assigned to a responsible party.","Senior management approval has been documented."],"C",
+"จำ: IR escalation procedures → EACH PROCESS ASSIGNED TO A RESPONSIBLE PARTY"),
+
+(804,"Which is the PRIMARY benefit of implementing a vulnerability assessment process?",
+["Compliance status is improved.","Threat management is enhanced.","Security metrics are enhanced.","Proactive risk management is facilitated."],"D",
+"จำ: vulnerability assessment PRIMARY benefit → PROACTIVE RISK MANAGEMENT"),
+
+(805,"An org is implementing an IS governance framework. To communicate program effectiveness to stakeholders, it is MOST important to establish:",
+["a control self-assessment (CSA) process.","metrics for each milestone.","automated reporting to stakeholders.","a monitoring process for the security policy."],"B",
+"จำ: communicate IS governance effectiveness → METRICS FOR EACH MILESTONE"),
+
+(806,"Which is the MOST effective way to present quarterly reports to the board on IS program status?",
+["Detailed analysis of security program KPIs","An IS risk register","An IS dashboard","A capability and maturity assessment"],"C",
+"จำ: quarterly report to board on IS program → IS DASHBOARD"),
+
+(807,"Which is the BEST way to obtain support for a new organization-wide IS program?",
+["Deliver an IS awareness campaign.","Publish an IS RACI chart.","Benchmark against similar industry organizations.","Establish an IS strategy committee."],"D",
+"จำ: obtain support for new IS program → ESTABLISH IS STRATEGY COMMITTEE"),
+
+(808,"To confirm a 3rd party complies with IS requirements, it is MOST important to ensure:",
+["contract clauses comply with IS policy.","security metrics are included in the SLA.","the IS policy of the 3rd party is reviewed.","right to audit is included in the SLA."],"D",
+"จำ: 3rd party IS compliance confirmation → RIGHT TO AUDIT in SLA"),
+
+(809,"Which BEST enables an org to transform its culture to support IS?",
+["Strong management support","Robust technical security controls","Periodic compliance audits","Incentives for security incident reporting"],"A",
+"จำ: transform culture to support IS → STRONG MANAGEMENT SUPPORT"),
+
+(810,"An org is close to going live with a cloud app. Pen test results show a high-rated vulnerability. What is the BEST way to proceed?",
+["Postpone the implementation until the vulnerability has been fixed.","Commission further pen tests to validate initial results.","Assess whether the vulnerability is within the organization's risk tolerance levels.","Implement the app and request the cloud provider to fix the vulnerability."],"C",
+"จำ: high vuln before go-live → ASSESS WHETHER within risk tolerance levels"),
+
+(811,"Which is the BEST way to achieve compliance with new global regulations related to protection of personal information?",
+["Review contracts and SOWs with vendors.","Determine current and desired state of controls.","Execute a risk treatment plan.","Implement data regionalization controls."],"B",
+"จำ: comply with new privacy regulations → DETERMINE CURRENT AND DESIRED STATE of controls (gap)"),
+
+(812,"Which should be given HIGHEST priority during an IS post-incident review?",
+["Evaluating IR effectiveness","Documenting actions taken in sufficient detail","Evaluating the performance of IR team members","Updating key risk indicators (KRIs)"],"A",
+"จำ: post-incident review HIGHEST priority → EVALUATING IR EFFECTIVENESS"),
+
+(813,"Which is the BEST course of action when an online company discovers a network attack in progress?",
+["Shut off all network access points.","Isolate the affected network segment.","Dump all event logs to removable media.","Enable trace logging on all events."],"B",
+"จำ: network attack in progress → ISOLATE affected network segment"),
+
+(814,"Which is the BEST reason for an org to use Disaster Recovery as a Service (DRaaS)?",
+["It transfers the risk associated with recovery to a third party.","It eliminates the need for the business to perform testing.","It eliminates the need to maintain offsite facilities.","It lowers the annual cost to the business."],"C",
+"จำ: DRaaS BEST reason → ELIMINATES NEED TO MAINTAIN OFFSITE FACILITIES"),
+
+(815,"When properly implemented, secure transmission protocols protect transactions:",
+["from eavesdropping.","in the server's database.","from denial of service (DoS) attacks.","on the client desktop."],"A",
+"จำ: secure transmission protocols protect → FROM EAVESDROPPING"),
+
+(816,"An org is acquiring a new company. Which is the BEST approach to protect newly acquired data assets prior to integration?",
+["Review data architecture.","Include security requirements in the contract.","Perform a risk assessment.","Assess security controls."],"C",
+"จำ: protect newly acquired data before integration → RISK ASSESSMENT"),
+
+(817,"The PRIMARY objective of a post-incident review of an IS incident is to:",
+["minimize impact.","determine the impact.","prevent recurrence.","update the risk profile."],"C",
+"จำ: post-incident review PRIMARY objective → PREVENT RECURRENCE"),
+
+(818,"The MOST appropriate time to conduct a DR test would be after:",
+["the security risk profile has been reviewed.","major business processes have been redesigned.","the BCP has been updated.","noncompliance incidents have been filed."],"C",
+"จำ: MOST appropriate time for DR test → AFTER BCP HAS BEEN UPDATED"),
+
+(819,"Which method BEST demonstrates that an IS program provides appropriate coverage?",
+["Gap assessment","Vulnerability scan report","Maturity assessment","Security risk analysis"],"D",
+"จำ: IS program provides appropriate coverage → SECURITY RISK ANALYSIS"),
+
+(820,"Which is an IS manager's MOST important course of action when responding to a major incident that could disrupt the business?",
+["Notify law enforcement.","Contact forensic investigators.","Follow the escalation process.","Identify the indicators of compromise."],"C",
+"จำ: major incident that could disrupt business → FOLLOW THE ESCALATION PROCESS"),
+
+(821,"An IS manager finds significant exceptions to a newly released industry-required security standard. What should be done NEXT?",
+["Document risk acceptances.","Conduct an IS audit.","Assess the consequences of noncompliance.","Revise the organization's security policy."],"C",
+"จำ: significant exceptions to required standard → ASSESS CONSEQUENCES OF NONCOMPLIANCE"),
+
+(822,"Which BEST facilitates effective IR testing?",
+["Including all business units in testing","Testing after major business changes","Simulating realistic test scenarios","Reviewing test results quarterly"],"C",
+"จำ: effective IR testing → SIMULATING REALISTIC TEST SCENARIOS"),
+
+(823,"Which is the BEST indication of effective IS governance?",
+["IS is considered the responsibility of the entire IS team.","IS is integrated into corporate governance.","IS governance is based on an external security framework.","IS controls are assigned to risk owners."],"B",
+"จำ: effective IS governance → IS INTEGRATED INTO CORPORATE GOVERNANCE"),
+
+(824,"The IS manager is notified of a new vulnerability affecting key data processing systems. What should be done FIRST?",
+["Re-evaluate the risk.","Ask the business owner for the new remediation plan.","Inform senior management.","Implement compensating controls."],"A",
+"จำ: new vulnerability in key systems → FIRST = RE-EVALUATE THE RISK"),
+
+(825,"Which is the BEST way to assess risk associated with using a SaaS vendor?",
+["Require vendors to complete IS questionnaires.","Request customer references from the vendor.","Verify IS requirements are included in the contract.","Review the results of the vendor's independent control reports."],"D",
+"จำ: assess SaaS vendor risk → REVIEW VENDOR'S INDEPENDENT CONTROL REPORTS"),
+
+(826,"Security administration efforts will be greatly reduced following deployment of which technique?",
+["Access control lists","Distributed access control","Discretionary access control","Role-based access control"],"D",
+"จำ: reduce security administration efforts → ROLE-BASED ACCESS CONTROL"),
+
+(827,"Which is the BEST way for an IS manager to improve effectiveness of an org's IS program?",
+["Focus on addressing conflicts between security and performance.","Obtain assistance from IT to implement automated security controls.","Include IS requirements in the change control process.","Collaborate with business and IT functions in determining controls."],"D",
+"จำ: improve IS program effectiveness → COLLABORATE WITH BUSINESS AND IT in determining controls"),
+
+(828,"What should an IS manager do FIRST upon learning of noncompliance with an impending IS regulatory change?",
+["Conduct a business impact and vulnerability analysis.","Report the noncompliance to senior management.","Assess the risk and cost of noncompliance.","Implement the correct measures to become compliant."],"C",
+"จำ: noncompliance with IS regulatory change → FIRST = ASSESS RISK AND COST of noncompliance"),
+
+(829,"Which is MOST critical when creating an IR plan?",
+["Identifying what constitutes an incident","Identifying vulnerable data assets","Documenting incident notification and escalation processes","Aligning with the risk assessment process"],"C",
+"จำ: IR plan MOST critical → DOCUMENTING INCIDENT NOTIFICATION AND ESCALATION PROCESSES"),
+
+(830,"Which would BEST help to ensure appropriate security controls are built into software?",
+["Integrating security throughout the development process","Performing security testing prior to deployment","Providing standards for implementation during development","Providing security training to the dev team"],"A",
+"จำ: security built into software → INTEGRATING SECURITY THROUGHOUT DEVELOPMENT PROCESS"),
+
+(831,"Which will BEST facilitate integration of IS governance into enterprise governance?",
+["Implementing an IS awareness program","Documenting the IS governance framework","Developing an IS policy based on risk assessments","Establishing an IS steering committee"],"D",
+"จำ: IS governance into enterprise governance → IS STEERING COMMITTEE"),
+
+(832,"What should an IS manager do FIRST when noncompliance with security standards is identified?",
+["Validate the noncompliance","Include the noncompliance in the risk register","Report the noncompliance to senior management","Implement compensating controls"],"A",
+"จำ: noncompliance identified → FIRST = VALIDATE THE NONCOMPLIANCE"),
+
+(833,"When recovering a compromised system needing a complete rebuild, which should be considered FIRST?",
+["Network system logs","Intrusion detection system (IDS) logs","Patch management files","Configuration management files"],"D",
+"จำ: complete rebuild of compromised system → FIRST = CONFIGURATION MANAGEMENT FILES"),
+
+(834,"When deciding to move to a cloud-based model, the FIRST consideration should be:",
+["data classification","physical location of the data","storage in a shared environment","availability of the data"],"A",
+"จำ: move to cloud FIRST consideration → DATA CLASSIFICATION"),
+
+(835,"Which is the PRIMARY objective of incident triage?",
+["Containment of threats","Coordination of communications","Categorization of events","Mitigation of vulnerabilities"],"C",
+"จำ: incident triage PRIMARY objective → CATEGORIZATION OF EVENTS"),
+
+(836,"Who is accountable for ensuring risk mitigation is effective?",
+["Application owner","Business owner","Risk owner","Control owner"],"C",
+"จำ: accountable for risk mitigation effectiveness → RISK OWNER"),
+
+(837,"Which BEST enables an IS manager to obtain organizational support for implementation of security controls?",
+["Conducting periodic vulnerability assessments","Defining the organization's risk management framework","Communicating BIA results","Establishing effective stakeholder relationships"],"D",
+"จำ: obtain organizational support for controls → ESTABLISHING EFFECTIVE STAKEHOLDER RELATIONSHIPS"),
+
+(838,"To support effective risk decision making, which is MOST important to have in place?",
+["An audit committee of mid-level management","Risk reporting procedures","Well-defined and approved controls","Established risk domains"],"B",
+"จำ: effective risk decision making → RISK REPORTING PROCEDURES"),
+
+(839,"Which party should be responsible for determining access levels to an app that processes client information?",
+["The identity and access management team","The business client","The IS team","Business unit management"],"D",
+"จำ: determine access levels to app → BUSINESS UNIT MANAGEMENT"),
+
+(840,"What should be an IS manager's MOST important consideration when developing a multi-year plan?",
+["Ensuring contingency plans for potential IS risks","Ensuring alignment with the plans of other business units","Demonstrating projected budget increases year after year","Allowing the IS program to expand its capabilities"],"B",
+"จำ: multi-year IS plan MOST important → ALIGNMENT WITH OTHER BUSINESS UNITS"),
+
+(841,"When performing a BIA, who should be responsible for determining the initial RTO?",
+["IS manager","External consultant","Business continuity coordinator","Information owner"],"D",
+"จำ: determine initial RTO in BIA → INFORMATION OWNER"),
+
+(842,"Which will ensure confidentiality of content when accessing an email system over the Internet?",
+["Digital encryption","Multi-factor authentication","Digital signatures","Data masking"],"A",
+"จำ: email confidentiality over Internet → DIGITAL ENCRYPTION"),
+
+(843,"Who is BEST suited to determine how the information in a database should be classified?",
+["IS analyst","Database analyst","Database administrator (DBA)","Data owner"],"D",
+"จำ: determine database classification → DATA OWNER"),
+
+(844,"Which is an incident containment method?",
+["Reviewing system logs and audit trails","Removing compromised systems from the network","Analyzing systems for impact from the incident","Mapping the scope of the incident on the network"],"B",
+"จำ: incident containment method → REMOVING COMPROMISED SYSTEMS from network"),
+
+(845,"A CISO learns a 3rd party service provider did not notify the org of a data breach affecting the provider's data center. What should the CISO do FIRST?",
+["Determine the extent of the impact to the organization.","Request an independent review of the provider's data center.","Notify affected customers of the data breach.","Recommend canceling the outsourcing contract."],"A",
+"จำ: 3rd party breach not notified → FIRST = DETERMINE EXTENT OF IMPACT to org"),
+
+(846,"Which is MOST important to include in an IR plan to ensure incidents are responded to by appropriate individuals?",
+["Skills required for the IR team","A detailed incident notification process","A list of external resources to assist","Service level agreements (SLAs)"],"B",
+"จำ: IR plan → appropriate individuals respond = DETAILED INCIDENT NOTIFICATION PROCESS"),
+
+(847,"Which is the PRIMARY role of an IS manager in a software development project?",
+["To identify software security weaknesses","To identify noncompliance in the early design stage","To assess and approve the security application architecture","To enhance awareness for secure software design"],"C",
+"จำ: IS manager in software dev project PRIMARY role → ASSESS AND APPROVE SECURITY APP ARCHITECTURE"),
+
+(848,"Which MOST effectively identifies issues related to noncompliance with legal, regulatory, and contractual requirements?",
+["Compliance maturity assessment","Compliance benchmarking data","Compliance gap analysis","Independent compliance audit"],"D",
+"จำ: identify noncompliance with legal/regulatory requirements → INDEPENDENT COMPLIANCE AUDIT"),
+
+(849,"Which is MOST helpful for fostering an effective IS culture?",
+["Obtaining support from key organizational influencers","Implementing comprehensive technical security controls","Conducting regular IS awareness training","Developing procedures to enforce IS policy"],"A",
+"จำ: foster effective IS culture → SUPPORT FROM KEY ORGANIZATIONAL INFLUENCERS"),
+
+(850,"Which is MOST important to convey to employees in building a security risk-aware culture?",
+["Employee access should be based on least privilege.","Personal info requires different controls than sensitive info.","The responsibility for security rests with all employees.","Understanding an asset's value is critical to risk management."],"C",
+"จำ: security risk-aware culture → RESPONSIBILITY FOR SECURITY RESTS WITH ALL EMPLOYEES"),
+]
+
+# ── Q851-900 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(851,"Which is the PRIMARY objective of integrating IS governance into corporate governance?",
+["To align security goals with the IS program","To ensure the business supports IS goals","To adequately safeguard the business in achieving its mission","To obtain management commitment for sustaining the security program"],"C",
+"จำ: integrate IS governance into corporate governance → SAFEGUARD BUSINESS IN ACHIEVING ITS MISSION"),
+
+(852,"Which is an IS manager's MOST important action to mitigate risk associated with malicious software?",
+["Disabling end-user computer peripheral access ports","Implementing a multi-layered security program","Ensuring antivirus has the latest definition files","Strengthening security patch implementation processes"],"B",
+"จำ: mitigate malicious software risk → MULTI-LAYERED SECURITY PROGRAM"),
+
+(853,"Which is the PRIMARY reason for granting a security exception?",
+["The risk is justified by the cost to security.","The risk is justified by the benefit to security.","The risk is justified by the benefit to the business.","The risk is justified by the cost to the business."],"C",
+"จำ: grant security exception PRIMARY reason → RISK JUSTIFIED BY BENEFIT TO BUSINESS"),
+
+(854,"Which is MOST effective in preventing vulnerabilities that may disrupt availability of a critical business app?",
+["A patch management process","Change management controls","Version control","Logical access controls"],"B",
+"จำ: prevent vulnerabilities disrupting critical app → CHANGE MANAGEMENT CONTROLS"),
+
+(855,"An org is outsourcing DR activities. Which is MOST important to include in the outsourcing agreement?",
+["Requirements for regularly testing backups","The DR communication plan","Recovery time objectives (RTOs)","Definition of when a disaster should be declared"],"C",
+"จำ: outsource DR activities → include RECOVERY TIME OBJECTIVES (RTOs)"),
+
+(856,"Which type of plan is PRIMARILY intended to reduce the potential impact of security events that may occur?",
+["Incident response plan","Business continuity plan (BCP)","Security awareness plan","Disaster recovery plan (DRP)"],"A",
+"จำ: reduce potential impact of security events → INCIDENT RESPONSE PLAN"),
+
+(857,"Which is the MOST important outcome of strategic alignment of corporate and IS governance?",
+["Implementation of IS controls","Development of a common set of IT security policies","Higher acceptance of IS projects","Reduction of adverse impacts on the organization to an acceptable level"],"D",
+"จำ: strategic alignment of corporate + IS governance → REDUCE ADVERSE IMPACTS to acceptable level"),
+
+(858,"Which is MOST important as a basis for developing an effective IS program that supports business goals?",
+["An IS strategy","A defined security organizational structure","IS policies","Metrics to drive the IS program"],"A",
+"จำ: basis for effective IS program → IS STRATEGY"),
+
+(859,"Which BEST enables integration of IS governance into corporate governance?",
+["Senior management approval of IS strategy","Clear lines of authority across the organization","An IS steering committee with business representation","Well-documented IS policies and standards"],"C",
+"จำ: IS governance into corporate governance → IS STEERING COMMITTEE with business representation"),
+
+(860,"Which contributes MOST to the effectiveness of IS governance?",
+["Properly managed risk","Alignment with technology strategy","Stakeholder commitment","A defined security policy"],"C",
+"จำ: IS governance effectiveness → STAKEHOLDER COMMITMENT"),
+
+(861,"Which is the BEST approach for addressing noncompliance with security standards?",
+["Maintain a security exceptions process.","Apply additional logging and monitoring to affected assets.","Discontinue affected activities until security requirements can be met.","Develop new security standards."],"A",
+"จำ: address noncompliance with security standards → MAINTAIN SECURITY EXCEPTIONS PROCESS"),
+
+(862,"Which is the BEST method for managing IS compliance of third-party suppliers?",
+["Develop specific IS policies for third parties.","Conduct a vulnerability assessment of the 3rd party.","Include 3rd party details in the risk register.","Ensure IS requirements are addressed in the contract."],"D",
+"จำ: 3rd party IS compliance → IS REQUIREMENTS ADDRESSED IN CONTRACT"),
+
+(863,"An org is creating agreement with a cloud provider. Who should determine the 3rd party's destruction schedule for the org's information?",
+["The org's IS manager","The cloud provider's IS manager","The org's data owner","The cloud provider's data custodian"],"C",
+"จำ: determine destruction schedule for org's info → ORG'S DATA OWNER"),
+
+(864,"Which is the BEST course of action when the org's IR team lacks expertise in forensic analysis?",
+["Contract with external forensic experts.","Develop forensic analysis procedures.","Document the shortcoming.","Acquire forensic analysis tools."],"A",
+"จำ: IR team lacks forensic expertise → CONTRACT WITH EXTERNAL FORENSIC EXPERTS"),
+
+(865,"What should be the FIRST step when investigating an employee suspected of inappropriately downloading proprietary info?",
+["Check for a signed NDA.","Review system access logs.","Conduct a forensic examination of the device.","Discuss the concern with the employee."],"B",
+"จำ: investigate employee downloading proprietary info → FIRST = REVIEW SYSTEM ACCESS LOGS"),
+
+(866,"Which is MOST critical to ensure IS incidents are managed properly?",
+["Conducting an incident capability maturity assessment","Testing the IR plan","Establishing an incident management performance matrix","Assembling the IR team"],"B",
+"จำ: IS incidents managed properly → TESTING THE IR PLAN"),
+
+(867,"The GREATEST challenge when attempting data recovery of a specific file during forensic analysis is when:",
+["high-level disk formatting has been performed.","all files in the directory have been deleted.","the partition table on the disk has been deleted.","the file has been overwritten."],"D",
+"จำ: forensic data recovery GREATEST challenge → FILE HAS BEEN OVERWRITTEN"),
+
+(868,"Which is MOST helpful in determining the criticality of an organization's business functions?",
+["Disaster recovery plan (DRP)","Business continuity plan (BCP)","Security assessment report (SAR)","Business impact analysis (BIA)"],"D",
+"จำ: determine criticality of business functions → BIA"),
+
+(869,"The contribution of RPO to disaster recovery is to:",
+["eliminate single points of failure.","reduce mean time between failures (MTBF).","define backup strategy.","minimize outage periods."],"C",
+"จำ: RPO contribution to DR → DEFINE BACKUP STRATEGY"),
+
+(870,"An IS manager is MOST likely to obtain approval for a new security project when the business case provides evidence of:",
+["threats to the organization.","organizational alignment.","existing control costs.","IT strategy alignment."],"B",
+"จำ: obtain approval for security project → evidence of ORGANIZATIONAL ALIGNMENT"),
+
+(871,"Which should be established FIRST when implementing an IS governance framework?",
+["Security incident management team","Security policies","Security architecture","Security awareness training program"],"B",
+"จำ: implement IS governance framework FIRST → SECURITY POLICIES"),
+
+(872,"Which approach is MOST helpful for properly scoping a security assessment of an existing vendor?",
+["Review the vendor's security policy.","Review controls listed in the vendor contract.","Focus the review on infrastructure with highest risk.","Determine whether vendor follows selected security framework rules."],"B",
+"จำ: scope vendor security assessment → REVIEW CONTROLS LISTED IN VENDOR CONTRACT"),
+
+(873,"A 3rd party audit identified several critical risks. What should the IS manager do NEXT?",
+["Assign risk ownership.","Identify mitigating controls.","Report the findings to senior management.","Prioritize the risks."],"D",
+"จำ: 3rd party audit found critical risks → NEXT = PRIORITIZE THE RISKS"),
+
+(874,"Which provides the BEST evidence that a recently established IS program is effective?",
+["The number of reported incidents has increased.","Regular IT balanced scorecards are communicated.","The number of IT incident tickets stayed consistent.","Senior management reported fewer junk emails."],"A",
+"จำ: IS program effective BEST evidence → ↑ NUMBER OF REPORTED INCIDENTS"),
+
+(875,"An investigation found root cause was negligent handling of incident alerts by system admins. What is the BEST way to address?",
+["Provide IR training to data owners.","Provide IR training to data custodians.","Conduct a risk assessment and share with senior management.","Revise the IR plan to align with business processes."],"B",
+"จำ: negligent incident alert handling by sys admins → IR TRAINING TO DATA CUSTODIANS"),
+
+(876,"An org was victim of a targeted attack undetected until analyst noticed extra user account on firewall. Which would have detected it?",
+["Web-application firewall","Security information and event management (SIEM)","Data leakage prevention (DLP)","Network access control"],"B",
+"จำ: detect extra user account on firewall → SIEM"),
+
+(877,"Who is accountable for data loss in event of an IS incident at a 3rd party provider?",
+["The IS manager","The service provider that hosts the data","The IR team","The business data owner"],"D",
+"จำ: data loss accountability at 3rd party → BUSINESS DATA OWNER"),
+
+(878,"Which BEST minimizes IS risk in deploying apps to production?",
+["Conducting pen testing post implementation","Having a well-defined change process","Verifying security during the testing process","Integrating security controls in each phase of the life cycle"],"D",
+"จำ: minimize IS risk deploying to production → INTEGRATING SECURITY CONTROLS IN EACH PHASE"),
+
+(879,"Which would BEST guide the development and maintenance of an IS program?",
+["A business impact assessment","The organization's risk appetite","A comprehensive risk register","An established risk assessment process"],"B",
+"จำ: guide IS program development → ORG'S RISK APPETITE"),
+
+(880,"Which BEST indicates effective IS governance?",
+["Availability of IS policies","Regular steering committee meetings","Organization-wide attendance at annual security training","Regular testing of the security IR plan"],"B",
+"จำ: effective IS governance → REGULAR STEERING COMMITTEE MEETINGS"),
+
+(881,"The MOST useful technique for maintaining management support for the IS program is:",
+["informing management about the security of business operations.","identifying risks and consequences of failure to comply.","benchmarking security programs of comparable organizations.","implementing a comprehensive security awareness program."],"A",
+"จำ: maintain management support → INFORM MANAGEMENT ABOUT SECURITY OF BUSINESS OPERATIONS"),
+
+(882,"When remote access is granted to a company's internal network, the MOST important consideration should be that access is provided:",
+["by the use of a remote access server.","if a robust IT infrastructure exists.","subject to legal and regulatory requirements.","on a need-to-know basis subject to controls."],"D",
+"จำ: remote access to internal network → NEED-TO-KNOW basis subject to controls"),
+
+(883,"Which should be triggered FIRST when unknown malware has infected an org's critical system?",
+["Disaster recovery plan (DRP)","Vulnerability management plan","Incident response plan","Business continuity plan (BCP)"],"C",
+"จำ: unknown malware on critical system → TRIGGER INCIDENT RESPONSE PLAN"),
+
+(884,"Which is the FIRST step in developing a BIA?",
+["Identifying interdependencies among critical functions","Determining the minimum resources needed for recovery","Identifying which business functions are critical to the organization","Determining the required RTO of business operations"],"C",
+"จำ: BIA FIRST step → IDENTIFY WHICH BUSINESS FUNCTIONS ARE CRITICAL"),
+
+(885,"Which is MOST important when defining how an IS budget should be allocated?",
+["Business impact assessment","Regulatory compliance standards","IS strategy","IS policy"],"C",
+"จำ: IS budget allocation → IS STRATEGY"),
+
+(886,"A forensic examination of a PC is required but the PC has been switched off. What should be done FIRST?",
+["Perform a backup of the computer using the network.","Perform a bit-by-bit backup of the hard disk using a write-blocking device.","Reboot the system using third-party forensic software.","Perform a backup of the hard drive using backup utilities."],"B",
+"จำ: forensic exam on switched-off PC → FIRST = BIT-BY-BIT BACKUP with write-blocking device"),
+
+(887,"What should an org do FIRST when confronted with transfer of personal data across borders?",
+["Define policies and standards for data processing.","Implement applicable privacy principles.","Research cyber insurance policies.","Assess local or regional regulation."],"D",
+"จำ: personal data transfer across borders → FIRST = ASSESS LOCAL/REGIONAL REGULATION"),
+
+(888,"Which BEST enables an org to measure total time operations can be sustained at an alternative site?",
+["Recovery point objective (RPO)","Allowable interruption window (AIW)","Maximum tolerable outage (MTO)","Recovery time objective (RTO)"],"C",
+"จำ: total time operations sustained at alternative site → MAXIMUM TOLERABLE OUTAGE (MTO)"),
+
+(889,"Which has the GREATEST influence on successful integration of IS within the business?",
+["Organizational structure and culture","Risk tolerance and organizational objectives","IS personnel","The desired state of the organization"],"A",
+"จำ: IS integration into business GREATEST influence → ORGANIZATIONAL STRUCTURE AND CULTURE"),
+
+(890,"Which is the MOST important consideration to support potential legal action when responding to a security incident?",
+["Contacting the appropriate law enforcement agency","Encrypting the documentation being assembled","Maintaining chain-of-custody of evidence","Preparing full forensic system backups"],"C",
+"จำ: support potential legal action → MAINTAINING CHAIN-OF-CUSTODY of evidence"),
+
+(891,"An IR team established that an app has been breached. What should be done NEXT?",
+["Maintain the affected systems in a forensically acceptable state.","Inform senior management of the breach.","Isolate the impacted systems from the rest of the network.","Conduct a risk assessment on the affected application."],"C",
+"จำ: app breached confirmed → NEXT = ISOLATE IMPACTED SYSTEMS"),
+
+(892,"A daily report reveals an IT employee changed a firewall rule outside of change control. The IS manager's FIRST step should be to:",
+["perform an analysis of the change.","report the event to senior management.","require that the change be reversed.","review the change management process."],"A",
+"จำ: unauthorized firewall change → FIRST = PERFORM ANALYSIS OF THE CHANGE"),
+
+(893,"Which BEST facilitates reporting of useful information about IS program effectiveness?",
+["Security benchmark report","Risk heat map","Security metrics dashboard","Key risk indicators (KRIs)"],"C",
+"จำ: useful IS program effectiveness reporting → SECURITY METRICS DASHBOARD"),
+
+(894,"Which BEST mitigates risk of information loss caused by a cloud provider becoming insolvent?",
+["Contractual provisions for the right to audit","Effective DLP controls","Contractual provisions for data repatriation","Cybersecurity insurance"],"C",
+"จำ: cloud provider becomes insolvent → CONTRACTUAL PROVISIONS FOR DATA REPATRIATION"),
+
+(895,"An IS team is identifying confidential data to formalize asset classification. Most relevant input would be from:",
+["Business process owners.","The legal department.","The CIO.","Database administrators (DBAs)."],"A",
+"จำ: identify confidential data for classification → BUSINESS PROCESS OWNERS"),
+
+(896,"Which is the PRIMARY reason to conduct a post-incident review?",
+["To determine whether digital evidence is admissible","To notify regulatory authorities","To improve the response process","To aid in future risk assessments"],"C",
+"จำ: post-incident review PRIMARY reason → IMPROVE THE RESPONSE PROCESS"),
+
+(897,"Which is the BEST way to protect against unauthorized access to an encrypted file sent via email?",
+["Validating the recipient's identity","Using a digital signature in the email","Utilizing a separate distribution channel for the password","Ensuring a policy exists for encrypting files in transit"],"C",
+"จำ: protect encrypted file sent via email → SEPARATE DISTRIBUTION CHANNEL for password"),
+
+(898,"The PRIMARY purpose of implementing IS governance metrics is to:",
+["measure alignment with best practices.","refine control operations.","assess operational and program metrics.","guide security towards the desired state."],"D",
+"จำ: IS governance metrics PRIMARY purpose → GUIDE SECURITY TOWARDS DESIRED STATE"),
+
+(899,"Which role is PRIMARILY responsible for developing an information classification framework based on business needs?",
+["Information owner","IS steering committee","Senior management","IS manager"],"C",
+"จำ: develop information classification framework → SENIOR MANAGEMENT"),
+
+(900,"Which should be done FIRST when developing an IS strategy?",
+["Establish IS steering committee.","Determine the desired state of IS.","Develop security policies and standards.","Identify owners of information assets."],"B",
+"จำ: developing IS strategy FIRST → DETERMINE DESIRED STATE of IS"),
+]
+
+# ── Q901-950 ──────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(901,"A BIA should be periodically executed PRIMARILY to:",
+["verify the effectiveness of controls.","check compliance with regulations.","validate vulnerabilities on environmental changes.","analyze the importance of assets."],"D",
+"จำ: BIA periodically executed PRIMARILY → ANALYZE THE IMPORTANCE OF ASSETS"),
+
+(902,"While responding to a high-profile incident, an IS manager observed deficiencies in the IR plan. When is the BEST time to update the plan?",
+["While responding to the incident","During post-incident review","During a tabletop exercise","After a risk reassessment"],"B",
+"จำ: update IR plan deficiencies → DURING POST-INCIDENT REVIEW"),
+
+(903,"Which BEST enables an IS manager to demonstrate effectiveness of IS and risk program to senior management?",
+["Updated risk assessments","Audit reports","Counts of IS incidents","Monthly metrics"],"D",
+"จำ: demonstrate IS program effectiveness to senior mgmt → MONTHLY METRICS"),
+
+(904,"Which would BEST justify spending for a compensating control?",
+["Root cause analysis","Emerging risk trends","Vulnerability assessment","Risk analysis"],"D",
+"จำ: justify spending for compensating control → RISK ANALYSIS"),
+
+(905,"Which is the BEST way to monitor for APTs in an organization?",
+["Browse the Internet to learn of potential events.","Search for threat signatures in the environment.","Search for anomalies in the environment.","Network with peers in the industry to share information."],"C",
+"จำ: monitor for APTs → SEARCH FOR ANOMALIES in environment"),
+
+(906,"Who should be accountable for reviewing a new EDR solution to verify it has been properly deployed and configured?",
+["The security analyst","The chief audit executive (CAE)","The CISO","The system administrator"],"C",
+"จำ: accountable for EDR solution deployment review → CISO"),
+
+(907,"An organization's quality process can BEST support security management by providing:",
+["a repository for security systems documentation.","assurance that security requirements are met.","guidance for security strategy.","security configuration controls."],"B",
+"จำ: quality process supports security management → ASSURANCE THAT SECURITY REQUIREMENTS ARE MET"),
+
+(908,"Which is the MOST important consideration when defining an IS framework?",
+["IS budget","Industry standards","Business strategy","Organizational culture"],"C",
+"จำ: defining IS framework MOST important → BUSINESS STRATEGY"),
+
+(909,"Which is the MOST important consideration for reporting risk assessment results to senior management?",
+["Reports should include comparisons to industry benchmarks.","Reports should be presented in business terms.","Reports should use formal methodologies.","Reports should include recommended controls."],"B",
+"จำ: report risk assessment to senior mgmt → PRESENTED IN BUSINESS TERMS"),
+
+(910,"Which is the BEST way to determine the effectiveness of an IR plan?",
+["Reviewing previous audit reports","Benchmarking the plan against best practices","Performing a penetration test","Conducting a tabletop exercise"],"D",
+"จำ: determine IR plan effectiveness → TABLETOP EXERCISE"),
+
+(911,"Which should be an IS manager's MOST important consideration when determining priority for implementing security controls?",
+["Availability of security budget","Alignment with industry benchmarks","Results of BIAs","Possibility of reputational loss"],"C",
+"จำ: priority for implementing controls → RESULTS OF BIAs"),
+
+(912,"Which is the PRIMARY reason for an IS manager to periodically review existing controls?",
+["To prioritize security initiatives","To avoid redundant controls","To align with emerging risk","To address end-user control complaints"],"C",
+"จำ: periodically review existing controls → TO ALIGN WITH EMERGING RISK"),
+
+(913,"Which should be done FIRST when implementing a security program?",
+["Implement data encryption.","Perform a risk analysis.","Create an information asset inventory.","Determine the value of information assets."],"C",
+"จำ: implement security program FIRST → CREATE INFORMATION ASSET INVENTORY"),
+
+(914,"Who is MOST appropriate to own the risk associated with failure of a privileged access control?",
+["Data owner","IS manager","Business owner","Compliance manager"],"C",
+"จำ: own risk of privileged access control failure → BUSINESS OWNER"),
+
+(915,"Which is an example of a deterrent control?",
+["Segregation of responsibilities","A warning banner","An intrusion detection system (IDS)","Periodic data restoration"],"B",
+"จำ: deterrent control example → WARNING BANNER"),
+
+(916,"An IS manager completed a risk assessment and determined residual risk. What should be the NEXT step?",
+["Implement countermeasures to mitigate risk.","Classify all identified risks.","Conduct an evaluation of controls.","Determine if the risk is within the risk appetite."],"D",
+"จำ: after determining residual risk → NEXT = DETERMINE IF WITHIN RISK APPETITE"),
+
+(917,"Which BEST enables an org to maintain an appropriate security control environment?",
+["Periodic employee security training","Budgetary support for security","Alignment to an industry security framework","Monitoring of the threat landscape"],"C",
+"จำ: maintain appropriate security control environment → ALIGNMENT TO INDUSTRY SECURITY FRAMEWORK"),
+
+(918,"Which is MOST important for responding effectively to security breaches?",
+["Chain of custody","Incident classification","Log monitoring","Communication plan"],"B",
+"จำ: respond effectively to security breaches → INCIDENT CLASSIFICATION"),
+
+(919,"Which is the BEST method for assisting with incident containment in an IaaS cloud environment?",
+["Disabling unnecessary services","Implementing privileged identity management","Establishing automated detection","Implementing network segmentation"],"D",
+"จำ: incident containment in IaaS cloud → NETWORK SEGMENTATION"),
+
+(920,"Which should be performed FIRST in response to a new IS regulation?",
+["Industry benchmarking","Independent audit","Risk assessment","Gap analysis"],"D",
+"จำ: new IS regulation → FIRST = GAP ANALYSIS"),
+
+(921,"To ensure IS of outsourced IT services, which is the MOST critical due diligence activity?",
+["Assess the level of security awareness of the service provider.","Review a recent independent audit report of the service provider.","Review samples of service level reports from the service provider.","Request the service provider comply with IS policy."],"B",
+"จำ: outsourced IT services IS assurance → REVIEW INDEPENDENT AUDIT REPORT of provider"),
+
+(922,"Which is the MOST important reason to consider org culture when developing an IS program?",
+["It helps expedite approval for the IS budget.","It helps the org meet compliance requirements.","Everyone in the org is responsible for IS.","Security incidents have adverse impact on the entire org."],"C",
+"จำ: consider org culture in IS program → EVERYONE IS RESPONSIBLE FOR IS"),
+
+(923,"Which process BEST supports the evaluation of IR effectiveness?",
+["Post-incident review","Chain of custody","Incident logging","Root cause analysis"],"A",
+"จำ: evaluate IR effectiveness → POST-INCIDENT REVIEW"),
+
+(924,"What should an IS manager do FIRST after learning through mass media of a data breach at the org's hosted payroll service provider?",
+["Validate the breach with the provider.","Suspend the data exchange with the provider.","Notify appropriate regulatory authorities.","Initiate the BCP."],"A",
+"จำ: media reports provider breach → FIRST = VALIDATE THE BREACH with provider"),
+
+(925,"What should an IS manager do FIRST after discovering a business unit bypassed change management to implement a new app?",
+["Update the change management process.","Revise the procurement process.","Discuss the issue with senior leadership.","Remove the application from production."],"C",
+"จำ: business unit bypassed change management → FIRST = DISCUSS WITH SENIOR LEADERSHIP"),
+
+(926,"Which is MOST important to consider when developing a security awareness strategy?",
+["Technical solutions for delivery","Cost to implement","Organizational culture","Organizational maturity"],"C",
+"จำ: security awareness strategy → ORGANIZATIONAL CULTURE"),
+
+(927,"A pen test of an org's external web app shows several vulnerabilities. Which presents the GREATEST concern?",
+["Vulnerabilities were caused by insufficient UAT.","Exploit code for one of the vulnerabilities is publicly available.","Rules of engagement form was not signed prior to the pen test.","Vulnerabilities were not found by internal tests."],"B",
+"จำ: web app pen test vulnerabilities GREATEST concern → EXPLOIT CODE PUBLICLY AVAILABLE"),
+
+(928,"Which is the GREATEST concern from lack of severity criteria in incident classification?",
+["The service desk will be staffed incorrectly.","Timely detection of attacks will be impossible.","Statistical reports will be incorrect.","Escalation procedures will be ineffective."],"D",
+"จำ: no severity criteria in incident classification → ESCALATION PROCEDURES WILL BE INEFFECTIVE"),
+
+(929,"Which is the BEST way to maintain organization-wide support for an IS strategy?",
+["Ensure IS objectives are understood by key stakeholders.","Monitor user activity to identify IS policy violations.","Place IS awareness materials in visible locations.","Ensure IS policies are easily accessible."],"A",
+"จำ: org-wide support for IS strategy → IS OBJECTIVES UNDERSTOOD BY KEY STAKEHOLDERS"),
+
+(930,"Several critical systems have been compromised with malware. Which is the BEST strategy to eradicate this incident?",
+["Reimage the systems.","Block access to the impacted systems.","Perform malware scanning.","Perform a vulnerability assessment."],"A",
+"จำ: eradicate malware on critical systems → REIMAGE THE SYSTEMS"),
+
+(931,"Which is the MOST important success factor for maintaining a security-aware culture?",
+["Senior management sign-off on security projects","Regular security training and simulation exercises","Regular org-wide reporting on the risk profile","Employee security policy acknowledgment"],"B",
+"จำ: maintain security-aware culture → REGULAR SECURITY TRAINING AND SIMULATION EXERCISES"),
+
+(932,"Senior management is concerned the org's IPS may disrupt business operations. Which BEST indicates the IS manager has tuned the system to address this concern?",
+["Decreasing false positives","Decreasing false negatives","Increasing false negatives","Increasing false positives"],"A",
+"จำ: IPS disrupts business → tune by DECREASING FALSE POSITIVES"),
+
+(933,"Which metric would BEST monitor how well IS requirements are incorporated into change management?",
+["IS incidents caused by unauthorized changes","Unauthorized changes in the environment","Denied changes due to insufficient security details","IS-related changes"],"C",
+"จำ: IS in change management → DENIED CHANGES DUE TO INSUFFICIENT SECURITY DETAILS"),
+
+(934,"Which metric is MOST appropriate for evaluating the incident notification process?",
+["Elapsed time between detection, reporting, and response","Average number of incidents per reporting period","Average total cost of downtime per reported incident","Elapsed time between response and resolution"],"A",
+"จำ: evaluate incident notification process → ELAPSED TIME between detection, reporting, and response"),
+
+(935,"Meeting which security objective BEST ensures information is protected against unauthorized disclosure?",
+["Confidentiality","Integrity","Authenticity","Nonrepudiation"],"A",
+"จำ: protect against unauthorized disclosure → CONFIDENTIALITY"),
+
+(936,"Which is MOST important when developing a BCP for ransomware attacks?",
+["Backups are maintained on multiple sites and regularly reviewed.","Impacted networks can be detached at the network switch level.","Backups are maintained offline and regularly tested.","Production data is continuously replicated between primary and secondary sites."],"C",
+"จำ: BCP for ransomware → BACKUPS MAINTAINED OFFLINE and regularly tested"),
+
+(937,"Who should be assigned as owner of a newly identified risk related to an org's new payroll system?",
+["Head of IT department","Head of human resources (HR)","IS manager","Data privacy officer"],"B",
+"จำ: owner of payroll system risk → HEAD OF HR (business owner)"),
+
+(938,"An org decided to outsource IT operations. Which should be the PRIMARY focus of the IS manager?",
+["Business continuity contingency planning is provided.","Security requirements are included in the vendor contract.","External security audit results are reviewed.","SLAs meet operational standards."],"B",
+"จำ: outsource IT operations PRIMARY focus → SECURITY REQUIREMENTS IN VENDOR CONTRACT"),
+
+(939,"Which is MOST effective in gaining support for IS strategy from senior management?",
+["Cost-benefit analysis results","Third-party security audit results","BIA results","A major breach at a competitor"],"A",
+"จำ: gain senior mgmt support for IS strategy → COST-BENEFIT ANALYSIS RESULTS"),
+
+(940,"Management of a financial institution accepted an operational risk leading to deactivation of a critical monitoring process. Which should be the IS manager's GREATEST concern?",
+["Deviation from risk management best practices","Impact on the risk culture","Inability to determine short-term impact","Impact on compliance risk"],"D",
+"จำ: accepted risk → deactivated monitoring = GREATEST concern → IMPACT ON COMPLIANCE RISK"),
+
+(941,"An employee's BYOD smartphone has been lost with corporate sensitive data. The IS manager's BEST course of action should have been to implement:",
+["a requirement of prompt notification in event of loss.","multi-factor authentication for the mobile device.","a board-approved mobile policy and standard.","a securely configured device enforced by an MDM solution."],"D",
+"จำ: BYOD lost with sensitive data → SECURELY CONFIGURED DEVICE enforced by MDM"),
+
+(942,"Which is the BEST approach for an IS manager to develop an org's IS strategy?",
+["Budget training costs and contingencies for unexpected events.","Determine desired outcomes and perform a gap analysis.","Evaluate the security posture in comparison with competitors.","Estimate operational costs and perform reliability checks."],"B",
+"จำ: develop IS strategy → DETERMINE DESIRED OUTCOMES + GAP ANALYSIS"),
+
+(943,"Which is the BEST way to monitor the effectiveness of security controls?",
+["Review application and system audit logs.","Conduct regular threat assessments.","Establish and report security metrics.","Benchmark security controls against similar orgs."],"C",
+"จำ: monitor security controls effectiveness → ESTABLISH AND REPORT SECURITY METRICS"),
+
+(944,"An org had a data breach affecting clients. Legal counsel only learned after a press release. Which would have been MOST helpful in preventing this?",
+["A gap analysis of technical controls","Regular IS policy reviews","Tabletop testing of the IR plan","A comprehensive BCP"],"C",
+"จำ: legal not notified before press release → TABLETOP TESTING OF IR PLAN (includes comms)"),
+
+(945,"Which would MOST effectively ensure that a new server is appropriately secured?",
+["Enforcing technical security standards","Performing secure code reviews","Initiating security scanning","Conducting penetration testing"],"A",
+"จำ: new server appropriately secured → ENFORCING TECHNICAL SECURITY STANDARDS"),
+
+(946,"Spoofing should be prevented because it may be used to:",
+["assemble information, track traffic, and identify network vulnerabilities.","predict which way a program will branch when an option is presented.","capture information such as passwords traveling through the network.","gain illegal entry to a secure system by faking the sender's address."],"D",
+"จำ: prevent spoofing → GAIN ILLEGAL ENTRY by FAKING SENDER'S ADDRESS"),
+
+(947,"Which is MOST important to have in place for an org's IS program to be effective?",
+["Senior management support","A comprehensive IT strategy","Defined and allocated budget","Documented IS processes"],"A",
+"จำ: IS program effective → SENIOR MANAGEMENT SUPPORT"),
+
+(948,"When assigning a risk owner, the MOST important consideration is to ensure the owner has:",
+["adequate knowledge of risk treatment and related control activities.","decision-making authority and the ability to allocate resources for risk.","sufficient time for monitoring and managing the risk effectively.","risk communication and reporting skills."],"B",
+"จำ: assign risk owner → DECISION-MAKING AUTHORITY + ability to allocate resources"),
+
+(949,"After a ransomware incident, systems were restored. Which should be of MOST concern to the IS manager?",
+["The SLA was not met.","The RTO was not met.","The root cause was not identified.","Notification to stakeholders was delayed."],"C",
+"จำ: post-ransomware restore → MOST concern = ROOT CAUSE NOT IDENTIFIED"),
+
+(950,"To improve efficiency of new software development, security requirements should be defined:",
+["based on code review.","based on available security assessment tools.","after functional requirements.","concurrently with other requirements."],"D",
+"จำ: security requirements in software dev → CONCURRENTLY WITH OTHER REQUIREMENTS"),
+]
+
+# ── Q951-1000 ─────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(951,"Which would provide the MOST effective security outcome in an org's contract management process?",
+["Extending security assessment to cover asset disposal on contract termination","Ensuring security requirements are defined at the RFP stage","Extending security assessment to include random pen testing","Performing vendor security benchmark analyses at the RFP stage"],"B",
+"จำ: effective security in contract management → SECURITY REQUIREMENTS AT RFP STAGE"),
+
+(952,"Which is the BEST way to contain an SQL injection attack detected by a web app firewall?",
+["Force password changes on the SQL database.","Reconfigure the web app firewall to block the attack.","Update the detection patterns on the web app firewall.","Block the IPs from where the attack originates."],"B",
+"จำ: contain SQL injection via WAF → RECONFIGURE WAF TO BLOCK THE ATTACK"),
+
+(953,"Who is accountable for approving an IS governance framework?",
+["The board of directors","The CISO","The enterprise risk committee","The CIO"],"A",
+"จำ: approve IS governance framework → BOARD OF DIRECTORS"),
+
+(954,"Which is the PRIMARY benefit when IS governance framework is aligned with corporate governance?",
+["Protection of business value and assets","Identification of core business strategies","Easier entrance into new businesses and technologies","Improved regulatory compliance posture"],"A",
+"จำ: IS governance aligned with corporate governance → PROTECTION OF BUSINESS VALUE AND ASSETS"),
+
+(955,"Which is the BEST method to protect confidentiality of data transmitted over the Internet?",
+["Network address translation (NAT)","Message hashing","Transport Layer Security (TLS)","Multi-factor authentication"],"C",
+"จำ: protect data confidentiality over Internet → TLS"),
+
+(956,"Which is the FIRST step when conducting a post-incident review?",
+["Identify mitigating controls.","Assess the costs of the incident.","Perform root cause analysis.","Assign responsibility for corrective actions."],"C",
+"จำ: post-incident review FIRST step → PERFORM ROOT CAUSE ANALYSIS"),
+
+(957,"Which BEST facilitates the effectiveness of cybersecurity IR?",
+["Utilizing a SIEM tool","Utilizing industry-leading network pen testing tools","Increasing communication with all IR stakeholders","Continuously updating signatures of anti-malware solution"],"C",
+"จำ: cybersecurity IR effectiveness → INCREASING COMMUNICATION WITH ALL IR STAKEHOLDERS"),
+
+(958,"A legacy app cannot be patched. A firewall is implemented in front of it. Which risk treatment has been applied?",
+["Accept","Transfer","Mitigate","Avoid"],"C",
+"จำ: firewall in front of unpatched legacy app = MITIGATE"),
+
+(959,"An IS manager was notified of potential security risks with a 3rd party service provider. What should be done NEXT?",
+["Escalate to the CRO.","Conduct a vulnerability analysis.","Conduct a risk analysis.","Determine compensating controls."],"C",
+"จำ: 3rd party security risks → NEXT = CONDUCT RISK ANALYSIS"),
+
+(960,"An email digital signature will:",
+["automatically correct unauthorized modification of an email message.","verify to recipients the integrity of an email message.","protect the confidentiality of an email message.","prevent unauthorized modification of an email message."],"B",
+"จำ: email digital signature → VERIFY INTEGRITY to recipients"),
+
+(961,"Business leaders encourage increased use of social media. What should be done FIRST to mitigate risk of confidential info disclosure?",
+["Establish an organization-wide social media policy.","Develop sanctions for misuse of social media sites.","Monitor social media sites visited by employees.","Restrict social media access on corporate devices."],"A",
+"จำ: social media risk → FIRST = ESTABLISH SOCIAL MEDIA POLICY"),
+
+(962,"Which BEST facilitates effective strategic alignment of security initiatives?",
+["Procedures and standards are approved by department heads.","Organizational units contribute to and agree on priorities.","Periodic security audits are conducted by a third-party.","The business strategy is periodically updated."],"B",
+"จำ: strategic alignment of security initiatives → ORG UNITS CONTRIBUTE AND AGREE ON PRIORITIES"),
+
+(963,"Which is MOST important to maintain integration among IR plan, BCP, and DRP?",
+["Asset classification","RTOs","Chain of custody","Escalation procedures"],"D",
+"จำ: integrate IR plan + BCP + DRP → ESCALATION PROCEDURES"),
+
+(964,"An IS program is BEST positioned for success when closely aligned with:",
+["IS best practices.","recognized industry frameworks.","IS policies.","the IS strategy."],"D",
+"จำ: IS program success → closely aligned with IS STRATEGY"),
+
+(965,"What should an IS manager do FIRST after identifying suspicious activity on a PC not in the IT asset inventory?",
+["Isolate the PC from the network.","Perform a vulnerability scan.","Determine why the PC is not in inventory.","Reinforce IS training."],"A",
+"จำ: suspicious PC not in inventory → FIRST = ISOLATE FROM NETWORK"),
+
+(966,"Which is the MOST important consideration when briefing executives about the current state of the IS program?",
+["Including a situational forecast.","Using appropriate language for the target audience.","Including trend charts for metrics.","Using a rating system to demonstrate effectiveness."],"B",
+"จำ: brief executives on IS program → APPROPRIATE LANGUAGE FOR TARGET AUDIENCE"),
+
+(967,"An org has multiple data repositories across departments. Which IS initiative should be the HIGHEST priority?",
+["Data loss prevention (DLP)","Data retention strategy","Data encryption standards","Data masking"],"A",
+"จำ: multiple data repositories → HIGHEST priority = DLP"),
+
+(968,"Which is ESSENTIAL to ensuring effective IR?",
+["BCP","Cost-benefit analysis","Classification scheme","Senior management support"],"C",
+"จำ: effective IR ESSENTIAL → CLASSIFICATION SCHEME"),
+
+(969,"Which is the BEST indicator of an organization's IS status?",
+["Threat analysis","Controls audit","Penetration test","Intrusion detection log analysis"],"B",
+"จำ: IS status BEST indicator → CONTROLS AUDIT"),
+
+(970,"Which practice is MOST effective for determining the adequacy of incident management operations?",
+["Conducting unannounced external vulnerability testing","Testing current IR plans with relevant stakeholders","Assessing IR team members' skills","Reviewing IR procedures against best practices"],"B",
+"จำ: adequacy of incident management → TESTING IR PLANS WITH RELEVANT STAKEHOLDERS"),
+
+(971,"Which MUST happen immediately following identification of a malware incident?",
+["Eradication","Containment","Preparation","Recovery"],"B",
+"จำ: after malware identified → IMMEDIATELY = CONTAINMENT"),
+
+(972,"Which is MOST effective in monitoring an organization's existing risk?",
+["Vulnerability assessment results","SIEM systems","Periodic updates to risk register","Risk management dashboards"],"D",
+"จำ: monitor existing risk → RISK MANAGEMENT DASHBOARDS"),
+
+(973,"Which BEST indicates that IS governance and corporate governance are integrated?",
+["The IS team is aware of business goals.","A cost-benefit analysis is conducted on all IS initiatives.","The board is regularly informed of IS KPIs.","The IS steering committee is composed of business leaders."],"D",
+"จำ: IS + corporate governance integrated → IS STEERING COMMITTEE composed of BUSINESS LEADERS"),
+
+(974,"Which should be the PRIMARY basis for determining the value of assets?",
+["Cost of replacing the assets","Total cost of ownership (TCO)","Business cost when assets are not available","Original cost of the assets minus depreciation"],"C",
+"จำ: determine asset value → BUSINESS COST WHEN ASSETS ARE NOT AVAILABLE"),
+
+(975,"Which is MOST helpful to identify whether IS policies have been followed?",
+["Corrective controls","Directive controls","Detective controls","Preventive controls"],"C",
+"จำ: identify whether IS policies followed → DETECTIVE CONTROLS"),
+
+(976,"Which is the MOST important reason to classify an incident after detection?",
+["To assign appropriate prioritization levels","To obtain funds for external forensic support","To approve data breach notifications","To ensure management is accurately informed"],"A",
+"จำ: classify incident after detection → ASSIGN APPROPRIATE PRIORITIZATION LEVELS"),
+
+(977,"Which principle BEST addresses protection of data from unauthorized modification?",
+["Nonrepudiation","Integrity","Availability","Authenticity"],"B",
+"จำ: protect from unauthorized modification → INTEGRITY"),
+
+(978,"The MAIN reason for continuous monitoring of the security program is to:",
+["validate reduction of incidents.","confirm benefits are being realized.","ensure alignment with industry standards.","optimize resource allocation."],"B",
+"จำ: continuous monitoring security program MAIN reason → CONFIRM BENEFITS BEING REALIZED"),
+
+(979,"Which would BEST enable the help desk to recognize an IS incident?",
+["Provide the help desk with criteria for security incidents.","Include help desk members on the security IR team.","Require help desk to participate in post-incident reviews.","Train the help desk to review the call logs."],"A",
+"จำ: help desk recognize IS incident → PROVIDE CRITERIA FOR SECURITY INCIDENTS"),
+
+(980,"Which would be the GREATEST concern with implementation of KRIs?",
+["Inability to measure KRIs","Poorly defined risk appetite","Overly specific KRI definitions","Complex organizational structure"],"B",
+"จำ: KRI implementation GREATEST concern → POORLY DEFINED RISK APPETITE"),
+
+(981,"When org lacks internal expertise for technical forensics, what is the BEST way to ensure effective investigations?",
+["Purchase forensic SOPs.","Retain a forensics firm prior to experiencing an incident.","Ensure IR policy allows hiring a forensics firm.","Provide forensics training to the IS team."],"B",
+"จำ: no forensics expertise → RETAIN FORENSICS FIRM PRIOR TO INCIDENT"),
+
+(982,"Which is MOST important for effective implementation of an IS governance program?",
+["IS roles and responsibilities are documented","Program budget approved and monitored by senior management","Employees receive customized IS training","Program goals communicated and understood by the organization"],"D",
+"จำ: IS governance program effective → PROGRAM GOALS COMMUNICATED AND UNDERSTOOD by org"),
+
+(983,"Which is the BEST way to maintain ongoing senior management support for implementation of a security monitoring tool?",
+["Demonstrate return on investment (ROI).","Update security plans.","Present security monitoring reports.","Communicate risk reduction."],"A",
+"จำ: maintain senior mgmt support for monitoring tool → DEMONSTRATE ROI"),
+
+(984,"Which would BEST support a business case to implement an anti-ransomware solution?",
+["Industry benchmark of anti-ransomware investments","A threat and vulnerability assessment","Trend analysis of ransomware attacks","A reduction in required backups and associated costs"],"B",
+"จำ: business case for anti-ransomware → THREAT AND VULNERABILITY ASSESSMENT"),
+
+(985,"When responding to an incident involving malware on a server, what should be done FIRST?",
+["Isolate the server from the network.","Identify the owner of the server.","Locate the most recent backups.","Investigate the source of the malware."],"A",
+"จำ: malware on server → FIRST = ISOLATE FROM NETWORK"),
+
+(986,"Which BEST reduces the likelihood of leakage of private information via email?",
+["User awareness training","Periodic phishing exercises","Email signature verification","Restricted personal use of company email"],"A",
+"จำ: reduce email private info leakage → USER AWARENESS TRAINING"),
+
+(987,"Which BEST determines the data retention strategy and subsequent policy for an org?",
+["BIA","Risk appetite","Business requirements","Supplier requirements"],"C",
+"จำ: data retention strategy → BUSINESS REQUIREMENTS"),
+
+(988,"Which MUST be established to maintain an effective IS governance framework?",
+["Security controls automation","Change management processes","Security policy provisions","Defined security metrics"],"C",
+"จำ: maintain IS governance framework → SECURITY POLICY PROVISIONS"),
+
+(989,"Which is the BEST defense-in-depth implementation for protecting high value assets or handling environments with trust concerns?",
+["Continuous monitoring","Compartmentalization","Multi-factor authentication","Overlapping redundancy"],"B",
+"จำ: defense-in-depth for high value assets → COMPARTMENTALIZATION"),
+
+(990,"IS management and business unit management cannot agree whether to escalate an incident. Which would MOST effectively prevent this from recurring?",
+["Develop additional communication channels.","Obtain senior management buy-in for IR processes.","Periodically test the IR plan.","Create a clear definition of incident classifications."],"D",
+"จำ: disagreement on escalation → CLEAR DEFINITION OF INCIDENT CLASSIFICATIONS"),
+
+(991,"Which should be done FIRST to ensure IS is integrated in system development projects?",
+["Assign resources based on business impact.","Define security requirements.","Review the security policy.","Embed a security representative in each project team."],"B",
+"จำ: IS in system development FIRST → DEFINE SECURITY REQUIREMENTS"),
+
+(992,"For which is it MOST important that system administrators be restricted to read-only access?",
+["User access log files","Administrator user profiles","System logging options","Administrator log files"],"D",
+"จำ: sys admins read-only MOST important → ADMINISTRATOR LOG FILES (prevent tampering)"),
+
+(993,"Which business unit should own the data that populates an identity management system?",
+["Legal","Human resources (HR)","IS","IT"],"B",
+"จำ: data owner for identity management system → HR"),
+
+(994,"Which BEST indicates senior management support for an IS program?",
+["Top-down communication","Regular security awareness training","Participation in a certification program","Steering committee involvement"],"D",
+"จำ: senior management support for IS program → STEERING COMMITTEE INVOLVEMENT"),
+
+(995,"When selecting metrics to monitor IS program effectiveness, it is MOST important for an IS manager to:",
+["identify the program's risk and compensating controls.","consider the organization's business strategy.","consider the strategic objectives of the program.","leverage industry benchmarks."],"C",
+"จำ: select IS metrics → consider STRATEGIC OBJECTIVES OF THE PROGRAM"),
+
+(996,"A BCP should contain:",
+["criteria for activation.","hardware and software inventories.","data restoration procedures.","information about eradication activities."],"A",
+"จำ: BCP should contain → CRITERIA FOR ACTIVATION"),
+
+(997,"A finance director decided to outsource the budget app and identified potential providers. What should the IS manager do FIRST?",
+["Determine the required security controls for the new solution.","Obtain audit reports on service providers' hosting environment.","Review the DRPs of the providers.","Align roles of org's and service providers' staffs."],"A",
+"จำ: outsource budget app → IS manager FIRST = DETERMINE REQUIRED SECURITY CONTROLS"),
+
+(998,"What type of control is being implemented when a SIEM system is installed?",
+["Corrective","Preventive","Deterrent","Detective"],"D",
+"จำ: SIEM = DETECTIVE control"),
+
+(999,"Which should be done FIRST when developing an information asset classification policy?",
+["Identify accountability for information assets throughout the org.","Establish the criteria that define an asset's classification level.","Identify existing security measures for protecting assets.","Obtain executive input to identify high-value assets."],"B",
+"จำ: asset classification policy FIRST → ESTABLISH CRITERIA for classification level"),
+
+(1000,"Which is the BEST option to lower the cost to implement app security controls?",
+["Include standard app security requirements.","Perform security tests in the development environment.","Perform a risk analysis after project completion.","Integrate security activities within the development process."],"D",
+"จำ: lower cost of app security → INTEGRATE SECURITY WITHIN DEVELOPMENT PROCESS"),
+]
+
+# ── Q1001-1050 ────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(1001,"Which is the GREATEST benefit of effective IS governance?",
+["Treatment priorities are based on risk exposure.","IS standards are communicated to primary stakeholders.","The IS budget is aligned to the organization.","Executive management's strategy is aligned to the IS strategy."],"A",
+"จำ: effective IS governance GREATEST benefit → TREATMENT PRIORITIES BASED ON RISK EXPOSURE"),
+
+(1002,"The ability to integrate IS governance into corporate governance is PRIMARILY driven by:",
+["the % of corporate budget allocated to IS program.","how often IS metrics are presented to senior mgmt.","how often the IS steering committee reviews security policies.","how well the IS program supports business objectives."],"D",
+"จำ: IS governance integration PRIMARILY driven by → IS PROGRAM SUPPORTS BUSINESS OBJECTIVES"),
+
+(1003,"Which presents the GREATEST challenge for protecting IoT devices?",
+["IoT vendor reputation","IoT architecture diversity","IoT-specific training","IoT device policies"],"B",
+"จำ: protecting IoT GREATEST challenge → IoT ARCHITECTURE DIVERSITY"),
+
+(1004,"Which parameter is MOST helpful when designing a DR strategy?",
+["Maximum tolerable downtime (MTD)","Mean time between failures (MTBF)","Allowable interruption window (AIW)","Recovery point objective (RPO)"],"A",
+"จำ: design DR strategy → MAXIMUM TOLERABLE DOWNTIME (MTD)"),
+
+(1005,"An IT service desk was not prepared for a ransomware attack. What should be given HIGHEST priority in an action plan?",
+["Investing in threat intelligence capability","Implementing KRIs for ransomware attacks","Updating the IS incident response manual","Strengthening the data backup capability"],"C",
+"จำ: service desk not prepared for ransomware → UPDATE IS INCIDENT RESPONSE MANUAL"),
+
+(1006,"After a risk has been identified, analyzed, and evaluated, what should be done NEXT?",
+["Monitor the risk.","Prioritize the risk for treatment.","Identify the risk owner.","Identify controls for risk mitigation."],"B",
+"จำ: after risk identified/analyzed/evaluated → NEXT = PRIORITIZE FOR TREATMENT"),
+
+(1007,"Which will BEST facilitate timely and effective IR?",
+["Including pen test results in IR planning","Assessing the risk of compromised assets","Notifying stakeholders when invoking IR plan","Classifying the severity of an incident"],"D",
+"จำ: timely and effective IR → CLASSIFYING SEVERITY OF INCIDENT"),
+
+(1008,"Which MOST effectively communicates the current risk profile to senior mgmt after controls are applied?",
+["Residual risk","Impact of loss events","Inherent risk","Number of risks avoided"],"A",
+"จำ: current risk profile after controls applied → RESIDUAL RISK"),
+
+(1009,"Which process should be done NEXT after completing a BIA?",
+["Evaluate the DRP.","Develop requirements for IR plan.","Develop a BCP.","Identify resources for business recovery."],"C",
+"จำ: after completing BIA → NEXT = DEVELOP BCP"),
+
+(1010,"Which is MOST important to include in an IS policy?",
+["Maturity levels","Baselines","Best practices","Management objectives"],"D",
+"จำ: IS policy MOST important → MANAGEMENT OBJECTIVES"),
+
+(1011,"What should an IS manager do FIRST when creating an org's DRP?",
+["Develop response and recovery strategies.","Identify response and recovery teams.","Review the communications plan.","Conduct a BIA."],"D",
+"จำ: creating DRP FIRST → CONDUCT A BIA"),
+
+(1012,"Which would be the MOST effective use of findings from a post-incident review?",
+["Providing input for updates to the IR plan","Developing cost reports regarding the incident","Providing justification for IR plan budget increase","Incorporating results into IS awareness training materials"],"A",
+"จำ: post-incident review findings MOST effective use → UPDATE THE IR PLAN"),
+
+(1013,"A known vulnerability was patched on the offending system. What should be done NEXT?",
+["Scan to determine whether the vulnerability is present on other systems.","Review the vulnerability management process.","Install patches on all existing systems.","Report the root cause to senior management."],"A",
+"จำ: patched known vuln → NEXT = SCAN OTHER SYSTEMS for same vuln"),
+
+(1014,"Which is MOST helpful in determining the realization of benefits from an IS program?",
+["Vulnerability assessments","Key risk indicators (KRIs)","BIA","Key performance indicators (KPIs)"],"D",
+"จำ: realization of IS program benefits → KPIs"),
+
+(1015,"During compliance review, a critical legacy app cannot meet mandatory security requirements. What should be done FIRST?",
+["Update the risk register.","Recommend taking the app out of service.","Implement compensating controls.","Monitor the app until it can be replaced."],"A",
+"จำ: legacy app can't meet security requirements → FIRST = UPDATE RISK REGISTER"),
+
+(1016,"Which is the BEST way to improve an org's ability to detect and respond to incidents?",
+["Conduct a BIA.","Conduct periodic awareness training.","Perform a security gap analysis.","Perform network pen testing."],"B",
+"จำ: improve detect and respond to incidents → PERIODIC AWARENESS TRAINING"),
+
+(1017,"Who would provide the MOST relevant input when aligning IS strategy with organizational goals?",
+["Data privacy officer (DPO)","CISO","IS steering committee","Enterprise risk committee"],"C",
+"จำ: align IS strategy with org goals → IS STEERING COMMITTEE"),
+
+(1018,"Which is the PRIMARY role of the IS manager in app development?",
+["To ensure control procedures address business risk","To ensure enterprise security controls are implemented","To ensure compliance with industry best practice","To ensure security is integrated into the SDLC"],"D",
+"จำ: IS manager in app development PRIMARY role → INTEGRATE SECURITY INTO SDLC"),
+
+(1019,"Which action by senior management would BEST enable successful IS governance framework implementation?",
+["Demonstrating support for business and IS governance functions","Delegating implementation to IS management","Promoting use of internationally recognized governance framework","Engaging a consulting firm specializing in IS governance"],"A",
+"จำ: IS governance success → senior mgmt DEMONSTRATING SUPPORT for IS governance"),
+
+(1020,"Which is the BEST way to reduce risk of security incidents from targeted email attacks?",
+["Conduct awareness training across the org.","Require acknowledgment of the acceptable use policy.","Disable all incoming cloud mail services.","Implement a DLP system."],"A",
+"จำ: reduce risk from targeted email attacks → AWARENESS TRAINING"),
+
+(1021,"Which is the PRIMARY benefit of an IS awareness training program?",
+["Evaluating organizational security culture","Enforcing security policy","Influencing human behavior","Defining risk accountability"],"C",
+"จำ: IS awareness training PRIMARY benefit → INFLUENCING HUMAN BEHAVIOR"),
+
+(1022,"Which MOST effectively supports an org's security culture?",
+["Business unit security metrics","An IS governance framework","Stakeholder involvement","A security mission statement"],"C",
+"จำ: support security culture → STAKEHOLDER INVOLVEMENT"),
+
+(1023,"A new type of ransomware infected an org's network. Which would have BEST enabled detection?",
+["Periodic IS training for end users","Use of integrated patch deployment tools","Regular review of the threat landscape","Monitoring of anomalies in system behavior"],"D",
+"จำ: detect new ransomware type → MONITORING ANOMALIES IN SYSTEM BEHAVIOR"),
+
+(1024,"What should an IS manager do FIRST upon notification of a potential security risk with a 3rd party provider?",
+["Determine risk treatment options.","Conduct a vulnerability analysis.","Escalate to the third-party provider.","Conduct a risk analysis."],"D",
+"จำ: potential 3rd party security risk → FIRST = CONDUCT RISK ANALYSIS"),
+
+(1025,"When should an IS manager contact the information owner after a security incident is reported?",
+["After the potential incident has been logged","After the incident has been contained","After the incident has been confirmed","After the incident has been mitigated"],"C",
+"จำ: contact information owner → AFTER INCIDENT HAS BEEN CONFIRMED"),
+
+(1026,"After recovery from a cyberattack is announced, what should be done NEXT?",
+["Secure and preserve digital evidence for analysis.","Gather feedback on business impact.","Conduct a meeting to capture lessons learned.","Prepare an executive summary for senior management."],"C",
+"จำ: after cyberattack recovery announced → NEXT = LESSONS LEARNED meeting"),
+
+(1027,"Which defines the MOST comprehensive set of security requirements for a newly developed IS?",
+["Baseline controls","Audit findings","Risk assessment results","Key risk indicators (KRIs)"],"C",
+"จำ: comprehensive security requirements for new system → RISK ASSESSMENT RESULTS"),
+
+(1028,"Which IS practice would BEST prevent a SQL injection attack?",
+["Adopting agile development","Enhancing the patching program","Training developers on secure coding practices to reduce vulnerabilities","Performing vulnerability testing before each version release"],"C",
+"จำ: prevent SQL injection → TRAIN DEVELOPERS ON SECURE CODING"),
+
+(1029,"Which is a viable containment strategy for a DDoS attack?",
+["Block IP addresses used by the attacker.","Disable firewall ports exploited by the attacker.","Power off affected servers.","Redirect the attacker's traffic."],"D",
+"จำ: DDoS containment → REDIRECT ATTACKER'S TRAFFIC"),
+
+(1030,"A data discovery project uncovers an unclassified process document. Who is BEST suited to determine the classification?",
+["Creator of the document","Data custodian","IS manager","Security policy author"],"A",
+"จำ: unclassified document classification → CREATOR OF THE DOCUMENT"),
+
+(1031,"Which is MOST important to include in a post-incident report?",
+["Forensic analysis results","List of potentially compromised assets","Root cause analysis","SLAs"],"C",
+"จำ: post-incident report MOST important → ROOT CAUSE ANALYSIS"),
+
+(1032,"When creating an IR plan, the triggers for the BCP MUST be based on:",
+["a threat assessment.","RTOs.","a BIA.","a risk assessment."],"C",
+"จำ: BCP triggers in IR plan → MUST based on BIA"),
+
+(1033,"An org's IS strategy should be the PRIMARY input to which of the following?",
+["Security governance framework design","Enterprise risk scenario development","Security program metrics","Organizational risk appetite"],"A",
+"จำ: IS strategy PRIMARY input to → SECURITY GOVERNANCE FRAMEWORK DESIGN"),
+
+(1034,"Which BEST enables an org to enhance its IR plan processes and procedures?",
+["IS audits","Security risk assessments","Lessons learned analysis","KPIs"],"C",
+"จำ: enhance IR plan → LESSONS LEARNED ANALYSIS"),
+
+(1035,"Which is BEST used to determine the maturity of an IS program?",
+["Organizational risk appetite","Risk assessment results","Security metrics","Security budget allocation"],"C",
+"จำ: determine IS program maturity → SECURITY METRICS"),
+
+(1036,"Which should be done FIRST when developing an IS strategy aligned with org goals?",
+["Establish a security risk framework with KRIs.","Determine IS's impact on achievement of org goals.","Assess IS risk associated with the org goals.","Select IS projects related to org goals."],"C",
+"จำ: IS strategy aligned with org goals FIRST → ASSESS IS RISK associated with org goals"),
+
+(1037,"A BIA BEST enables an org to establish:",
+["annualized loss expectancy (ALE).","recovery methods.","restoration priorities.","total cost of ownership (TCO)."],"C",
+"จำ: BIA BEST enables → RESTORATION PRIORITIES"),
+
+(1038,"Which is the PRIMARY objective of developing an IS program aligned with IS strategy?",
+["To define resources required to achieve IS goals","To define a bottom-up approach for implementing IS policies","To define standards to be implemented","To define risk mitigation plans for security technologies"],"A",
+"จำ: IS program aligned with IS strategy PRIMARY objective → DEFINE RESOURCES REQUIRED to achieve IS goals"),
+
+(1039,"Which is MOST important to include in an IS framework?",
+["Guidance for designing IS controls","IS organizational structure","Industry benchmarks of IS metrics","IS risk assessment"],"D",
+"จำ: IS framework MOST important → IS RISK ASSESSMENT"),
+
+(1040,"An org learns a service provider had a breach last month and did not notify. What should be the IS manager's FIRST action?",
+["Terminate the provider contract.","Conduct a BIA.","Inform senior management.","Review the provider contract."],"D",
+"จำ: provider breach not notified → FIRST = REVIEW THE PROVIDER CONTRACT"),
+
+(1041,"Which communication approach BEST enables an IS manager to maximize IS program effectiveness?",
+["Reporting on industry threats with potential business impact","Conducting periodic one-on-one meetings to align security with business","Participating in operational review meetings to discuss daily operations","Providing regular status of updates to security policies"],"B",
+"จำ: maximize IS program effectiveness → PERIODIC ONE-ON-ONE MEETINGS to align security with business"),
+
+(1042,"Which control type should be considered FIRST for aligning employee behavior with IS objectives?",
+["Administrative security controls","Access security controls","Technical security controls","Physical security controls"],"A",
+"จำ: align employee behavior with IS objectives → ADMINISTRATIVE SECURITY CONTROLS"),
+
+(1043,"IS team presented risk register at steering committee. Which should be of MOST concern?",
+["No owners were identified for some risks.","Business apps had the highest number of risks.","Risk mitigation action plans had no timelines.","Risk mitigation milestones were delayed."],"A",
+"จำ: risk register MOST concern → NO OWNERS IDENTIFIED for some risks"),
+
+(1044,"Which BEST enables an org to determine activities/changes on a system during a cybersecurity incident?",
+["Penetration testing","Root cause analysis","Continuous log monitoring","Computer forensics"],"D",
+"จำ: determine activities during cybersecurity incident → COMPUTER FORENSICS"),
+
+(1045,"What should the IS manager do FIRST when a business dept wants to use blockchain for a new payment process?",
+["Include new requirements in the SDLC pipeline.","Update business case to include security budget for new process.","Perform a risk assessment to identify emerging risks.","Benchmark blockchain solutions to determine most secure."],"C",
+"จำ: new blockchain payment process → FIRST = RISK ASSESSMENT for emerging risks"),
+
+(1046,"Which BEST facilitates development of IS procedures that support IS policy?",
+["Aligning procedures with industry best practices","Classifying the information assets to be protected","Considering the impact of systemic risk events","Conducting external benchmarking"],"B",
+"จำ: IS procedures support IS policy → CLASSIFYING INFORMATION ASSETS to be protected"),
+
+(1047,"Which provides the BEST input to a business case for a technical solution to address system vulnerabilities?",
+["BIA","Vulnerability scan results","Risk assessment","Penetration test results"],"C",
+"จำ: business case for technical solution vs vulnerabilities → RISK ASSESSMENT"),
+
+(1048,"Which is MOST helpful for determining priorities when creating a long-term IS roadmap?",
+["The org's IS framework","IS steering committee input","Enterprise architecture (EA)","Industry best practices"],"B",
+"จำ: long-term IS roadmap priorities → IS STEERING COMMITTEE INPUT"),
+
+(1049,"A KEY consideration in use of quantitative risk analysis is that it:",
+["applies commonly used labels to information assets.","assigns numeric values to exposures of information assets.","is based on criticality analysis of information assets.","aligns with best practice for risk analysis."],"B",
+"จำ: quantitative risk analysis KEY → ASSIGNS NUMERIC VALUES to exposures"),
+
+(1050,"An org has unpatched IT systems in violation of patching policy. This should be treated as:",
+["an increased threat profile.","a vulnerability management failure.","an increased risk profile.","a security control failure."],"D",
+"จำ: unpatched systems violating policy = SECURITY CONTROL FAILURE"),
+]
+
+# ── Q1051-1100 ────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(1051,"How does data discovery assist with data classification?",
+["It provides assurance of data integrity.","It shows where specific data is stored.","It automatically classifies data by keywords.","It helps to identify the data owner."],"B",
+"จำ: data discovery assists classification → SHOWS WHERE SPECIFIC DATA IS STORED"),
+
+(1052,"Which is the MOST effective control to prevent proliferation of shadow IT?",
+["Implement a software allow list.","Conduct periodic vulnerability scanning.","Install a solution to detect unlicensed software.","Conduct software audits."],"A",
+"จำ: prevent shadow IT → IMPLEMENT SOFTWARE ALLOW LIST"),
+
+(1053,"Which is the MOST important driver when developing an effective IS strategy?",
+["Benchmarking reports","IS standards","Business requirements","Security audit reports"],"C",
+"จำ: effective IS strategy MOST important driver → BUSINESS REQUIREMENTS"),
+
+(1054,"Which is MOST important for improvement of a BCP?",
+["Implementing an IT resilience solution","Implementing management reviews","Documenting critical business processes","Incorporating lessons learned"],"D",
+"จำ: BCP improvement MOST important → INCORPORATING LESSONS LEARNED"),
+
+(1055,"Which is MOST important when choosing a shared alternate location for computing facilities?",
+["IR team training","The org's risk tolerance","The org's mission","Resource availability"],"D",
+"จำ: shared alternate computing location → RESOURCE AVAILABILITY"),
+
+(1056,"A financial institution identified high fraud risk in credit dept. Which IS control will BEST reduce fraud risk?",
+["Mandatory time off","Segregation of duties","Acceptable use policy","Periodic risk assessments"],"B",
+"จำ: reduce fraud risk → SEGREGATION OF DUTIES"),
+
+(1057,"An employee clicked a malicious link compromising company data. What is the BEST way to mitigate this future risk?",
+["Assess and update spam filtering rules.","Establish an acceptable use policy.","Implement disciplinary procedures.","Conduct phishing awareness training."],"D",
+"จำ: employee clicked malicious link → PHISHING AWARENESS TRAINING"),
+
+(1058,"The business value of an information asset is derived from:",
+["its replacement cost.","its criticality.","the threat profile.","the risk assessment."],"B",
+"จำ: business value of information asset → ITS CRITICALITY"),
+
+(1059,"Which is the BEST indicator of the maturity level of a vendor risk management process?",
+["Number of vendors rejected due to security review","% of vendors regularly reviewed against defined criteria","% of vendors that have gone through vendor onboarding","Average time to complete vendor risk management process"],"B",
+"จำ: vendor risk management maturity → % VENDORS REGULARLY REVIEWED against criteria"),
+
+(1060,"An international org is implementing a corporate security policy for PII. Which should be the IS manager's MAIN concern?",
+["Data backup strategy","Organizational reporting structure","Local regulations","Consistency in awareness programs"],"C",
+"จำ: international PII policy → MAIN concern = LOCAL REGULATIONS"),
+
+(1061,"Which is the BEST reason for senior management to support a business case for monitoring system for critical app?",
+["The system can be replicated for additional use cases.","An industry peer experienced a recent breach with similar app.","The cost of implementing is less than the impact of downtime.","The solution is within the org's risk tolerance."],"C",
+"จำ: business case for monitoring system → COST OF IMPLEMENTING < IMPACT OF DOWNTIME"),
+
+(1062,"Which is MOST important when developing an IS governance framework?",
+["Ensuring alignment with the org's risk management framework","Integrating security within SDLC","Developing policies and procedures to support the framework","Developing security IR measures"],"A",
+"จำ: IS governance framework → ALIGN WITH ORG'S RISK MANAGEMENT FRAMEWORK"),
+
+(1063,"What should be an IS manager's GREATEST concern when HR outsources data processing to a cloud provider?",
+["Security posture of the provider","Data loss protection insurance","Required provider service levels","The scope of the data"],"D",
+"จำ: HR outsources to cloud → GREATEST concern = SCOPE OF THE DATA"),
+
+(1064,"Which BEST enables org to sustain delivery of products within acceptable time frames during disruption?",
+["Business continuity plan (BCP)","Disaster recovery plan (DRP)","Business impact analysis (BIA)","Service level agreement (SLA)"],"A",
+"จำ: sustain delivery during disruption → BCP"),
+
+(1065,"Which BEST determines an information asset's classification?",
+["Criticality to a business process","Value of information asset in marketplace","Risk assessment from data owner","Cost of producing information asset"],"A",
+"จำ: information asset classification → CRITICALITY TO A BUSINESS PROCESS"),
+
+(1066,"Which is the PRIMARY objective of a cyber resilience strategy?",
+["Business continuity","Employee awareness","Executive support","Regulatory compliance"],"A",
+"จำ: cyber resilience strategy PRIMARY objective → BUSINESS CONTINUITY"),
+
+(1067,"Which is the MOST important reason to communicate to affected parties that a security incident occurred?",
+["To improve IS awareness","To disclose root cause of incident","To comply with regulations regarding notification","To increase goodwill toward org"],"C",
+"จำ: communicate security incident to affected parties → COMPLY WITH NOTIFICATION REGULATIONS"),
+
+(1068,"Which is the BEST indication that an IS control is no longer relevant?",
+["The control is not cost efficient.","The control does not support a specific business function.","IT management does not support the control.","The technology related to the control is obsolete."],"B",
+"จำ: IS control no longer relevant → DOES NOT SUPPORT A SPECIFIC BUSINESS FUNCTION"),
+
+(1069,"Which is the PRIMARY advantage of using DRaaS to manage DR program?",
+["Offers flexible deployment options using cloud infrastructure.","Allows the org to prioritize its core operations.","Is more secure than traditional data backup architecture.","Allows use of a professional response team at a lower cost."],"B",
+"จำ: DRaaS PRIMARY advantage → ALLOWS ORG TO PRIORITIZE CORE OPERATIONS"),
+
+(1070,"Which is the MOST important outcome of a post-incident review?",
+["The system affected is restored to prior state.","The root cause of incident is determined.","The person responsible is identified.","Impact reported to senior management."],"B",
+"จำ: post-incident review MOST important outcome → ROOT CAUSE DETERMINED"),
+
+(1071,"Which is the BEST indicator of performance of a security program?",
+["Changes in ROIs","Changes in maturity level","Changes in budget allocation","Changes in security training attendance"],"B",
+"จำ: security program performance BEST indicator → CHANGES IN MATURITY LEVEL"),
+
+(1072,"An org remediated a security flaw in a system. What should be done NEXT?",
+["Allocate budget for pen testing.","Update system documentation.","Assess the residual risk.","Share lessons learned with the org."],"C",
+"จำ: security flaw remediated → NEXT = ASSESS RESIDUAL RISK"),
+
+(1073,"Which BEST facilitates development of a comprehensive IS policy?",
+["Alignment with established IS framework","Security KPIs","A review of recent IS incidents","An established internal audit program"],"A",
+"จำ: comprehensive IS policy → ALIGNMENT WITH ESTABLISHED IS FRAMEWORK"),
+
+(1074,"Which is the MOST effective way to demonstrate improvement in security performance?",
+["Report results of security control CSA.","Present trends in a validated metrics dashboard.","Provide a summary of security project ROIs.","Present vulnerability testing results."],"B",
+"จำ: demonstrate security performance improvement → TRENDS IN VALIDATED METRICS DASHBOARD"),
+
+(1075,"Which is MOST important to consider for org-wide support for an IS program?",
+["Corporate risk framework","Corporate culture","Clarity of security roles and responsibilities","Maturity of security policy"],"B",
+"จำ: org-wide support for IS program → CORPORATE CULTURE"),
+
+(1076,"Which is the BEST way to ensure the BCP is current?",
+["Manage business process changes.","Update BIAs on a regular basis.","Review and update emergency contact lists.","Conduct periodic testing."],"B",
+"จำ: ensure BCP is current → UPDATE BIAs REGULARLY"),
+
+(1077,"Which would be MOST useful when determining the BCP strategy for a large org's data center?",
+["BIA","Incident root cause analysis","Stakeholder feedback analysis","Business continuity risk analysis"],"A",
+"จำ: BCP strategy for data center → BIA"),
+
+(1078,"A risk assessment for network reconfiguration reveals high likelihood of sensitive data being compromised. What is the IS manager's BEST course of action?",
+["Seek an independent opinion to confirm findings.","Determine alignment with existing regulations.","Report findings to key stakeholders.","Recommend additional network segmentation."],"C",
+"จำ: risk assessment shows high likelihood of compromise → REPORT FINDINGS TO KEY STAKEHOLDERS"),
+
+(1079,"Who should be included in INITIAL discussions regarding a failed security control?",
+["Penetration testers","The service provider","Senior management","The process owner"],"D",
+"จำ: failed security control initial discussions → THE PROCESS OWNER"),
+
+(1080,"A new CRM system was implemented. Who should be responsible for enforcing authorized access to CRM data?",
+["The data custodian","The data owner","Internal IT audit","The IS manager"],"A",
+"จำ: enforce access to CRM data → DATA CUSTODIAN (implements owner's decisions)"),
+
+(1081,"What should an IS manager do FIRST upon learning of new ransomware targeting a particular line of business?",
+["Ensure backups are stored offsite.","Conduct a DR test and address gaps.","Assess the potential impact to the organization.","Conduct a vulnerability scan and remediate."],"C",
+"จำ: new ransomware targeting line of business → FIRST = ASSESS POTENTIAL IMPACT"),
+
+(1082,"Which should be the PRIMARY objective when establishing a new IS program?",
+["Facilitating operational security","Optimizing resources","Minimizing organizational risk","Executing the security strategy"],"C",
+"จำ: new IS program PRIMARY objective → MINIMIZING ORGANIZATIONAL RISK"),
+
+(1083,"An org implemented controls to mitigate ransomware risk. Which is MOST important to present to senior mgmt?",
+["Number and severity of ransomware incidents","Total cost of investment","Benchmarks of industry peers impacted by ransomware","Cost and associated risk reduction"],"D",
+"จำ: report ransomware control performance → COST AND ASSOCIATED RISK REDUCTION"),
+
+(1084,"Which is the BEST defense against DDoS attacks?",
+["Regular patching","Multiple and redundant paths","Intruder-detection lockout","Well-configured routers and firewalls"],"B",
+"จำ: best defense against DDoS → MULTIPLE AND REDUNDANT PATHS"),
+
+(1085,"Which scenario would MOST likely require a change to corporate security policies?",
+["New security standards have been implemented.","Employees do not understand or adhere to policies.","The org has undergone a merger.","The org incurs an increased number of security incidents."],"C",
+"จำ: require change to security policies → ORG UNDERGONE A MERGER"),
+
+(1086,"During a BCP test, which is the MOST important consideration?",
+["The test involves IT members.","The test simulates actual prime-time processing conditions.","The test is scheduled to reduce operational impact.","The test addresses the critical components."],"D",
+"จำ: BCP test MOST important → TEST ADDRESSES CRITICAL COMPONENTS"),
+
+(1087,"When testing IR plan for ransomware recovery, which is MOST important to verify?",
+["An alternative network link is immediately available.","Data backups are recoverable from an offsite location.","Network access requires two-factor authentication.","Digital currency is immediately available."],"B",
+"จำ: test IR plan for ransomware → DATA BACKUPS RECOVERABLE from offsite"),
+
+(1088,"Which is the GREATEST benefit of incorporating IS governance into corporate governance?",
+["Management accountability for IS","Improved process resiliency in event of attacks","Promotion of security-by-design to business","Heightened awareness of IS strategies"],"A",
+"จำ: IS governance in corporate governance GREATEST benefit → MANAGEMENT ACCOUNTABILITY for IS"),
+
+(1089,"What should an IS manager do FIRST when a vulnerability has been disclosed?",
+["Perform a patch update.","Conduct a risk assessment.","Conduct an impact assessment.","Perform a penetration test."],"B",
+"จำ: vulnerability disclosed → FIRST = CONDUCT RISK ASSESSMENT"),
+
+(1090,"When org experiences a disruptive event, the BCP should be triggered PRIMARILY based on:",
+["expected duration of outage.","the root cause of the event.","type of security incident.","management direction."],"A",
+"จำ: BCP trigger → PRIMARILY based on EXPECTED DURATION OF OUTAGE"),
+
+(1091,"Which control would BEST help detect a targeted attack exploiting a zero-day vulnerability?",
+["Intrusion prevention system (IPS)","Vulnerability scanning","Endpoint detection and response (EDR)","Extended detection and response (XDR)"],"D",
+"จำ: detect zero-day targeted attack → EXTENDED DETECTION AND RESPONSE (XDR)"),
+
+(1092,"Which is the MOST relevant control to address the integrity of information?",
+["Implementation of a redundant server system","Encryption of email","Implementation of an Internet security app","Assignment of appropriate access permissions"],"D",
+"จำ: information integrity → ASSIGNMENT OF APPROPRIATE ACCESS PERMISSIONS"),
+
+(1093,"What should be the PRIMARY objective of an information classification scheme?",
+["To define data retention requirements","To develop an asset inventory","To meet legislative and regulatory requirements","To implement controls proportionate to risk"],"D",
+"จำ: information classification scheme PRIMARY objective → CONTROLS PROPORTIONATE TO RISK"),
+
+(1094,"Which is MOST important when prioritizing threats during risk assessment?",
+["Regulatory requirements on the org","The severity of exploited vulnerabilities","The threat landscape within the industry","The potential impact on operations"],"D",
+"จำ: prioritize threats in risk assessment → POTENTIAL IMPACT ON OPERATIONS"),
+
+(1095,"Which would BEST fulfill a board's request for concise overview of IS risk facing the business?",
+["BIA","Balanced scorecard","Risk heat map","Risk scenario summary"],"C",
+"จำ: board concise IS risk overview → RISK HEAT MAP"),
+
+(1096,"Which is the PRIMARY purpose of a BIA?",
+["To define security roles and responsibilities","To determine the criticality of information assets","To establish incident severity levels","To determine ROI"],"B",
+"จำ: BIA PRIMARY purpose → DETERMINE CRITICALITY OF INFORMATION ASSETS"),
+
+(1097,"An org wants to integrate IS into HR management processes. What should be the FIRST step?",
+["Calculate the ROI.","Provide security awareness training to HR.","Assess the business objectives of the processes.","Benchmark processes with best practice to identify gaps."],"C",
+"จำ: integrate IS into HR → FIRST = ASSESS BUSINESS OBJECTIVES of processes"),
+
+(1098,"Following a breach where risk isolated and forensics done, what should be done NEXT?",
+["Place the web server in quarantine.","Rebuild server from last verified backup.","Shut down server in organized manner.","Rebuild server with relevant patches from original media."],"D",
+"จำ: after breach forensics → NEXT = REBUILD FROM ORIGINAL MEDIA with patches"),
+
+(1099,"Which is MOST important for effective cybersecurity incident management?",
+["Early detection and response","Regular tabletop exercises","Root cause analysis","Investigation and forensics"],"A",
+"จำ: effective cybersecurity incident management → EARLY DETECTION AND RESPONSE"),
+
+(1100,"An org's security standard has a major revision; old version no longer valid for certification. What should be the FIRST action?",
+["Modify policies to ensure new requirements are covered.","Review the new standard for applicability to the business.","Evaluate the cost of maintaining the certification.","Communicate the new standard to senior leadership."],"B",
+"จำ: security standard major revision → FIRST = REVIEW NEW STANDARD FOR APPLICABILITY"),
+]
+
+# ── Q1101-1150 ────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(1101,"Which is the MOST appropriate metric to demonstrate effectiveness of IS controls to senior management?",
+["Number of security vulnerabilities uncovered with network scans","Percentage of servers patched","Downtime due to malware infections","Annualized loss resulting from security incidents"],"D",
+"จำ: demonstrate IS controls effectiveness to senior → ANNUALIZED LOSS from security incidents"),
+
+(1102,"Which BEST indicates an org has integrated IS governance with corporate governance?",
+["Impact is measured according to business loss when assessing IT risk.","Service levels for security vendors are defined according to business needs.","Security policies are reviewed whenever business objectives change.","Security performance metrics are measured against business objectives."],"D",
+"จำ: IS + corporate governance integrated → SECURITY METRICS measured against BUSINESS OBJECTIVES"),
+
+(1103,"The MOST effective way to present IS risk to senior management is to highlight:",
+["business impact.","countermeasures.","threat intelligence.","risk mitigation over time."],"A",
+"จำ: present IS risk to senior mgmt → BUSINESS IMPACT"),
+
+(1104,"Within CIA triad, which activity BEST supports confidentiality?",
+["Ensuring encryption for data in transit","Enforcing SLAs","Utilizing a formal change management process","Ensuring hashing of administrator credentials"],"A",
+"จำ: CIA confidentiality → ENCRYPTION FOR DATA IN TRANSIT"),
+
+(1105,"Which should be the PRIMARY objective for creating a culture of security within an org?",
+["To obtain resources for IS initiatives","To reduce risk to acceptable levels","To prioritize security within the org","To demonstrate control effectiveness to senior mgmt"],"B",
+"จำ: culture of security PRIMARY objective → REDUCE RISK TO ACCEPTABLE LEVELS"),
+
+(1106,"Which should be updated FIRST when aligning IR plan with corporate strategy?",
+["Security procedures","Disaster recovery plan (DRP)","Incident notification plan","Risk response scenarios"],"D",
+"จำ: align IR plan with corporate strategy → FIRST = UPDATE RISK RESPONSE SCENARIOS"),
+
+(1107,"Which is the MOST effective way to ensure security of services from 3rd party vendors?",
+["Review 3rd party contracts as part of vendor management.","Perform an audit on vendors' security controls.","Integrate risk management into vendor management process.","Conduct security reviews on services and solutions."],"C",
+"จำ: ensure 3rd party vendor security → INTEGRATE RISK MANAGEMENT into vendor management"),
+
+(1108,"Which eradication method is MOST appropriate when responding to malware on an app server?",
+["Disconnect the system from the network.","Change passwords on the compromised system.","Restore the system from a known good backup.","Perform OS hardening."],"C",
+"จำ: eradicate malware on app server → RESTORE FROM KNOWN GOOD BACKUP"),
+
+(1109,"Which is MOST important for guiding development and management of a comprehensive IS program?",
+["Adopting IS program management best practices","Aligning org's business objectives with IT objectives","Establishing and maintaining an IS governance framework","Implementing policies and procedures to address IS strategy"],"C",
+"จำ: guide comprehensive IS program → ESTABLISHING IS GOVERNANCE FRAMEWORK"),
+
+(1110,"Which is the BEST way to ensure data is not co-mingled or exposed when using a cloud provider?",
+["Require provider to follow stringent data classification procedures.","Obtain an independent audit report.","Review the provider's IS policies.","Include high penalties for security breaches in contract."],"B",
+"จำ: data not co-mingled with cloud → OBTAIN INDEPENDENT AUDIT REPORT"),
+
+(1111,"Before approving a new security solution, senior mgmt requires a business case. Which BEST supports justification?",
+["The solution contributes to business strategy.","The solution improves business risk tolerance levels.","The solution reduces the cost of noncompliance.","The solution improves business resiliency."],"A",
+"จำ: business case for security solution → CONTRIBUTES TO BUSINESS STRATEGY"),
+
+(1112,"When implementing IS governance, it is MOST important for exec leadership to have direct role in:",
+["reviewing the IS policy directing the organization.","developing technical KRIs for IS.","implementing IS metrics for the org.","approving IS standards and procedures."],"A",
+"จำ: exec leadership direct role in IS governance → REVIEWING IS POLICY"),
+
+(1113,"Which should have the MOST influence on org's response to a new industry regulation?",
+["The org's risk control baselines","The org's control objectives","The org's risk management framework","The org's risk appetite"],"D",
+"จำ: response to new regulation → ORG'S RISK APPETITE"),
+
+(1114,"Biometrics are BEST used for:",
+["authorization.","authentication.","auditing.","accounting."],"B",
+"จำ: biometrics BEST used for → AUTHENTICATION"),
+
+(1115,"Predetermined containment methods in cybersecurity IR should be based PRIMARILY on the:",
+["capability of incident handlers.","type of confirmed incident.","predicted incident duration.","number of impacted users."],"B",
+"จำ: containment methods based on → TYPE OF CONFIRMED INCIDENT"),
+
+(1116,"Communicating which would be MOST helpful to gain senior mgmt support for risk treatment?",
+["Threat analysis","Root cause analysis","Quantitative loss","Industry benchmarks"],"C",
+"จำ: senior mgmt support for risk treatment → QUANTITATIVE LOSS"),
+
+(1117,"Which is the PRIMARY objective of information asset classification?",
+["Threat minimization","Vulnerability reduction","Risk management","Compliance management"],"C",
+"จำ: information asset classification PRIMARY objective → RISK MANAGEMENT"),
+
+(1118,"Which IDS trend would be of GREATEST concern when reviewing performance?",
+["Increase in false negatives","Increase in false positives","Decrease in false positives","Decrease in false negatives"],"A",
+"จำ: IDS GREATEST concern → INCREASE IN FALSE NEGATIVES (missing real attacks)"),
+
+(1119,"Management wants to compare IaaS risk vs hosting internally. Which provides BEST method?",
+["Reviewing mitigating and compensating controls for each risk scenario","Mapping risk scenarios by likelihood and impact on a chart","Performing a risk assessment on the IaaS provider","Mapping risk scenarios by sensitivity of data"],"B",
+"จำ: compare IaaS risk vs internal → MAP by LIKELIHOOD AND IMPACT on a chart"),
+
+(1120,"Which is the PRIMARY reason to regularly update BCP and DRP documents?",
+["To ensure audit and compliance requirements are met","To enforce security policy requirements","To maintain business asset inventories","To ensure the availability of business operations"],"D",
+"จำ: update BCP/DRP regularly → ENSURE AVAILABILITY OF BUSINESS OPERATIONS"),
+
+(1121,"Which will have the GREATEST impact on development of information classification scheme?",
+["Value of the information","Data format","Owners of the information","Organizational structure"],"A",
+"จำ: information classification scheme GREATEST impact → VALUE OF THE INFORMATION"),
+
+(1122,"To prepare for 3rd party forensics investigation after malware incident, IR team should:",
+["clean the malware.","isolate the infected systems.","image the infected systems.","preserve the evidence."],"D",
+"จำ: prepare for 3rd party forensics → PRESERVE THE EVIDENCE"),
+
+(1123,"Who should own the risk associated with unauthorized access to application data?",
+["Data custodian","Application developer","Application owner","Access administrator"],"C",
+"จำ: own risk of unauthorized access to app data → APPLICATION OWNER"),
+
+(1124,"The categorization of incidents is MOST important for evaluating which of the following?",
+["Appropriate communication channels","Risk severity and incident priority","Allocation of needed resources","Response and containment requirements"],"B",
+"จำ: incident categorization MOST important for → RISK SEVERITY AND INCIDENT PRIORITY"),
+
+(1125,"An org learns a 3rd party outsourced critical functions to another external provider. What is MOST important?",
+["Engage independent audit of the 3rd party's external provider.","Conduct external audit of contracted 3rd party.","Recommend canceling contract with 3rd party.","Evaluate the 3rd party's agreements with its external provider."],"D",
+"จำ: 3rd party outsourced to another provider → EVALUATE 3RD PARTY'S AGREEMENTS with provider"),
+
+(1126,"An org acquired a new system with strict maintenance instructions and schedules. Where should this be documented?",
+["Standards","Procedures","Guidelines","Policies"],"B",
+"จำ: maintenance instructions and schedules → PROCEDURES"),
+
+(1127,"The PRIMARY benefit of using HTTPS is that it provides:",
+["confidentiality of data transmitted.","integrity for data at rest.","authentication.","better session traceability."],"A",
+"จำ: HTTPS PRIMARY benefit → CONFIDENTIALITY OF DATA TRANSMITTED"),
+
+(1128,"Remote employees have notebooks, cable locks, smartphones, and VPN. What is MOST important for IS manager to ensure?",
+["Employees are trained on the acceptable use policy.","Employees use smartphone tethering when accessing remotely.","Employees use VPN when accessing org's online resources.","Employees physically lock PCs when leaving immediate area."],"A",
+"จำ: remote employees → MOST important = TRAINED ON ACCEPTABLE USE POLICY"),
+
+(1129,"To improve org's IS culture, it is MOST important for senior management to:",
+["participate in security training.","review security budget and resources.","demonstrate good security practices.","approve security policies."],"C",
+"จำ: improve IS culture → senior mgmt DEMONSTRATE GOOD SECURITY PRACTICES"),
+
+(1130,"Which BEST illustrates residual risk within an organization?",
+["Balanced scorecard","Risk management framework","BIA","Heat map"],"D",
+"จำ: illustrate residual risk → HEAT MAP"),
+
+(1131,"Which is the MOST effective way to determine alignment of IS program with business strategy?",
+["Evaluate results of BCP testing.","Evaluate business impact of incidents.","Review KPIs.","Engage business process owners."],"D",
+"จำ: IS program alignment with business strategy → ENGAGE BUSINESS PROCESS OWNERS"),
+
+(1132,"An org experienced loss of revenue during a disaster. Which would BEST prepare for recovery?",
+["BIA","IR plan","DRP","BCP"],"D",
+"จำ: prepare for recovery from disaster (revenue loss) → BCP"),
+
+(1133,"Which is the MOST important success factor when developing an IS strategy?",
+["The strategy delivery is adequately funded.","The strategy is aligned with industry-recognized security control framework.","The strategy is based on proven technologies.","The strategy is approved by board and executive management."],"D",
+"จำ: IS strategy success factor → APPROVED BY BOARD AND EXECUTIVE MANAGEMENT"),
+
+(1134,"Which BEST demonstrates a security-conscious organizational culture?",
+["Security incidents reported directly to senior management.","Security awareness metrics established and tracked.","Phishing simulations are part of IS training.","Employees identify potential incidents and report them."],"D",
+"จำ: security-conscious culture → EMPLOYEES IDENTIFY AND REPORT potential incidents"),
+
+(1135,"Which is the MOST effective data loss control when connecting personal mobile to corporate email?",
+["Email stored in encrypted format on the mobile device.","Users must agree to biometric MFA.","Senior manager must approve each new connection.","Email sync prevented when connected to public Wi-Fi."],"A",
+"จำ: personal mobile + corporate email → EMAIL STORED ENCRYPTED on device"),
+
+(1136,"Which should be the FIRST step when performing triage of a malware incident?",
+["Preserving the forensic image","Containing the affected system","Comparing backup against production","Removing the malware"],"B",
+"จำ: malware incident triage FIRST → CONTAINING THE AFFECTED SYSTEM"),
+
+(1137,"Which BEST helps enable the desired IS culture within an org?",
+["IS awareness training and campaigns","Incentives for appropriate IS-related behavior","Effective IS policies and procedures","Delegation of IS roles and responsibilities"],"A",
+"จำ: enable IS culture → IS AWARENESS TRAINING AND CAMPAIGNS"),
+
+(1138,"What should be the GREATEST concern when annual audit reveals BCP not reviewed in more than a year?",
+["Org may suffer reputational damage for not following best practices.","Audit finding may impact overall risk rating.","Outdated BCP may result in less efficient recovery.","Lack of updates may result in noncompliance with internal policies."],"C",
+"จำ: BCP not updated in over a year → GREATEST concern = LESS EFFICIENT RECOVERY"),
+
+(1139,"Which is the MOST important goal of an IS program?",
+["Optimizing resources","Reducing risk factors","Managing controls","Enhancing business decision making"],"B",
+"จำ: IS program MOST important goal → REDUCING RISK FACTORS"),
+
+(1140,"Which BEST helps ensure effective execution of an org's DRP?",
+["The plan is based on industry best practices.","The plan is reviewed by senior and IT operational management.","Procedures are available at primary and failover location.","Process steps are documented by the DR team."],"C",
+"จำ: effective DRP execution → PROCEDURES AVAILABLE AT PRIMARY AND FAILOVER LOCATION"),
+
+(1141,"Which would be MOST effective in reducing impact of a DDoS attack?",
+["Impose state limits on servers.","Spread a site across multiple ISPs.","Harden network security.","Block the attack at the source."],"B",
+"จำ: reduce DDoS impact → SPREAD SITE ACROSS MULTIPLE ISPs"),
+
+(1142,"The PRIMARY reason for senior management to monitor IS metrics is to ensure:",
+["alignment of IS budget to corporate funding.","alignment of IS with corporate governance.","alignment of security and IT objectives.","alignment with risk mitigation efforts."],"B",
+"จำ: senior mgmt monitor IS metrics → ALIGN IS WITH CORPORATE GOVERNANCE"),
+
+(1143,"Which is the MOST important reason to perform a privacy impact assessment?",
+["To provide assurance to senior management","To ensure business data processing assessed for risk","To ensure compensating controls are in place","To reduce threats associated with data processing"],"B",
+"จำ: perform PIA → ENSURE BUSINESS DATA PROCESSING ASSESSED FOR RISK"),
+
+(1144,"When reporting IS risk to senior management, it is MOST important to include:",
+["control risk.","inherent risk.","detection risk.","residual risk."],"D",
+"จำ: report IS risk to senior → RESIDUAL RISK"),
+
+(1145,"Which is MOST likely to improve an org's security culture?",
+["Involving stakeholders in security planning","Enforcing penalties for security incidents","Communicating security incidents within the industry","Incentivizing managers based on security metrics"],"A",
+"จำ: improve security culture → INVOLVING STAKEHOLDERS in security planning"),
+
+(1146,"Which is MOST important to complete during recovery phase before bringing affected systems back online?",
+["Test and verify that compromised systems are clean.","Document recovery steps for senior management.","Record and close security incident tickets.","Capture and preserve forensic images."],"A",
+"จำ: recovery phase before bringing back online → VERIFY SYSTEMS ARE CLEAN"),
+
+(1147,"Which is the BEST way to improve risk management in org that manages risk at departmental level?",
+["Deploy security risk management software in all departments.","Determine whether org has defined risk tolerance and appetite.","Subscribe to external risk reports relevant to each dept.","Propose that security risk be integrated under a common risk register."],"D",
+"จำ: improve departmental risk management → INTEGRATE UNDER COMMON RISK REGISTER"),
+
+(1148,"Which is MOST helpful when determining service level requirements for an outsourced app?",
+["Supplier BCP","IS policy","Application capabilities","Data classification"],"D",
+"จำ: service level requirements for outsourced app → DATA CLASSIFICATION"),
+
+(1149,"Which is MOST important when planning eradication of a cyberattack?",
+["Skills and competencies of the eradication team","Cost of tools and efforts required","Obtain a clean backup of the OS","Knowledge about the type and source of the threat"],"D",
+"จำ: plan eradication of cyberattack → KNOWLEDGE ABOUT TYPE AND SOURCE OF THREAT"),
+
+(1150,"Which BEST enables an IS manager to identify changes in threat landscape due to emerging technologies?",
+["Input from external experts","Annual security assessments","Periodic risk assessments","Benchmarking against industry peers"],"A",
+"จำ: identify threat landscape changes from emerging tech → INPUT FROM EXTERNAL EXPERTS"),
+]
+
+# ── Q1151-1200 ────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(1151,"An enterprise decided to procure security services from a 3rd party vendor. Which is MOST important to include in vendor selection criteria?",
+["The maturity of the vendor's internal control environment","Feedback from the vendor's previous clients","Alignment of the vendor's business objectives with enterprise security goals","Pen testing against the vendor's network"],"C",
+"จำ: vendor selection for security services → ALIGNMENT OF VENDOR'S BUSINESS OBJECTIVES with enterprise security goals"),
+
+(1152,"The resilience requirements of an application are BEST determined by:",
+["a cost-benefit analysis.","a threat assessment.","a BIA.","a risk assessment."],"C",
+"จำ: application resilience requirements → BIA"),
+
+(1153,"Which BEST facilitates recovery of data lost as a result of a cybersecurity incident?",
+["DRP","Offsite data backups","Encrypted data drives","Removable storage media"],"B",
+"จำ: recover lost data from cybersecurity incident → OFFSITE DATA BACKUPS"),
+
+(1154,"Which is MOST important to successful implementation of a new IS program?",
+["Evaluating current IS processes","Gaining commitment from senior management","Conducting regular external benchmarking","Monitoring KPIs"],"B",
+"จำ: new IS program success → SENIOR MANAGEMENT COMMITMENT"),
+
+(1155,"IS team confirmed threat actors are exploiting a newly announced critical vulnerability. What should be done FIRST?",
+["Notify senior management.","Prevent access to the application.","Invoke the IR plan.","Install additional application controls."],"C",
+"จำ: threat actors exploiting critical vuln → FIRST = INVOKE THE IR PLAN"),
+
+(1156,"Which is the MOST important consideration when evaluating performance of existing security controls?",
+["Interviewing control owners to collect metrics data","Establishing testing scenarios based on international standards","Selecting testing methods that match the purpose of testing","Obtaining senior management support to facilitate testing"],"C",
+"จำ: evaluate security control performance → TESTING METHODS MATCH THE PURPOSE"),
+
+(1157,"Which metric BEST demonstrates effectiveness of org's security awareness program?",
+["% employee computers infected with malware","% employees who regularly attend security training","Number of security incidents reported to help desk","Number of phishing emails viewed by end users"],"C",
+"จำ: security awareness program effectiveness → # SECURITY INCIDENTS REPORTED TO HELP DESK"),
+
+(1158,"Who should decide whether a specific control should be changed once risk is approved for mitigation?",
+["Risk owner","Data owner","Control owner","Process owner"],"A",
+"จำ: decide on control change after risk approved → RISK OWNER"),
+
+(1159,"When determining KRIs for an IS program it is MOST important to select:",
+["KRIs that track both short-term and long-term performance.","KRIs that align with business processes.","KRIs that are quantifiable.","as many KRIs as possible."],"B",
+"จำ: determining KRIs for IS program → KRIs ALIGNED WITH BUSINESS PROCESSES"),
+
+(1160,"Senior management requested a budget cut for IS program. What should be the IS manager's FIRST action?",
+["Analyze the impact to the IS program.","Advise business unit heads of potential changes.","Evaluate cost savings within existing implementations.","Re-prioritize IS implementation and operations."],"A",
+"จำ: IS budget cut requested → FIRST = ANALYZE IMPACT TO IS PROGRAM"),
+
+(1161,"What is MOST important when establishing metrics for reporting to IS strategy committee?",
+["Benchmarking expected value against industry standards","Aligning metrics with organizational culture","Agreeing on baseline values for metrics","Developing a dashboard for communicating metrics"],"B",
+"จำ: metrics for IS strategy committee → ALIGN WITH ORGANIZATIONAL CULTURE"),
+
+(1162,"Which presents the GREATEST challenge when assessing impact of emerging risk?",
+["Outdated risk management strategy","Insufficient data related to the emerging risk","Complexity of the emerging risk","Lack of resources to perform risk assessments"],"B",
+"จำ: assess emerging risk GREATEST challenge → INSUFFICIENT DATA about emerging risk"),
+
+(1163,"To effectively manage org's IS risk, it is MOST important to:",
+["establish and communicate risk tolerance.","benchmark risk scenarios against peer orgs.","assign risk management to an experienced consultant.","periodically identify and correct new system vulnerabilities."],"A",
+"จำ: manage IS risk effectively → ESTABLISH AND COMMUNICATE RISK TOLERANCE"),
+
+(1164,"Which is the MOST useful input for an IS manager when updating org's security policy?",
+["Security team capabilities","Risk appetite","Vulnerability scan","Industry best practices"],"B",
+"จำ: update security policy MOST useful input → RISK APPETITE"),
+
+(1165,"The MOST effective way for IS manager to secure senior mgmt support for IS strategy is by:",
+["presenting industry-specific IS best practices.","determining cost effective IS controls.","educating management on IS program needs.","developing reports showing current threats."],"C",
+"จำ: secure senior mgmt support for IS strategy → EDUCATE MANAGEMENT ON IS PROGRAM NEEDS"),
+
+(1166,"When engaging external party to perform pen test, it is MOST important to:",
+["provide an updated asset inventory.","notify employees of the testing.","define the project scope.","provide network documentation."],"C",
+"จำ: external pen test → MOST important = DEFINE PROJECT SCOPE"),
+
+(1167,"Which is the MOST effective way to convey IS responsibilities across an org?",
+["Implementing security awareness programs","Defining IS responsibilities in security policy","Developing a skills matrix","Documenting IS responsibilities within job descriptions"],"D",
+"จำ: convey IS responsibilities across org → IS RESPONSIBILITIES IN JOB DESCRIPTIONS"),
+
+(1168,"A financial institution is expanding to international jurisdictions. Which should be of GREATEST concern for protecting customer info?",
+["Ability to monitor and enforce controls in multiple jurisdictions","Global payment card industry regulations","Privacy laws and regulations for each country","IS resources available in each country"],"C",
+"จำ: expand internationally + protect customer info → PRIVACY LAWS AND REGULATIONS per country"),
+
+(1169,"When evaluating cloud storage solutions, the FIRST consideration should be:",
+["how sensitive data will be transferred.","SLA for encryption keys.","volume of data to be stored.","alignment with org's data classification policy."],"D",
+"จำ: cloud storage FIRST consideration → ALIGNMENT WITH DATA CLASSIFICATION POLICY"),
+
+(1170,"Which is the GREATEST benefit from introduction of data security standards for payment cards?",
+["Helps achieve holistic protection of information assets in the industry.","Deters hackers from committing crimes related to card payments.","Enables wider range of more sophisticated payment methods.","Optimizes budget allocation for cybersecurity."],"A",
+"จำ: payment card data security standards GREATEST benefit → HOLISTIC PROTECTION of information assets"),
+
+(1171,"Which should an IS manager establish FIRST to ensure security-related activities are adequately monitored?",
+["Regular reviews of system logs","Accountability for security functions","Procedures for security assessments","Schedules for internal audits"],"B",
+"จำ: ensure security activities monitored → FIRST = ACCOUNTABILITY FOR SECURITY FUNCTIONS"),
+
+(1172,"Which is the BEST approach for data owners to use when defining access privileges for users?",
+["Implement an IAM tool.","Adopt user account settings recommended by vendor.","Perform a risk assessment of users' access privileges.","Define access privileges based on user roles."],"D",
+"จำ: define user access privileges → BASED ON USER ROLES"),
+
+(1173,"Which is the BEST control to protect customer personal info stored in the cloud?",
+["Strong encryption methods","Appropriate data anonymization","Strong physical access controls","Timely deletion of digital records"],"A",
+"จำ: protect customer personal info in cloud → STRONG ENCRYPTION METHODS"),
+
+(1174,"Which is MOST important to include in an enterprise IS policy?",
+["Acceptable use","Security objectives","Security metrics","Audit trail review requirements"],"B",
+"จำ: enterprise IS policy MOST important → SECURITY OBJECTIVES"),
+
+(1175,"IS manager wants to upgrade workstations to new OS. What would BEST help gain senior mgmt support?",
+["Results of user surveys about issues with current OS","List of latest security features in new OS","Summary of performance improvements in new OS","Assessment of current OS based on risk"],"D",
+"จำ: gain support for OS upgrade → RISK-BASED ASSESSMENT of current OS"),
+
+(1176,"Which is MOST important to define when creating IS management metrics?",
+["Budget","Objectives","Policy","Benchmarks"],"B",
+"จำ: creating IS metrics MOST important to define → OBJECTIVES"),
+
+(1177,"A PRIMARY benefit of adopting an IS framework is that it provides:",
+["standardized security controls.","common exploitability indices.","credible emerging threat intelligence.","security and vulnerability reporting guidelines."],"A",
+"จำ: IS framework PRIMARY benefit → STANDARDIZED SECURITY CONTROLS"),
+
+(1178,"It is MOST important that risk owners understand they are accountable for:",
+["collaborating with stakeholders to evaluate control effectiveness.","reporting risk metrics and control compliance to IS manager.","escalating control deficiencies to steering committee.","overseeing and monitoring the effectiveness of controls associated with the risk."],"D",
+"จำ: risk owner accountability → OVERSEEING AND MONITORING CONTROL EFFECTIVENESS"),
+
+(1179,"Which is MOST important to include in security incident escalation procedures?",
+["Recovery procedures","Containment procedures","Key objectives of security program","Notification criteria"],"D",
+"จำ: security incident escalation procedures → NOTIFICATION CRITERIA"),
+
+(1180,"An org implemented a new email filter to mitigate email risk. Who is BEST suited to be the control owner?",
+["Head of IT department","Head of compliance","Head of corporate communications","Head of IS"],"D",
+"จำ: email filter control owner → HEAD OF INFORMATION SECURITY"),
+
+(1181,"When introducing a new information asset, what is the MOST important responsibility of the asset owner?",
+["Information backup","Information access administration","Information disposal","Information classification"],"D",
+"จำ: new information asset → asset owner MOST important = INFORMATION CLASSIFICATION"),
+
+(1182,"When establishing an IS governance framework, it is MOST important for an IS manager to understand:",
+["IS best practices.","the corporate culture.","risk management techniques.","the threat environment."],"B",
+"จำ: establish IS governance framework → MOST important to understand = CORPORATE CULTURE"),
+
+(1183,"When updating IS policy to accommodate a new regulation, the IS manager should FIRST:",
+["review KRIs.","consult process owners.","update KPIs.","perform a gap analysis."],"D",
+"จำ: update IS policy for new regulation → FIRST = PERFORM GAP ANALYSIS"),
+
+(1184,"Which is the BEST way to align security and business strategies?",
+["Establish KPIs for the business.","Integrate IS governance into corporate governance.","Ensure IS program conforms to industry standards.","Include security risk in ongoing metrics reporting."],"B",
+"จำ: align security and business strategies → INTEGRATE IS GOVERNANCE INTO CORPORATE GOVERNANCE"),
+
+(1185,"What should an IS manager do FIRST when developing a security framework?",
+["Document security procedures","Conduct an asset inventory","Update the security policy","Perform a gap analysis"],"B",
+"จำ: developing security framework FIRST → CONDUCT ASSET INVENTORY"),
+
+(1186,"A SaaS app supports critical business process. What is MOST important to include in SLA for timely incident response?",
+["Vendor declarations and warranties","Enhanced monitoring of in-scope systems","Defined incident response roles and responsibilities","Established IR procedures"],"C",
+"จำ: SaaS critical app SLA for timely IR → DEFINED IR ROLES AND RESPONSIBILITIES"),
+
+(1187,"Who is BEST positioned to perform a BIA?",
+["The IS team","Process owners","The IT team","Business continuity management auditors"],"B",
+"จำ: perform BIA → PROCESS OWNERS"),
+
+(1188,"Which is the BEST indication of an effective DR planning process?",
+["RTOs are shorter than RPOs","Hot sites are required for any declared disaster","Post-incident reviews are conducted after each event","Chain of custody maintained throughout DR"],"C",
+"จำ: effective DR planning → POST-INCIDENT REVIEWS after each event"),
+
+(1189,"Which provides the BEST input to determine level of protection needed for an IT system?",
+["Vulnerability assessment","Asset classification","Threat analysis","Internal audit findings"],"B",
+"จำ: level of protection for IT system → ASSET CLASSIFICATION"),
+
+(1190,"Which should be the FIRST consideration for an IS manager after a security incident is confirmed?",
+["Developing incident reporting criteria","Executing containment procedures","Restoring business operations","Determining the root cause"],"B",
+"จำ: security incident confirmed → FIRST = EXECUTING CONTAINMENT PROCEDURES"),
+
+(1191,"Which action will BEST resolve root cause of cyber incident involving unauthorized network access via critical web server vuln?",
+["Improving the patching process","Locking accounts with unauthorized access","Isolating affected systems","Terminating malicious network connections"],"A",
+"จำ: root cause = critical vuln → resolve by IMPROVING THE PATCHING PROCESS"),
+
+(1192,"Following an unsuccessful DoS attack, identified weaknesses should be:",
+["noted and re-examined later if similar weaknesses are found","tracked and reported on until their final resolution","quickly resolved regardless of cost","documented in security awareness programs"],"B",
+"จำ: DoS attack weaknesses identified → TRACKED AND REPORTED until final resolution"),
+
+(1193,"Which is an IS manager's MOST important action during 3rd party provider selection?",
+["Determining if the 3rd party is sufficiently staffed","Performing a network pen test","Analyzing the 3rd party's existing control environment","Consulting with the 3rd party's clients"],"C",
+"จำ: 3rd party selection → ANALYZE EXISTING CONTROL ENVIRONMENT"),
+
+(1194,"Which risk assessment finding for online-only business should be given HIGHEST priority for availability?",
+["Back office payment system has slowed.","Web server vulnerable to DDoS attacks.","Email auth via SSO has history of failure.","Visitor WiFi access point has unpatched vulns."],"B",
+"จำ: online business availability HIGHEST priority → WEB SERVER VULNERABLE TO DDoS"),
+
+(1195,"At which stage of BCP planning is risk identification performed?",
+["Impact analysis","Stakeholder meeting","Development","Project planning"],"D",
+"จำ: BCP risk identification stage → PROJECT PLANNING"),
+
+(1196,"IS team plans stronger auth for customer site but concerns about UX. What is IS manager's BEST course of action?",
+["Refer to industry best practices.","Quantify the security risk to the business.","Provide security awareness training to customers.","Assess business impact against security risk."],"D",
+"จำ: stronger auth vs UX concern → ASSESS BUSINESS IMPACT against security risk"),
+
+(1197,"Which is the PRIMARY reason for executive management to be involved in establishing security management framework?",
+["To determine the desired state of enterprise security","To satisfy auditors' recommendations","To ensure industry best practices are followed","To establish the minimum level of controls needed"],"A",
+"จำ: exec mgmt in security framework → DETERMINE DESIRED STATE of enterprise security"),
+
+(1198,"Which is MOST important for IS manager to consider when determining whether data should be stored?",
+["Type and nature of data","Business requirements","Data storage limitations","Data protection regulations"],"B",
+"จำ: determine whether to store data → BUSINESS REQUIREMENTS"),
+
+(1199,"Strong password policy requires reset every 30 days; help desk flooded with resets. What is IS manager's BEST action?",
+["Conduct a BIA","Provide end-user training","Escalate to senior management","Continue to enforce the policy"],"B",
+"จำ: password policy → help desk flooded = PROVIDE END-USER TRAINING"),
+
+(1200,"Which is the MOST important objective when planning an IR program?",
+["Minimizing business impact","Managing resources","Recovering from a disaster","Ensuring IT resiliency"],"A",
+"จำ: IR program MOST important objective → MINIMIZING BUSINESS IMPACT"),
+]
+
+# ── Q1201-1250 ────────────────────────────────────────────────────────────────
+QUESTIONS += [
+(1201,"Which is MOST important when selecting a 3rd party IDS vendor?",
+["The vendor's proposal aligns with objectives of the org","The vendor's proposal allows for contract modification during tech refresh","The vendor's proposal requires provider to have a BCP","The vendor's proposal allows for escrow if 3rd party goes out of business"],"A",
+"จำ: select IDS vendor → ALIGNS WITH OBJECTIVES OF THE ORG"),
+
+(1202,"A financial institution is developing a new mobile app. Which is the BEST time to begin security compliance assessments?",
+["During user acceptance testing (UAT)","During regulatory review","During the design phase","During static code analysis"],"C",
+"จำ: security compliance for new mobile app → DURING THE DESIGN PHASE"),
+
+(1203,"When considering a new security initiative, which should be done PRIOR to developing a business case?",
+["Conduct a risk assessment","Conduct a benchmarking exercise","Perform a cost-benefit analysis","Identify resource requirements"],"A",
+"จำ: before business case for security initiative → CONDUCT RISK ASSESSMENT"),
+
+(1204,"Which BEST demonstrates potential for successful BC in event of a disaster?",
+["Tabletop exercises","Awareness training assessments","Disaster recovery tests","Checklist reviews"],"C",
+"จำ: demonstrate successful BC potential → DISASTER RECOVERY TESTS"),
+
+(1205,"Which is an essential practice for workstations used in forensic investigations?",
+["Documented chain of custody log kept for workstations","Workstations only accessed by members of forensics team","Only forensics-related software installed on workstations","Workstations backed up and hardened regularly"],"B",
+"จำ: forensic investigation workstations → ONLY ACCESSED BY FORENSICS TEAM"),
+
+(1206,"Which component of risk assessment should be reviewed FIRST to understand scope of emerging risk?",
+["Risk categorization","Asset identification","Control evaluation","Risk treatment"],"B",
+"จำ: understand scope of emerging risk → FIRST = ASSET IDENTIFICATION"),
+
+(1207,"IS manager tasked to implement solution providing insight into potential security incidents. Which BEST supports this?",
+["IDS","SIEM","DLP","User behavior analytics"],"B",
+"จำ: insight into potential security incidents → SIEM"),
+
+(1208,"Which is MOST important for IS manager to confirm when reviewing an IR plan?",
+["Plan includes requirement for post-incident review","Plan is based on a BIA","Plan is stored at backup recovery locations","Plan is readily available for auditors"],"B",
+"จำ: review IR plan → MOST important confirm = PLAN BASED ON BIA"),
+
+(1209,"Unintentional employee behavior caused major data loss. BEST way to prevent recurrence?",
+["Improve security awareness training program","Communicate consequences for future instances","Implement compensating controls","Enhance DLP solution"],"A",
+"จำ: unintentional data loss by employee → IMPROVE SECURITY AWARENESS TRAINING"),
+
+(1210,"Exceptions to a security policy should be approved PRIMARILY based on:",
+["results of cost-benefit analysis.","risk appetite.","security incident classification.","industry best practices."],"B",
+"จำ: approve policy exceptions → RISK APPETITE"),
+
+(1211,"When developing a business case for new security initiative, IS manager should FIRST:",
+["conduct a feasibility study.","calculate TCO.","perform cost-benefit analysis.","define the issues to be addressed."],"D",
+"จำ: business case for security initiative FIRST → DEFINE THE ISSUES TO BE ADDRESSED"),
+
+(1212,"A proposal to gain senior mgmt buy-in for a new security project will be MOST effective if it includes:",
+["historical data of reported incidents.","analysis of current threat landscape.","industry benchmarking gap analysis.","projected return on investment (ROI)."],"D",
+"จำ: gain senior mgmt buy-in for security project → PROJECTED ROI"),
+
+(1213,"Which is MOST important for an IS steering committee to ensure?",
+["Funding is available for IS projects.","IS is managed as a business critical issue.","Periodic IS audits are conducted.","Resources for IS projects are minimized."],"B",
+"จำ: IS steering committee MOST important → IS MANAGED AS BUSINESS CRITICAL ISSUE"),
+
+(1214,"Breach contained and remediated. Industry regs require external notification. What should IS manager do NEXT?",
+["Refer to the privacy policy.","Refer to the IR plan.","Send out breach notification to all parties.","Contact board of directors."],"B",
+"จำ: breach requires external notification → REFER TO IR PLAN"),
+
+(1215,"Which is the BEST defense against a brute force attack?",
+["Discretionary access control","Multi-factor authentication (MFA)","Mandatory access control","Time-of-day restrictions"],"B",
+"จำ: brute force attack defense → MFA"),
+
+(1216,"Which is MOST important to verify during a test of an org's IR process?",
+["Whether IR team members know their responsibilities","Whether senior management endorses IR process","Whether users know which numbers to call in call tree","Whether IR team members are cross-trained"],"A",
+"จำ: test IR process → MOST important verify = IR TEAM KNOW THEIR RESPONSIBILITIES"),
+
+(1217,"IPS reported significant increase in hacking attempts; no systems compromised. What should IS manager do FIRST?",
+["Tune the IPS to address false positives.","Report the increase to senior management.","Validate the events identified by the IPS.","Update security awareness training."],"C",
+"จำ: IPS reports increased hacking attempts → FIRST = VALIDATE THE EVENTS"),
+
+(1218,"The likelihood of a successful intrusion is a function of:",
+["threat and vulnerability levels.","design and redundancy of network perimeter controls.","configuration and maintenance of log monitoring system.","opportunity and asset value."],"A",
+"จำ: likelihood of successful intrusion = THREAT AND VULNERABILITY LEVELS"),
+
+(1219,"Which is the BEST evidence that senior management supports the IS program?",
+["IS manager reports to CRO","A reduction in IS costs","Consistent enforcement of IS policies","A high level of IS risk acceptance"],"C",
+"จำ: senior mgmt supports IS program BEST evidence → CONSISTENT ENFORCEMENT of IS policies"),
+
+(1220,"During incident recovery, which is the BEST approach to ensure eradication of traces hidden by attacker?",
+["Reinstall the system from the original source.","Perform continuous monitoring until validation achieved.","Prohibit use of the compromised account.","Conduct a forensic investigation."],"A",
+"จำ: eradicate attacker traces → REINSTALL SYSTEM FROM ORIGINAL SOURCE"),
+
+(1221,"Which BEST enables effectiveness of IS training for new employees?",
+["New employees required to acknowledge IS policy.","New employees must complete security assessment after training.","IS training precedes all other onboarding training.","Training is specific to new employees' job functions."],"D",
+"จำ: IS training effectiveness for new employees → SPECIFIC TO JOB FUNCTIONS"),
+
+(1222,"Increasing trend in CEO phishing attacks for wire transfer fraud. Which is the BEST way to reduce risk?",
+["Temporarily suspend wire transfers.","Provide awareness training to staff responsible for wire transfers.","Disable emails for wire transfer staff.","Provide awareness training to CEO."],"B",
+"จำ: CEO phishing wire transfer fraud → AWARENESS TRAINING TO WIRE TRANSFER STAFF"),
+
+(1223,"Which is the BEST indication of effective IS governance?",
+["Comprehensive security policies reflect organizational objectives.","IS is integrated into organizational processes.","IS program follows industry best practices.","IS risk register is maintained."],"B",
+"จำ: effective IS governance → IS INTEGRATED INTO ORGANIZATIONAL PROCESSES"),
+
+(1224,"DLP flagged PII during transmission. What should IS manager do FIRST?",
+["Validate scope and impact with business process owner.","Escalate to senior management.","Review and validate rules within DLP system.","Initiate the IR plan."],"A",
+"จำ: DLP flags PII → FIRST = VALIDATE SCOPE AND IMPACT with business process owner"),
+
+(1225,"Which is MOST likely to require an org to update its BCP?",
+["Successful BCP testing results","Increases in IS risk trends","Multiple changes in organizational leadership","Major changes in business operating environment"],"D",
+"จำ: update BCP → MAJOR CHANGES IN BUSINESS OPERATING ENVIRONMENT"),
+
+(1226,"Which is the GREATEST benefit of tabletop exercise of BCP?",
+["Assesses availability of compatible backup hardware.","Identifies follow-up work to address shortcomings.","Provides low-cost method of assessing BCP completeness.","Allows for greater participation from business side."],"B",
+"จำ: BCP tabletop exercise GREATEST benefit → IDENTIFIES FOLLOW-UP WORK to address shortcomings"),
+
+(1227,"Which is the BEST approach for encouraging business units to assume IS roles and responsibilities?",
+["Engage an independent security audit.","Perform a risk assessment.","Conduct awareness program for senior management.","Develop controls and countermeasures."],"C",
+"จำ: encourage BU to assume IS roles → AWARENESS PROGRAM FOR SENIOR MANAGEMENT"),
+
+(1228,"Which is MOST influential in driving effectiveness of an IS program?",
+["Policies and standards","Organizational risk appetite","IS metrics","Organizational culture"],"D",
+"จำ: IS program effectiveness MOST influential → ORGANIZATIONAL CULTURE"),
+
+(1229,"The MAIN reason for senior management to review and approve IS strategic plan is to ensure:",
+["compliance with legal and regulatory requirements.","the plan aligns with corporate governance.","staff participation in IS efforts.","org has required funds to implement plan."],"B",
+"จำ: senior mgmt approve IS strategic plan → ALIGN WITH CORPORATE GOVERNANCE"),
+
+(1230,"Which is the GREATEST risk from a poorly trained IR team responding to a major incident?",
+["Separation of duty violations","Loss of confidential information","Evidence contamination","Failure to escalate to senior management"],"C",
+"จำ: poorly trained IR team GREATEST risk → EVIDENCE CONTAMINATION"),
+
+(1231,"Which is the PRIMARY preventive method to mitigate risks from privileged accounts?",
+["Eliminate privileged accounts.","Perform periodic certification of access.","Provide privileged access only to users who need it.","Frequently monitor activities on privileged accounts."],"C",
+"จำ: mitigate privileged account risks PRIMARY → PROVIDE ACCESS ONLY TO THOSE WHO NEED IT"),
+
+(1232,"Which BEST enables IR team to determine appropriate actions during initial investigation?",
+["Technical capabilities of the team","Feedback from affected departments","Historical data from past incidents","Procedures for incident triage"],"D",
+"จำ: appropriate IR actions during initial investigation → PROCEDURES FOR INCIDENT TRIAGE"),
+
+(1233,"Service desk reports PC displaying 'your personal files are encrypted.' What should be done FIRST?",
+["Analyze the compromised PC to determine root cause.","Isolate the compromised PC from the network.","Meet with security team to identify related assets.","Update all security endpoints."],"B",
+"จำ: files encrypted (ransomware) reported → FIRST = ISOLATE FROM NETWORK"),
+
+(1234,"When multiple Internet intrusions on a server are detected, PRIMARY concern should be to ensure:",
+["incident is reported to senior management.","integrity of evidence is preserved.","server is unplugged from power.","forensic investigation software is loaded."],"B",
+"จำ: multiple server intrusions detected → PRESERVE INTEGRITY OF EVIDENCE"),
+
+(1235,"Which group is MOST important to involve in development of IS procedures?",
+["Audit management","Senior management","End users","Operational units"],"D",
+"จำ: develop IS procedures → INVOLVE OPERATIONAL UNITS"),
+
+(1236,"Which would be MOST useful to determine current status of IS program maturity level?",
+["BIA","Cost-benefit analysis","Benchmark analysis","Risk assessment"],"C",
+"จำ: IS program maturity level → BENCHMARK ANALYSIS"),
+
+(1237,"The MOST significant outcome from conducting a BIA is improved:",
+["employee awareness.","disaster recovery planning.","IT capacity planning.","budgeting."],"B",
+"จำ: BIA MOST significant outcome → IMPROVED DISASTER RECOVERY PLANNING"),
+
+(1238,"Which BEST indicates ongoing senior management commitment to org's IS strategy?",
+["An efficient IR program","Established KPIs","A comprehensive security awareness training program","Adequate funding for the IS program"],"D",
+"จำ: senior mgmt commitment to IS strategy → ADEQUATE FUNDING for IS program"),
+
+(1239,"When presenting changes in security risk profile to senior management, which is MOST important to include?",
+["Performance measures for existing controls","Number of false positives","Security training test results","Industry benchmarks"],"A",
+"จำ: present security risk profile changes → PERFORMANCE MEASURES FOR EXISTING CONTROLS"),
+
+(1240,"Which is the MOST important objective when recommending controls?",
+["Ensuring implementation costs are approved","Identifying business processes the controls can support","Reducing the risk to an acceptable level","Minimizing the impact to business processes"],"C",
+"จำ: recommending controls → REDUCING RISK TO ACCEPTABLE LEVEL"),
+
+(1241,"Org learned subsidiary is in country where civil unrest just began. What should org do FIRST?",
+["Invoke the IR plan.","Assess changes in the risk profile.","Conduct security awareness training.","Activate the DRP."],"B",
+"จำ: civil unrest at subsidiary → FIRST = ASSESS CHANGES IN RISK PROFILE"),
+
+(1242,"After updating password standards, apps can't enforce them. IS manager's FIRST action should be to:",
+["evaluate cost of replacing the apps.","reevaluate the standards.","determine the potential impact.","implement compensating controls."],"C",
+"จำ: apps can't enforce new password standards → FIRST = DETERMINE POTENTIAL IMPACT"),
+
+(1243,"Which is a PRIMARY responsibility of a data owner?",
+["Data backup","Data classification","Data quality","Data storage"],"B",
+"จำ: data owner PRIMARY responsibility → DATA CLASSIFICATION"),
+
+(1244,"Which is MOST helpful for retaining exec management support for an IS program?",
+["Forming IS steering committee for oversight","Providing regular performance reports on program effectiveness","Including IS satisfaction in employee engagement surveys","Developing business cases for security awareness expenses"],"B",
+"จำ: retain exec support for IS program → REGULAR PERFORMANCE REPORTS on effectiveness"),
+
+(1245,"When performing a BIA, which is the MOST important reason to determine the MTD?",
+["To determine data needed for timely recovery","To assist in developing recovery strategies","To facilitate selection of technologies needed","To establish resources needed for successful recovery"],"B",
+"จำ: determine MTD in BIA → ASSIST IN DEVELOPING RECOVERY STRATEGIES"),
+
+(1246,"Which process should remain internal when outsourcing IT operations?",
+["Authorization management","Data encryption","Log monitoring","Incident management"],"A",
+"จำ: outsource IT ops → keep AUTHORIZATION MANAGEMENT internal"),
+
+(1247,"Org plans DevOps approach. What is IS manager's MOST important consideration for IS strategy?",
+["Risk profile may change with new approach.","The identified framework may not be appropriate.","Security policies may need to be revised.","Security staff may lack software coding skills."],"A",
+"จำ: DevOps approach → IS strategy = RISK PROFILE MAY CHANGE"),
+
+(1248,"Which is the MOST important reason to integrate nonrepudiation into user authentication design?",
+["To ensure no conflicts when changing database records","To ensure users cannot escalate their own access privileges","To ensure users cannot alter log records","To ensure actions can be traced to specific users"],"D",
+"จำ: nonrepudiation in authentication → ACTIONS TRACED TO SPECIFIC USERS"),
+
+(1249,"Significant risk in core business function; budget constraints prevent effective remediation. Who should be accountable for selecting risk treatment?",
+["Data custodian","Data owner","Security officer","Senior management"],"D",
+"จำ: significant risk + budget constraints → SENIOR MANAGEMENT accountable for risk treatment"),
+
+(1250,"IS manager building business case for next-gen firewall. Which would BEST maximize effectiveness?",
+["Comparing inherent risk to residual risk","Aligning proof-of-concept with IS strategy","Ensuring ROI is included","Comparing costs between new and current firewall"],"A",
+"จำ: business case for firewall → COMPARING INHERENT RISK TO RESIDUAL RISK"),
+]
+
 
 LABELS      = ["A", "B", "C", "D"]
 PAGE_SIZE   = 50
@@ -763,9 +3967,19 @@ for q in page_qs:
             label_visibility="collapsed",
             key=f"radio_{qnum}"
         )
-        if choice is not None:
-            st.session_state.answers[qnum] = choice[0]
-            st.rerun()
+        col_ans, col_skip = st.columns([3, 1])
+        with col_ans:
+            if st.button("Submit Answer", key=f"btn_{qnum}",
+                         use_container_width=True, type="primary"):
+                if choice is not None:
+                    st.session_state.answers[qnum] = choice[0]
+                    st.rerun()
+                else:
+                    st.warning("Please select an option first.")
+        with col_skip:
+            if st.button("Skip", key=f"skip_{qnum}", use_container_width=True):
+                st.session_state.answers[qnum] = "SKIP"
+                st.rerun()
 
     else:
         is_skip  = chosen == "SKIP"
