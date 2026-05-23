@@ -3959,7 +3959,7 @@ for q in page_qs:
     )
 
     if not answered_q:
-        options = [f"{LABELS[i]}.  {shuf_opts[i]}" for i in range(4)]
+        options = [f"{LABELS[i]}.  {opts[i]}" for i in range(4)]
         choice  = st.radio(
             label=f"q_{qnum}",
             options=options,
